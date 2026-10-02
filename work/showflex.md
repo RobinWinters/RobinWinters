@@ -1,0 +1,23 @@
+# ShowFlex: native iOS and fitness technology
+
+Robin Winters — iOS/Full Stack Engineer, 2024–present.
+
+My work at ShowFlex spans native Swift and SwiftUI implementation, mobile architecture, product direction, interaction quality, and beta release execution. The product connects event discovery with fitness and competition information.
+
+## Native event discovery
+
+I build discovery experiences using MapKit, search and filtering, dynamic geocoding, draggable detail sheets, and persistent navigation. The engineering scope includes state management, efficient data loading, accessibility, and motion. A map, search results, and event details need to work together as one interaction, with clear transitions between them.
+
+## Data behind the interface
+
+I create ingestion pipelines that normalize global event calendars, athlete metadata, registration information, and media into structured JSON and Firebase-backed product data. This work connects source information to the native browsing experience. It involves both data handling and the interface that makes the information usable.
+
+## Applied AI prototypes
+
+I also prototype AI-assisted physique and posing feedback and predictive competition features. These are experimental workflows; this account does not describe them as released product capabilities. Their purpose is to turn model output into clear, useful consumer interactions.
+
+This account describes my responsibilities and contributions. It does not claim sole authorship of the product, current App Store availability, adoption figures, benchmarks, or measured performance improvements.
+
+[Portfolio and work details](https://robin.ac/) · [ShowFlex](https://showflex.pro/) · [Professional profile](https://www.linkedin.com/in/robinwinters-sf/)
+
+Updated October 2, 2026. Self-authored professional account.
