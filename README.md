@@ -8,6 +8,14 @@ I build native iOS software and applied AI systems, with a focus on fitness tech
 - **Yukon Systems — Product Development Manager, 2023–2025.** Technical prioritization and delivery of AI systems, software requirements, architecture tradeoffs involving reliability, explainability, latency and performance, and agent workflows.
 - **Organic Alkaloids — Co-owner, 2017–2023.** International import strategy, procurement, logistics, client relationships, marketing and financial operations.
 
+## Work accounts
+
+- [ShowFlex: native iOS and fitness technology](work/showflex.md)
+- [Yukon Systems: AI systems and product delivery](work/yukon-systems.md)
+- [Organic Alkaloids: business operations and delivery](work/organic-alkaloids.md)
+
+These are self-authored accounts. Experimental features, role interests, and former positions are identified explicitly.
+
 ## Engineering focus
 
 Swift · SwiftUI · MapKit · Firebase · native iOS architecture · structured data pipelines · applied AI workflows · product delivery
