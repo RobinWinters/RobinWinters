@@ -40,6 +40,8 @@ My repositories include forks and upstream projects. Those retain their original
 
 ## Public reference formats
 
+- [Readable professional reference and HTML writing](https://robinwinters.github.io/): approved work history, scoped project evidence and resume downloads on GitHub Pages.
+
 - [Professional record and evidence](professional/README.md)
 - [Machine-readable professional record](professional/professional-record.json)
 - [Plain-text resume](professional/resume.txt) and [three application-focused variants](professional/resumes/README.md)
