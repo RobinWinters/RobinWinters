@@ -16,6 +16,10 @@ I build native iOS software and applied AI systems, with a focus on fitness tech
 
 These are self-authored accounts. Experimental features, role interests, and former positions are identified explicitly.
 
+## Technical writing
+
+- [Distributed sensing for strength training](work/technical-writing.md): a published architecture proposal across Apple Watch, AirPods, iPhone and Apple fitness frameworks. This is technical writing, not a claim of a released sensing product.
+
 ## Engineering focus
 
 Swift · SwiftUI · MapKit · Firebase · native iOS architecture · structured data pipelines · applied AI workflows · product delivery
@@ -27,5 +31,7 @@ I'm interested in iOS developer, Forward Deployed Engineer, and fitness-technolo
 - [Portfolio and work details](https://robin.ac/)
 - [LinkedIn](https://www.linkedin.com/in/robinwinters-sf/)
 - [ShowFlex](https://showflex.pro/)
+- [ShowFlex iPhone App Store listing](https://apps.apple.com/us/app/showflex/id6757890910)
+- [Codeberg](https://codeberg.org/RobinWinters)
 
 My repositories include forks and upstream projects. Those retain their original authorship; a fork on this account is not a claim that I created its upstream work.
