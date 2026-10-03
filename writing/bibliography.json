@@ -15,7 +15,31 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/moderation.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "moderation.md"
+      "fullTextMarkdown": "moderation.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
@@ -28,7 +52,31 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/distributed-kinematic-sensing.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "distributed-kinematic-sensing.md"
+      "fullTextMarkdown": "distributed-kinematic-sensing.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-1bl",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "Kinematics Lab Part II: You Don't Need Another...",
@@ -41,7 +89,24 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/kinematics-lab-part-ii.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "kinematics-lab-part-ii.md"
+      "fullTextMarkdown": "kinematics-lab-part-ii.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/kinematics-lab-part-ii-you-dont-need-another-o9e",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/kinematics-lab-part-ii-you-dont-need-another-7804ee06b4bf",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "Swift search request ownership",
@@ -51,7 +116,31 @@
       "author": "Robin Winters",
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/swift-search-cancellation-needs-an-ownership-check-44m4",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/swift-search-cancellation-needs-an-ownership-check-c2c6cd598ffc",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/swift-search-cancellation-needs-an-ownership-check",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "Fitness event feeds: explicit dates, stable identity and visible conflicts",
@@ -61,7 +150,31 @@
       "author": "Robin Winters",
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-161p",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-deaff1e6be83",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.",
@@ -74,7 +187,31 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/ios-27-liquid-glass.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "ios-27-liquid-glass.md"
+      "fullTextMarkdown": "ios-27-liquid-glass.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-3d90",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-48c61ffbb971",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "What if Myspace Had It Right?",
@@ -87,7 +224,24 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "what-if-myspace-had-it-right.md"
+      "fullTextMarkdown": "what-if-myspace-had-it-right.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/what-if-myspace-had-it-right-30oh",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/what-if-myspace-had-it-right-f60f1a9fa31c",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "The “Any Given Tuesday” Theory of AI Startups",
@@ -100,7 +254,24 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "any-given-tuesday-ai-startups.md"
+      "fullTextMarkdown": "any-given-tuesday-ai-startups.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/the-any-given-tuesday-theory-of-ai-startups-1341",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/the-any-given-tuesday-theory-of-ai-startups-1660a60cff13",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "How to Get Around AI Chat App Boundaries (and prevent it from happening)",
@@ -113,7 +284,31 @@
       "datePrecision": "day",
       "republicationUrl": "https://robinwinters.github.io/writing/ai-chat-app-boundaries.html",
       "republicationDate": "2026-10-02",
-      "fullTextMarkdown": "ai-chat-app-boundaries.md"
+      "fullTextMarkdown": "ai-chat-app-boundaries.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-4hgf",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-fac44a9cf61b",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "ShowFlex: event discovery connects native interaction with structured data",
@@ -124,7 +319,31 @@
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored professional work account",
       "datePrecision": "day",
-      "fullTextMarkdown": "../work/showflex-event-discovery.md"
+      "fullTextMarkdown": "../work/showflex-event-discovery.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/showflex-event-discovery-connects-native-interaction-with-structured-data-462c47c716ca",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     },
     {
       "title": "Yukon Systems: AI systems and product delivery",
@@ -135,7 +354,31 @@
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored professional work account",
       "datePrecision": "day",
-      "fullTextMarkdown": "../work/yukon-systems.md"
+      "fullTextMarkdown": "../work/yukon-systems.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/toros-at-yukon-systems-a-multi-model-decision-prototype-9lm",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/toros-at-yukon-systems-a-multi-model-decision-prototype-6f3a2aa9b345",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/toros-at-yukon-systems-a-multi-model-decision-prototype",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
     }
   ]
 }

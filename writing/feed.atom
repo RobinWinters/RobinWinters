@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://robinwinters.github.io/writing/</id>
   <title>Robin Winters: technical writing</title>
-  <updated>2026-10-03T22:58:52Z</updated>
+  <updated>2026-10-03T23:23:57Z</updated>
   <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://robinwinters.github.io/writing/" />
   <author>
@@ -16,6 +16,9 @@
     <summary>Self-authored account of native iOS engineering with dated ShowFlex App Store release evidence; AI workflows remain prototypes.</summary>
     <link rel="alternate" href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex-event-discovery.md" />
     <content type="html">&lt;article&gt;&lt;h1&gt;ShowFlex: event discovery connects native interaction with structured data&lt;/h1&gt;&lt;p&gt;Robin Winters — iOS/Full Stack Engineer, 2024–present&lt;/p&gt;&lt;p&gt;I’m an iOS / Full Stack Engineer at ShowFlex, a shipped iPhone fitness product available on the App Store. Since 2024, my work has spanned Swift and SwiftUI engineering, mobile architecture, MapKit event discovery, Firebase-backed data, interaction quality and release execution. Here is how native interaction and structured event data meet in that work.&lt;/p&gt;&lt;h2&gt;A map is one part of a discovery flow&lt;/h2&gt;&lt;p&gt;Event discovery connects a user&amp;#x27;s query, active filters, a set of locations and the event currently being inspected. Search results and map markers should refer to the same event identities. A detail sheet should describe the selected event even when the surrounding result order changes.&lt;/p&gt;&lt;p&gt;My work includes MapKit, search and filtering, dynamic geocoding, draggable detail sheets and persistent navigation. The product problem crosses those components: the interface needs clear state transitions as data and selection change. Accessibility, motion and efficient loading are part of the approved engineering scope.&lt;/p&gt;&lt;p&gt;The companion &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Swift search example&lt;/a&gt; demonstrates one general state-management problem: rejecting asynchronous results that belong to an older query. It is a separate educational package, not extracted ShowFlex code and not evidence of the exact implementation shipped in the app.&lt;/p&gt;&lt;h2&gt;Event information needs a usable structure&lt;/h2&gt;&lt;p&gt;The approved data work includes ingestion pipelines that normalize global event calendars, athlete metadata, registration information and media into structured JSON and Firebase-backed product data. Source information and native presentation meet at that boundary.&lt;/p&gt;&lt;p&gt;A calendar entry, location and registration link are useful only when they can be connected to the event a person is viewing. This explains why the work spans both data handling and the consumer interface. No throughput, latency, accuracy or adoption figures are claimed here.&lt;/p&gt;&lt;h2&gt;Public release evidence&lt;/h2&gt;&lt;p&gt;The &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;ShowFlex iPhone App Store listing&lt;/a&gt;, checked October 2, 2026, identifies ShowFlex Inc. as developer and seller. Version 17.0 describes an interactive IFBB events map and calendar import tools for IFBB Pro and NPC events. That is public evidence for an iPhone product and the listed map/calendar release.&lt;/p&gt;&lt;p&gt;It does not establish an Android release, individual authorship of every feature, a measured business outcome or release of the AI prototypes below. Store metadata can change; the check date matters.&lt;/p&gt;&lt;h2&gt;Applied AI remains a distinct work stream&lt;/h2&gt;&lt;p&gt;My approved scope also includes prototypes for AI-assisted physique and posing feedback and predictive competition features. These are experimental workflows. They are not described as released product capabilities or validated fitness assessments.&lt;/p&gt;&lt;p&gt;The distinction matters when assessing the portfolio: released iPhone event discovery has public product evidence; AI prototype work has a narrower professional claim and needs additional releasable demonstrations before it can become a detailed implementation case study.&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex.md"&gt;Existing work account&lt;/a&gt; · &lt;a href="https://showflex.pro/"&gt;ShowFlex&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;Portfolio&lt;/a&gt; · &lt;a href="https://www.linkedin.com/in/robinwinters-sf/"&gt;Professional profile&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Updated October 2, 2026. Self-authored professional account prepared with editorial assistance.&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/showflex-event-discovery-connects-native-interaction-with-structured-data-462c47c716ca" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md</id>
@@ -24,6 +27,9 @@
     <summary>Self-authored account of Robin’s TORos prototype contribution, with dated company publication and attribution limits.</summary>
     <link rel="alternate" href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md" />
     <content type="html">&lt;article&gt;&lt;h1&gt;Yukon Systems: AI systems and product delivery&lt;/h1&gt;&lt;p&gt;Robin Winters — Product Development Manager, 2023–2025.&lt;/p&gt;&lt;p&gt;At Yukon Systems, I led technical prioritization and delivery for AI systems. My responsibilities included software requirements, cross-functional coordination, architecture tradeoffs, and agent and consensus-modeling workflows.&lt;/p&gt;&lt;h2&gt;TORos: a deliberative decision-engine prototype&lt;/h2&gt;&lt;p&gt;I built TORos for Yukon Systems. It is a prototype, model-agnostic, multimodal decision engine that uses multiple models to discuss and challenge candidate decisions before reaching consensus. The design draws on a court-like deliberation metaphor: models can present competing reasoning rather than simply accept the first response.&lt;/p&gt;&lt;p&gt;Yukon Systems published &lt;a href="https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/"&gt;Part One: Orchestration &amp;amp; Alignment Through Agentic Consensus&lt;/a&gt; on May 5, 2025. The article includes an early TOROS CLI testing screenshot and discusses multi-model orchestration. It provides a dated company description of the prototype; it does not identify individual builders or independently measure the system&amp;#x27;s results.&lt;/p&gt;&lt;p&gt;My contribution is recorded from my October 3, 2026 statement. Specific development dates and collaborator credits remain unresolved; the employment years above are not a project date range. No sole authorship, released product, customer deployment, public source code or measured accuracy/reliability is asserted. Consensus describes the intended decision process and does not guarantee that a decision is correct.&lt;/p&gt;&lt;h2&gt;From requirements to technical decisions&lt;/h2&gt;&lt;p&gt;The work connected technical research with product requirements. Reliability, explainability, latency, and performance informed the decisions. My responsibilities included technical priorities, requirements, and delivery around agent and consensus-modeling workflows.&lt;/p&gt;&lt;h2&gt;Relevance to applied engineering&lt;/h2&gt;&lt;p&gt;Requirements, technical tradeoffs, stakeholder coordination, and delivery are relevant to the Forward Deployed Engineer roles I am interested in. My held title at Yukon Systems was Product Development Manager. Further implementation details, team credits and quantified outcomes will need suitable public evidence before inclusion.&lt;/p&gt;&lt;p&gt;&lt;a href="https://robin.ac/"&gt;Portfolio and work details&lt;/a&gt; · &lt;a href="https://www.linkedin.com/company/yukon-systems"&gt;Yukon Systems company profile&lt;/a&gt; · &lt;a href="https://www.linkedin.com/in/robinwinters-sf/"&gt;Professional profile&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Updated October 3, 2026. Self-authored professional account with a linked company publication; no confidential source code or partner information is included.&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/toros-at-yukon-systems-a-multi-model-decision-prototype-9lm" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/toros-at-yukon-systems-a-multi-model-decision-prototype-6f3a2aa9b345" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/toros-at-yukon-systems-a-multi-model-decision-prototype" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/</id>
@@ -371,6 +377,9 @@ Be excellent to each other,
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/</id>
@@ -1382,6 +1391,9 @@ This could transform Traditional Strength Training from a timer with a heartrate
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-1bl" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/</id>
@@ -1803,6 +1815,8 @@ Okay, back to the gym.
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/kinematics-lab-part-ii-you-dont-need-another-o9e" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/kinematics-lab-part-ii-you-dont-need-another-7804ee06b4bf" type="text/html" title="Medium edition" />
   </entry>
   <entry>
     <id>https://robinwinters.github.io/writing/swift-search-request-ownership.html</id>
@@ -1836,6 +1850,9 @@ self.pending = nil
 &lt;p&gt;The checks cover late successful results, obsolete failures, stale cleanup, an empty query, selection by identifier, a current error, and cancellation during debounce. They passed with Swift 6.4 on macOS on October 2, 2026. No live server, iPhone runtime, SwiftUI adapter or performance benchmark was part of that validation.&lt;/p&gt;
 &lt;p&gt;The pattern applies anywhere an interface can supersede asynchronous work: search suggestions, filters, geocoding or remote detail loading. Each product still needs its own rules for retaining results, displaying errors, leaving a screen and restoring selection. The package makes one such set of rules explicit and testable.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Code and tests&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Robin's professional background&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/swift-search-cancellation-needs-an-ownership-check-44m4" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/swift-search-cancellation-needs-an-ownership-check-c2c6cd598ffc" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/swift-search-cancellation-needs-an-ownership-check" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://robinwinters.github.io/writing/fitness-event-data-contracts.html</id>
@@ -1868,6 +1885,9 @@ self.pending = nil
 &lt;p&gt;On October 2, 2026, the package passed 12 Swift Testing checks on macOS with Swift 6.4. The checks cover timezone equivalence, retransmissions, conflict propagation and ordering, source-scoped identity, malformed dates, missing offsets, end-time rules, URL restrictions, unknown ends and sorted output. The command-line fixture and malformed-JSON failure path were also exercised. The repository includes &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/tree/Radpository/Fixtures"&gt;fixtures&lt;/a&gt; and &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/blob/Radpository/verification.json"&gt;verification details&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;These results describe this educational package. They do not establish iPhone-device execution, Linux execution, an App Store release or an improvement to an existing product. The value of the example is that its contracts and failure decisions are small enough to inspect and reproduce.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Professional work and evidence&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/"&gt;Full writing index&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;Source package&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-161p" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-deaff1e6be83" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/</id>
@@ -2057,6 +2077,9 @@ Build accordingly and have fun!
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-3d90" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-48c61ffbb971" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically" type="text/html" title="Hashnode edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/</id>
@@ -2309,6 +2332,8 @@ May the Force be with you.
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/what-if-myspace-had-it-right-30oh" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/what-if-myspace-had-it-right-f60f1a9fa31c" type="text/html" title="Medium edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/</id>
@@ -2777,6 +2802,8 @@ Build accordingly, and may the Force be with you.
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/the-any-given-tuesday-theory-of-ai-startups-1341" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/the-any-given-tuesday-theory-of-ai-startups-1660a60cff13" type="text/html" title="Medium edition" />
   </entry>
   <entry>
     <id>https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/</id>
@@ -2933,5 +2960,8 @@ Bonus: How to Get Rid of the “This isn’t just [X] it’s [Y]” from ChatGPT
 
 
 &lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-4hgf" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-fac44a9cf61b" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening" type="text/html" title="Hashnode edition" />
   </entry>
 </feed>
