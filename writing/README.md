@@ -28,3 +28,15 @@ Seven original articles, with images and captions, republished October 2, 2026. 
 - [How to Get Around AI Chat App Boundaries (and prevent it from happening)](ai-chat-app-boundaries.md) — 2025-07-30. [Readable HTML](https://robinwinters.github.io/writing/ai-chat-app-boundaries.html)
 
 [Republication manifest](republications.json). Copies are self-authored distribution, not independent endorsements.
+
+## Other published editions
+
+Robin connected the Medium and Hashnode accounts on October 3, 2026. The originals remain on LinkedIn; these copies retain their canonical attribution. Seven Medium and six Hashnode articles were publicly verified. Kinematics Lab Part II is unavailable on Hashnode following AutoMod archival and is not linked as a live copy.
+
+- Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase: [Medium](https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7) · [Hashnode](https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase)
+- Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit: [Medium](https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b) · [Hashnode](https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit)
+- Kinematics Lab Part II: You Don't Need Another...: [Medium](https://medium.com/@robin_61077/kinematics-lab-part-ii-you-dont-need-another-7804ee06b4bf)
+- In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.: [Medium](https://medium.com/@robin_61077/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-48c61ffbb971) · [Hashnode](https://robinwinters.hashnode.dev/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically)
+- What if Myspace Had It Right?: [Medium](https://medium.com/@robin_61077/what-if-myspace-had-it-right-f60f1a9fa31c) · [Hashnode](https://robinwinters.hashnode.dev/what-if-myspace-had-it-right)
+- The “Any Given Tuesday” Theory of AI Startups: [Medium](https://medium.com/@robin_61077/the-any-given-tuesday-theory-of-ai-startups-1660a60cff13) · [Hashnode](https://robinwinters.hashnode.dev/the-any-given-tuesday-theory-of-ai-startups)
+- How to Get Around AI Chat App Boundaries (and prevent it from happening): [Medium](https://medium.com/@robin_61077/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-fac44a9cf61b) · [Hashnode](https://robinwinters.hashnode.dev/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening)

@@ -28,6 +28,16 @@
       {
         "network": "X",
         "url": "https://x.com/R0BINWinters"
+      },
+      {
+        "network": "Medium",
+        "username": "robin_61077",
+        "url": "https://medium.com/@robin_61077"
+      },
+      {
+        "network": "Hashnode",
+        "username": "robin-winters",
+        "url": "https://hashnode.com/@robin-winters"
       }
     ]
   },

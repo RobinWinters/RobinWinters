@@ -39,6 +39,8 @@ I'm interested in iOS developer, Forward Deployed Engineer, and fitness-technolo
 - [ShowFlex](https://showflex.pro/)
 - [ShowFlex iPhone App Store listing](https://apps.apple.com/us/app/showflex/id6757890910)
 - [Codeberg](https://codeberg.org/RobinWinters)
+- [Medium — original technical articles](https://medium.com/@robin_61077)
+- [Hashnode — iOS, applied AI and fitness](https://robinwinters.hashnode.dev/)
 
 My repositories include forks and upstream projects. Those retain their original authorship; a fork on this account is not a claim that I created its upstream work.
 

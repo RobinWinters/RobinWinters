@@ -36,7 +36,7 @@ These are normal public files. Publishing them does not register a candidate wit
 
 ## Identity links
 
-[Portfolio](https://robin.ac/) · [GitHub](https://github.com/RobinWinters) · [Codeberg](https://codeberg.org/RobinWinters) · [LinkedIn](https://www.linkedin.com/in/robinwinters-sf/)
+[Portfolio](https://robin.ac/) · [GitHub](https://github.com/RobinWinters) · [Codeberg](https://codeberg.org/RobinWinters) · [LinkedIn](https://www.linkedin.com/in/robinwinters-sf/) · [Medium](https://medium.com/@robin_61077) · [Hashnode](https://hashnode.com/@robin-winters)
 
 The records describe the San Francisco professional associated with robin.ac. A shared name alone does not establish that another profile belongs to the same person. Repository ownership and forks do not establish original authorship of upstream work.
 
