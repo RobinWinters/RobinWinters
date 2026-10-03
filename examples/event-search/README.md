@@ -34,4 +34,6 @@ This is a new illustrative example prepared with coding-assistant support for pr
 
 Example code in this directory is released under the [MIT license](LICENSE). No license is granted here to private application code or to unrelated repositories.
 
+A matching public package is also available on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership).
+
 Updated October 2, 2026.

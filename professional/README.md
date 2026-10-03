@@ -19,6 +19,7 @@ Robin is interested in iOS developer, Forward Deployed Engineer and fitness-tech
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
 - [Questions and answers](questions-and-answers.md): concise answers about work, projects and professional interests.
+- [Role interests and relevant evidence](role-focus.md): native iOS, FDE targets and fitness technology.
 - [Evidence index](evidence-index.md): what each source establishes and who authored it.
 
 These are normal public files. Publishing them does not register a candidate with an ATS, establish an independent credential or guarantee inclusion in search or AI answers. Applicant systems commonly parse material submitted with an application; see [Greenhouse's resume-parsing documentation](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse).

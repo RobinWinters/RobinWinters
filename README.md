@@ -42,10 +42,11 @@ My repositories include forks and upstream projects. Those retain their original
 - [Machine-readable professional record](professional/professional-record.json)
 - [Plain-text resume](professional/resume.txt)
 - [Work and project questions](professional/questions-and-answers.md)
+- [Role interests and relevant evidence](professional/role-focus.md)
 
 ## Reproducible examples and deeper accounts
 
-- [Swift search request ownership](writing/swift-search-request-ownership.md), with [code and seven macOS tests](examples/event-search/README.md). A separate educational example prepared with coding-assistant support.
+- [Swift search request ownership](writing/swift-search-request-ownership.md), with [code and seven macOS tests](examples/event-search/README.md), also hosted on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership). A separate educational example prepared with coding-assistant support.
 - [ShowFlex: connecting native event discovery with structured data](work/showflex-event-discovery.md)
 - [Personal portfolio maintenance: preserving the interface while improving retrieval](work/portfolio-search-preservation.md)
 

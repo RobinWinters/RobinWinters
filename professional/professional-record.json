@@ -108,7 +108,8 @@
       "limitations": [
         "Not ShowFlex source",
         "No iPhone runtime or SwiftUI adapter validation"
-      ]
+      ],
+      "additional_public_copy": "https://codeberg.org/RobinWinters/swift-search-request-ownership"
     }
   ],
   "attribution": "Repository ownership or a fork is not proof of original authorship; retain upstream and team credit.",
