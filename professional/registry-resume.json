@@ -148,10 +148,18 @@
     "version": "v1.0.0",
     "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/registry-resume.json",
     "theme": "reference",
-    "recordUpdated": "2026-10-02",
+    "recordUpdated": "2026-10-03",
     "datePrecision": "Approved year ranges appear in visible work summaries. Numeric date fields are omitted in this rendering copy because themes can manufacture January dates from year-only values.",
-    "evidenceNote": "Self-authored approved professional claims. Exact education and additional credentials remain unresolved and omitted. Target roles are interests, not held titles.",
+    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles.",
     "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json",
     "structuredDateSource": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json"
-  }
+  },
+  "certificates": [
+    {
+      "name": "Physique and Bodybuilding Coach (PBC)",
+      "issuer": "National Academy of Sports Medicine (NASM)",
+      "date": "2026-09-20",
+      "url": "https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4"
+    }
+  ]
 }

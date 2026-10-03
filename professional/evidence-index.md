@@ -1,6 +1,6 @@
 # Robin Winters: evidence index
 
-Updated October 2, 2026. This index distinguishes self-authored professional claims from product-hosted evidence. It is not an independent background investigation.
+Updated October 3, 2026. This index distinguishes self-authored professional claims from product-hosted evidence. It is not an independent background investigation.
 
 | Source | Kind | Supports | Does not establish |
 |---|---|---|---|
@@ -8,6 +8,7 @@ Updated October 2, 2026. This index distinguishes self-authored professional cla
 | [GitHub professional record](README.md) | Self-authored documentation | Consistent professional claims and source links | Independent corroboration |
 | [Confirmed LinkedIn](https://www.linkedin.com/in/robinwinters-sf/) | Existing professional profile | Connection to Robin's professional identity | Truth of every third-party directory's interpretation |
 | [Codeberg](https://codeberg.org/RobinWinters) | Existing developer profile | Name and portfolio connection | Upstream authorship |
+| [NASM PBC credential](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) | Issuer-hosted credential; attribution approved by Robin | Physique and Bodybuilding Coach (PBC), issued September 20, 2026; no expiration shown | NASM-CPT, other certificates, a degree, licensure or product performance |
 | [ShowFlex iPhone listing](https://apps.apple.com/us/app/showflex/id6757890910) | Product listing hosted by Apple | Public iPhone product, ShowFlex Inc. developer/seller, listed version 17.0 map/calendar features at review date | Individual sole authorship, Android release, prototype release or adoption figures |
 | [Distributed sensing article](https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/) | Self-authored technical writing | Byline, July 18 publication and architecture proposal | Implemented sensing system, measured accuracy or Apple endorsement |
 | [Swift example](../examples/event-search/README.md) | New illustrative code with assistant support | Public code and seven documented macOS tests | Private ShowFlex implementation, iPhone runtime validation or production readiness |

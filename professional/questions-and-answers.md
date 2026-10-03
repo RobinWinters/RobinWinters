@@ -1,6 +1,6 @@
 # Robin Winters: work and project questions
 
-Self-authored professional reference, updated October 2, 2026. [Source record](professional-record.json) · [Evidence](evidence-index.md)
+Self-authored professional reference, updated October 3, 2026. [Source record](professional-record.json) · [Evidence](evidence-index.md)
 
 ## Who is Robin Winters at robin.ac?
 
@@ -28,7 +28,11 @@ That title is a role interest. The approved held titles are the three listed abo
 
 ## What education credentials are verified here?
 
-No exact degree, certificate, attendance dates or graduation status has been confirmed for distribution. Education qualifications are omitted. A logo, shared name or secondary directory entry does not establish a credential.
+Academic degrees, attendance dates and graduation status remain unresolved and are omitted. A logo, shared name or secondary directory entry does not establish a qualification.
+
+## What fitness credential has issuer evidence?
+
+[Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) — National Academy of Sports Medicine (NASM). Issued September 20, 2026; the issuer page states that it does not expire. Attribution and exact wording approved by Robin October 3, 2026.
 
 ## What technical writing is public?
 

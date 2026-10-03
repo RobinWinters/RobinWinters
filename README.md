@@ -22,6 +22,10 @@ These are self-authored accounts. Experimental features, role interests, and for
 
 - [Distributed sensing for strength training](work/technical-writing.md): a published architecture proposal across Apple Watch, AirPods, iPhone and Apple fitness frameworks. This is technical writing, not a claim of a released sensing product.
 
+## Fitness credential
+
+[Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) — National Academy of Sports Medicine (NASM). Issued September 20, 2026; the issuer page states that it does not expire. Attribution and exact wording approved by Robin October 3, 2026.
+
 ## Engineering focus
 
 Swift · SwiftUI · MapKit · Firebase · native iOS architecture · structured data pipelines · applied AI workflows · product delivery

@@ -14,6 +14,10 @@ This record keeps work history, project status and evidence together in formats 
 
 Robin is interested in iOS developer, Forward Deployed Engineer and fitness-technology roles. Forward Deployed Engineer is a target role, not a previously held title.
 
+## Fitness credential
+
+[Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) — National Academy of Sports Medicine (NASM). Issued September 20, 2026; the issuer page states that it does not expire. Attribution and exact wording approved by Robin October 3, 2026.
+
 ## Useful formats
 
 - [Readable professional reference and HTML writing](https://robinwinters.github.io/): approved work history, scoped project evidence and resume downloads on GitHub Pages.
@@ -36,4 +40,4 @@ These are normal public files. Publishing them does not register a candidate wit
 
 The records describe the San Francisco professional associated with robin.ac. A shared name alone does not establish that another profile belongs to the same person. Repository ownership and forks do not establish original authorship of upstream work.
 
-Updated October 2, 2026. Prepared with editorial assistance.
+Updated October 3, 2026. Prepared with editorial assistance.

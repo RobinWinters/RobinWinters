@@ -1,8 +1,8 @@
 {
   "format": "robin-winters-professional-record",
   "format_version": 1,
-  "record_updated": "2026-10-02",
-  "approval": "Supported professional claims approved by Robin Winters on October 2, 2026; unresolved qualifications omitted",
+  "record_updated": "2026-10-03",
+  "approval": "Supported work claims approved October 2, 2026; NASM PBC credential attribution and exact wording approved October 3, 2026; unresolved academic qualifications omitted",
   "identity": {
     "name": "Robin Winters",
     "website": "https://robin.ac/",
@@ -127,5 +127,15 @@
   ],
   "attribution": "Repository ownership or a fork is not proof of original authorship; retain upstream and team credit.",
   "evidence_policy": "This is a self-authored professional record. Product listings and technical publications have their stated evidentiary limits. It is not an independently verified background report.",
-  "retrieval_note": "A public JSON document for ordinary retrieval and reuse. It is not an instruction to an AI model, a guaranteed search feed or a universal ATS integration."
+  "retrieval_note": "A public JSON document for ordinary retrieval and reuse. It is not an instruction to an AI model, a guaranteed search feed or a universal ATS integration.",
+  "credentials": [
+    {
+      "name": "Physique and Bodybuilding Coach (PBC)",
+      "issuer": "National Academy of Sports Medicine (NASM)",
+      "issued": "2026-09-20",
+      "expiration": "Does not expire",
+      "url": "https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4",
+      "evidence_kind": "Issuer-hosted credential; recipient Robin Winters; identity and wording approved October 3, 2026"
+    }
+  ]
 }

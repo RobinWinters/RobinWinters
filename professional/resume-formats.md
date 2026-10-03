@@ -23,3 +23,7 @@ The [hosted resume](https://registry.jsonresume.org/RobinWinters) is rendered fr
 The App Store source establishes the public iPhone product and its publisher, rather than individual sole authorship. LinkedIn bylines and dates establish publication; technical results remain author-reported. The standalone Swift search package was prepared with coding-assistant support and tested on macOS; it is not private ShowFlex source or a signed-device release.
 
 [Professional record](README.md) · [Evidence index](evidence-index.md) · [Portfolio](https://robin.ac/)
+
+## October 3 credential update
+
+The JSON and plain-text formats now include the approved issuer-hosted NASM PBC credential. The existing PDF remains the faithful conversion of the previously approved Word resume; it does not yet include this later addition. Employment years and academic qualification omissions remain unchanged.
