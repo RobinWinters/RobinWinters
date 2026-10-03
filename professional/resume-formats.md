@@ -1,0 +1,17 @@
+# Robin Winters: reusable resume formats
+
+The approved work record is available as [plain text](resume.txt), a [detailed professional record](professional-record.json), and a [JSON Resume export](resume.json). All preserve the three held titles and their approved year ranges. Current ShowFlex work is distinguished from former Yukon Systems and Organic Alkaloids roles. Forward Deployed Engineer remains a role interest. Exact education qualifications and additional credentials remain omitted.
+
+## Standard export
+
+[JSON Resume](https://jsonresume.org/schema) is a community-maintained format for compatible resume tooling. The export was validated on October 2, 2026 against the official Draft-07 schema in [jsonresume.org/packages/schema](https://github.com/jsonresume/jsonresume.org/blob/master/packages/schema/schema.json), using jsonschema 4.26.0 with format checking. Validation returned zero errors. The schema accepts year-only employment dates, so no start or end month was invented.
+
+The export includes approved responsibilities, professional-profile URLs and scoped project/publication evidence. It supplies no proficiency ratings, inferred degree, sole-authorship claim or private contact details. The work dates remain 2024–present, 2023–2025 and 2017–2023. An omitted endDate denotes the current ShowFlex role.
+
+The export's canonical source is this repository's public `professional/resume.json`. The [official registry hosting workflow](https://jsonresume.org/getting-started) can render a public `resume.json` Gist belonging to the existing GitHub account. A rendered resume is another self-authored surface; it is not independent background verification or a universal ATS registration.
+
+## Reading the evidence
+
+The App Store source establishes the public iPhone product and its publisher, rather than individual sole authorship. LinkedIn bylines and dates establish publication; technical results remain author-reported. The standalone Swift search package was prepared with coding-assistant support and tested on macOS; it is not private ShowFlex source or a signed-device release.
+
+[Professional record](README.md) · [Evidence index](evidence-index.md) · [Portfolio](https://robin.ac/)

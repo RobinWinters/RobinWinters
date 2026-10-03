@@ -43,6 +43,7 @@ My repositories include forks and upstream projects. Those retain their original
 - [Professional record and evidence](professional/README.md)
 - [Machine-readable professional record](professional/professional-record.json)
 - [Plain-text resume](professional/resume.txt)
+- [JSON Resume export](professional/resume.json) and [format notes](professional/resume-formats.md)
 - [Work and project questions](professional/questions-and-answers.md)
 - [Role interests and relevant evidence](professional/role-focus.md)
 

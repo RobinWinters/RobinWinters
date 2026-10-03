@@ -1,0 +1,159 @@
+{
+  "basics": {
+    "name": "Robin Winters",
+    "label": "iOS/Full Stack Engineer",
+    "email": "robin@showflex.pro",
+    "url": "https://robin.ac/",
+    "location": {
+      "city": "San Francisco"
+    },
+    "summary": "Robin Winters builds native iOS software and applied AI systems, with a focus on fitness technology. Interested in iOS developer, Forward Deployed Engineer and fitness-technology roles.",
+    "profiles": [
+      {
+        "network": "Github",
+        "url": "https://github.com/RobinWinters"
+      },
+      {
+        "network": "Linkedin",
+        "url": "https://www.linkedin.com/in/robinwinters-sf/"
+      },
+      {
+        "network": "Codeberg",
+        "url": "https://codeberg.org/RobinWinters"
+      },
+      {
+        "network": "Linktree",
+        "url": "https://linktr.ee/robin.winters"
+      },
+      {
+        "network": "X",
+        "url": "https://x.com/R0BINWinters"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ShowFlex",
+      "position": "iOS/Full Stack Engineer",
+      "startDate": "2024",
+      "highlights": [
+        "Swift and SwiftUI engineering, mobile architecture and product direction",
+        "MapKit event discovery, search, filtering, geocoding and detail interactions",
+        "Firebase-backed data and ingestion pipelines",
+        "Interaction quality and beta release execution"
+      ],
+      "summary": "Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
+    },
+    {
+      "name": "Yukon Systems",
+      "position": "Product Development Manager",
+      "startDate": "2023",
+      "highlights": [
+        "Technical prioritization and cross-functional delivery of AI systems",
+        "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
+        "Agent and consensus-modeling workflows"
+      ],
+      "endDate": "2025"
+    },
+    {
+      "name": "Organic Alkaloids",
+      "position": "Co-owner",
+      "startDate": "2017",
+      "highlights": [
+        "International import strategy, procurement and logistics",
+        "Client relationships, marketing and financial management"
+      ],
+      "endDate": "2023"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Native iOS",
+      "keywords": [
+        "Swift",
+        "SwiftUI",
+        "MapKit",
+        "Mobile architecture",
+        "Interaction quality"
+      ]
+    },
+    {
+      "name": "Data and applied AI",
+      "keywords": [
+        "Firebase",
+        "Structured data pipelines",
+        "Applied AI workflows",
+        "Agent workflows"
+      ]
+    },
+    {
+      "name": "Product delivery",
+      "keywords": [
+        "Software requirements",
+        "Technical prioritization",
+        "Cross-functional coordination",
+        "Beta release execution"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ShowFlex iPhone product",
+      "url": "https://apps.apple.com/us/app/showflex/id6757890910",
+      "description": "Native iOS/Full Stack engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
+      "highlights": [
+        "Swift/SwiftUI, MapKit event discovery, Firebase-backed data and ingestion pipelines.",
+        "AI-assisted physique/posing feedback and predictive competition features are prototypes, not established released product capabilities.",
+        "No sole authorship, Android release or measured adoption/performance claim."
+      ]
+    },
+    {
+      "name": "Swift search request ownership example",
+      "url": "https://codeberg.org/RobinWinters/swift-search-request-ownership",
+      "description": "Standalone educational example prepared with coding-assistant support, separate from private product source.",
+      "highlights": [
+        "Seven Swift Testing checks passed on macOS with Swift 6.4.",
+        "No iPhone runtime or SwiftUI adapter validation claimed."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
+      "publisher": "LinkedIn",
+      "releaseDate": "2026-04-02",
+      "url": "https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/",
+      "summary": "Technical article describing a hybrid on-device and Firebase moderation architecture. Publication does not independently verify a deployment."
+    },
+    {
+      "name": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
+      "publisher": "LinkedIn",
+      "releaseDate": "2026-07-18",
+      "url": "https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/",
+      "summary": "Architecture proposal about coordinating Apple-device sensing and workout context. It does not establish a released sensing product or Apple endorsement."
+    },
+    {
+      "name": "Kinematics Lab Part II: You Don't Need Another...",
+      "publisher": "LinkedIn",
+      "releaseDate": "2026-07-30",
+      "url": "https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/",
+      "summary": "Follow-up technical report discussing capture integrity, prototype limitations and device coordination. Experiments and results are author-reported, not independently reproduced."
+    },
+    {
+      "name": "Swift search request ownership",
+      "publisher": "GitHub",
+      "releaseDate": "2026-10-02",
+      "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/swift-search-request-ownership.md",
+      "summary": "Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code."
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json",
+    "theme": "elegant",
+    "recordUpdated": "2026-10-02",
+    "datePrecision": "year for employment; no month-level dates inferred",
+    "evidenceNote": "Self-authored approved professional claims. Exact education and additional credentials remain unresolved and omitted. Target roles are interests, not held titles.",
+    "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json"
+  }
+}

@@ -18,6 +18,7 @@ Robin is interested in iOS developer, Forward Deployed Engineer and fitness-tech
 
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
+- [JSON Resume export](resume.json): a schema-validated representation for compatible resume tools. [Format notes](resume-formats.md) explain dates and source boundaries.
 - [Questions and answers](questions-and-answers.md): concise answers about work, projects and professional interests.
 - [Role interests and relevant evidence](role-focus.md): native iOS, FDE targets and fitness technology.
 - [Evidence index](evidence-index.md): what each source establishes and who authored it.
