@@ -14,3 +14,17 @@ The bylines establish publication and authorship, rather than independent confir
 [Machine-readable bibliography](bibliography.json) · [Atom feed](feed.atom) · [Professional record](../professional/README.md) · [Portfolio](https://robin.ac/)
 
 The feed is an ordinary syndication format. Publishing it does not register it with search engines, ATS vendors or AI systems.
+
+## Full LinkedIn republications
+
+Seven original articles, with images and captions, republished October 2, 2026. The original LinkedIn pages are unchanged; these editions preserve their wording and historical context. Two videos in the Liquid Glass article link to the original player.
+
+- [Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase](moderation.md) — 2026-04-02. [Readable HTML](https://robinwinters.github.io/writing/moderation.html)
+- [Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit](distributed-kinematic-sensing.md) — 2026-07-18. [Readable HTML](https://robinwinters.github.io/writing/distributed-kinematic-sensing.html)
+- [Kinematics Lab Part II: You Don't Need Another...](kinematics-lab-part-ii.md) — 2026-07-30. [Readable HTML](https://robinwinters.github.io/writing/kinematics-lab-part-ii.html)
+- [In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.](ios-27-liquid-glass.md) — 2026-06-30. [Readable HTML](https://robinwinters.github.io/writing/ios-27-liquid-glass.html)
+- [What if Myspace Had It Right?](what-if-myspace-had-it-right.md) — 2026-04-01. [Readable HTML](https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html)
+- [The “Any Given Tuesday” Theory of AI Startups](any-given-tuesday-ai-startups.md) — 2026-02-21. [Readable HTML](https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html)
+- [How to Get Around AI Chat App Boundaries (and prevent it from happening)](ai-chat-app-boundaries.md) — 2025-07-30. [Readable HTML](https://robinwinters.github.io/writing/ai-chat-app-boundaries.html)
+
+[Republication manifest](republications.json). Copies are self-authored distribution, not independent endorsements.

@@ -12,7 +12,10 @@
       "author": "Robin Winters",
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/moderation.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "moderation.md"
     },
     {
       "title": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
@@ -22,7 +25,10 @@
       "author": "Robin Winters",
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/distributed-kinematic-sensing.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "distributed-kinematic-sensing.md"
     },
     {
       "title": "Kinematics Lab Part II: You Don't Need Another...",
@@ -32,7 +38,10 @@
       "author": "Robin Winters",
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/kinematics-lab-part-ii.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "kinematics-lab-part-ii.md"
     },
     {
       "title": "Swift search request ownership",
@@ -53,6 +62,58 @@
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
       "datePrecision": "day"
+    },
+    {
+      "title": "In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.",
+      "url": "https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/",
+      "datePublished": "2026-06-30",
+      "scope": "Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/ios-27-liquid-glass.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "ios-27-liquid-glass.md"
+    },
+    {
+      "title": "What if Myspace Had It Right?",
+      "url": "https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/",
+      "datePublished": "2026-04-01",
+      "scope": "Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "what-if-myspace-had-it-right.md"
+    },
+    {
+      "title": "The \u201cAny Given Tuesday\u201d Theory of AI Startups",
+      "url": "https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/",
+      "datePublished": "2026-02-21",
+      "scope": "Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "any-given-tuesday-ai-startups.md"
+    },
+    {
+      "title": "How to Get Around AI Chat App Boundaries (and prevent it from happening)",
+      "url": "https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/",
+      "datePublished": "2025-07-30",
+      "scope": "Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day",
+      "republicationUrl": "https://robinwinters.github.io/writing/ai-chat-app-boundaries.html",
+      "republicationDate": "2026-10-02",
+      "fullTextMarkdown": "ai-chat-app-boundaries.md"
     }
   ]
 }

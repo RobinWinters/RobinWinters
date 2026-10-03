@@ -1,0 +1,230 @@
+{
+  "author": "Robin Winters",
+  "source": "Seven published articles read from the existing LinkedIn account; originals unchanged",
+  "republicationDate": "2026-10-02",
+  "contentPolicy": "Original text and linked references preserved. Formatting sanitized. Images are byte copies; embedded videos link to original article. Author opinions and historical technical claims are not newly verified product evidence.",
+  "articles": [
+    {
+      "slug": "moderation",
+      "title": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
+      "originalUrl": "https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/",
+      "originalDate": "2026-04-02",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/moderation.html",
+      "description": "Robin Winters on hybrid on-device text moderation with Apple Foundation Models and Firebase. Original April 2026 article, republished with images and code.",
+      "images": [
+        {
+          "path": "writing/images/moderation-1.png",
+          "sha256": "75387a1644288d530ac00e3820dd77b2a12aaff0afa3472f31077f3201396277",
+          "bytes": 106861,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/moderation-2.png",
+          "sha256": "650181b4ef4d9eb7fe7f3598430ec407765414645cec793d54f21a57991da015",
+          "bytes": 1302786,
+          "alt": "\"YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS\""
+        }
+      ],
+      "originalTextSha256": "9b712c045fed8a9027e3a5c41b431f79e756b7f6b86a3c220b4159931dc47fd6",
+      "semanticBlocksPreserved": 31,
+      "codeBlocksPreserved": 2,
+      "originalVideosLinked": 0,
+      "html": "writing/moderation.html",
+      "markdown": "writing/moderation.md"
+    },
+    {
+      "slug": "distributed-kinematic-sensing",
+      "title": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
+      "originalUrl": "https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/",
+      "originalDate": "2026-07-18",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/distributed-kinematic-sensing.html",
+      "description": "Robin Winters proposes coordinated Apple Watch, AirPods and iPhone sensing for strength training. Original July 2026 article with diagrams and source links.",
+      "images": [
+        {
+          "path": "writing/images/distributed-kinematic-sensing-1.png",
+          "sha256": "68f03775ad54c76e99e156fb4b58557d863b51529103bb960eed17603cb1376d",
+          "bytes": 1836578,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/distributed-kinematic-sensing-2.png",
+          "sha256": "065a2826c77dcf81789f5b0d8a22eed9a23d37e2272e451c5167cdbaa5b45983",
+          "bytes": 2142041,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/distributed-kinematic-sensing-3.png",
+          "sha256": "3dc0f51e4cd9f58e2b15ee238345db78f1d42bd1f1bfb421c24f6fa417425260",
+          "bytes": 2084625,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/distributed-kinematic-sensing-4.png",
+          "sha256": "ef45e7af25139411fb094610f2f611c685fb8519ce19e4cd7a8514dc1f73112e",
+          "bytes": 2197724,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/distributed-kinematic-sensing-5.png",
+          "sha256": "bef3ed6d3a6435aed0af447db6ecfc380e11072c95422ba6e4f39453be57e3dd",
+          "bytes": 1695041,
+          "alt": "Really need to work on the title."
+        }
+      ],
+      "originalTextSha256": "b2319833ab814c229263a24e743337796c586edf2e00da8e9a4b9254ec90e8ce",
+      "semanticBlocksPreserved": 180,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 0,
+      "html": "writing/distributed-kinematic-sensing.html",
+      "markdown": "writing/distributed-kinematic-sensing.md"
+    },
+    {
+      "slug": "kinematics-lab-part-ii",
+      "title": "Kinematics Lab Part II: You Don't Need Another...",
+      "originalUrl": "https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/",
+      "originalDate": "2026-07-30",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/kinematics-lab-part-ii.html",
+      "description": "Robin Winters reports Kinematics prototype capture results, integrity problems and next steps. Original July 2026 article with images.",
+      "images": [
+        {
+          "path": "writing/images/kinematics-lab-part-ii-1.jpg",
+          "sha256": "8e6445f19fef6da09233634665da2f4d8584a94988a12038b423b3830b6ebc2c",
+          "bytes": 129793,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/kinematics-lab-part-ii-2.png",
+          "sha256": "5cd7a2cd783fbb00cbdb8da2a01130f78fef873e86d4e753aa9833e09cdc8c1a",
+          "bytes": 2422829,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/kinematics-lab-part-ii-3.png",
+          "sha256": "90e74bd230cb024a0cc47a30631adef2c0d6aad123f896fce279a14031110628",
+          "bytes": 1583867,
+          "alt": "FitTech Has a Junk Drawer Problem"
+        }
+      ],
+      "originalTextSha256": "94df4d87b91758abba34c0ba4413140bdae1adbebe9eb2152c9be5ace5f75305",
+      "semanticBlocksPreserved": 58,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 0,
+      "html": "writing/kinematics-lab-part-ii.html",
+      "markdown": "writing/kinematics-lab-part-ii.md"
+    },
+    {
+      "slug": "ios-27-liquid-glass",
+      "title": "In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.",
+      "originalUrl": "https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/",
+      "originalDate": "2026-06-30",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/ios-27-liquid-glass.html",
+      "description": "Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos.",
+      "images": [
+        {
+          "path": "writing/images/ios-27-liquid-glass-1.png",
+          "sha256": "eaf90d673ea5d18e1ad77371b3f2f0bf84e646631dc54d2c6c7306adb1519d21",
+          "bytes": 569751,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/ios-27-liquid-glass-2.jpg",
+          "sha256": "603600acabc3913f71baef98e7688a11ccc0e521261a34e759cff4d3b52817a0",
+          "bytes": 87851,
+          "alt": "Apple's Liquid Glass Design Language"
+        }
+      ],
+      "originalTextSha256": "39d91f41b7fc6cd780fb784c83ba816828cc37cfec87df25588c8c2e396f9462",
+      "semanticBlocksPreserved": 20,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 2,
+      "html": "writing/ios-27-liquid-glass.html",
+      "markdown": "writing/ios-27-liquid-glass.md"
+    },
+    {
+      "slug": "what-if-myspace-had-it-right",
+      "title": "What if Myspace Had It Right?",
+      "originalUrl": "https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/",
+      "originalDate": "2026-04-01",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html",
+      "description": "Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images.",
+      "images": [
+        {
+          "path": "writing/images/what-if-myspace-had-it-right-1.jpg",
+          "sha256": "81713be7723289c9b632d224989ce63e256f616a7fdff89c8589b040e7632a8c",
+          "bytes": 145546,
+          "alt": "Article content"
+        },
+        {
+          "path": "writing/images/what-if-myspace-had-it-right-2.jpg",
+          "sha256": "2b22aa1a172195455a45fff26fb12e8f1c9870cda710b1387b473536c91eb7ca",
+          "bytes": 209892,
+          "alt": "Tom. Friend to all."
+        }
+      ],
+      "originalTextSha256": "f15303d8b3348d80836f8df636d188f86efe3e6de52ed6b599e2769223064dde",
+      "semanticBlocksPreserved": 25,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 0,
+      "html": "writing/what-if-myspace-had-it-right.html",
+      "markdown": "writing/what-if-myspace-had-it-right.md"
+    },
+    {
+      "slug": "any-given-tuesday-ai-startups",
+      "title": "The \u201cAny Given Tuesday\u201d Theory of AI Startups",
+      "originalUrl": "https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/",
+      "originalDate": "2026-02-21",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html",
+      "description": "Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover.",
+      "images": [
+        {
+          "path": "writing/images/any-given-tuesday-ai-startups-1.jpg",
+          "sha256": "661a63a1c92638fd97b649bbee685c33a77ba00d6ea5862fd0031a90dbaa8118",
+          "bytes": 25187,
+          "alt": "Cool robot on the outside, sad guy named Frank on the inside. "
+        }
+      ],
+      "originalTextSha256": "7059e98b3d787e4c08ec955b91c6234adfd7f6521becaffdca5774d61465eb25",
+      "semanticBlocksPreserved": 63,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 0,
+      "html": "writing/any-given-tuesday-ai-startups.html",
+      "markdown": "writing/any-given-tuesday-ai-startups.md"
+    },
+    {
+      "slug": "ai-chat-app-boundaries",
+      "title": "How to Get Around AI Chat App Boundaries (and prevent it from happening)",
+      "originalUrl": "https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/",
+      "originalDate": "2025-07-30",
+      "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
+      "republishedDate": "2026-10-02",
+      "url": "https://robinwinters.github.io/writing/ai-chat-app-boundaries.html",
+      "description": "Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover.",
+      "images": [
+        {
+          "path": "writing/images/ai-chat-app-boundaries-1.png",
+          "sha256": "a7589cde895efb6e0f40c7e00e7f0079004da84230e92d8fe3cb894ba9fe1a91",
+          "bytes": 72304,
+          "alt": "The Laughing Man"
+        }
+      ],
+      "originalTextSha256": "ba78d62263ec896359aec8af0f3be5b824dfe837a0473c16e50dbeb2a883f378",
+      "semanticBlocksPreserved": 26,
+      "codeBlocksPreserved": 0,
+      "originalVideosLinked": 0,
+      "html": "writing/ai-chat-app-boundaries.html",
+      "markdown": "writing/ai-chat-app-boundaries.md"
+    }
+  ]
+}
