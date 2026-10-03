@@ -15,10 +15,11 @@
       "linktree": "https://linktr.ee/robin.winters",
       "x": "https://x.com/R0BINWinters",
       "medium": "https://medium.com/@robin_61077",
-      "hashnode": "https://hashnode.com/@robin-winters"
+      "hashnode": "https://hashnode.com/@robin-winters",
+      "dev": "https://dev.to/robinwinters"
     }
   },
-  "summary": "Robin Winters builds native iOS software and applied AI systems, with a focus on fitness technology.",
+  "summary": "Robin Winters is an iOS/Full Stack Engineer at ShowFlex, a shipped iPhone fitness product, working across Swift, SwiftUI, MapKit, Firebase and applied AI systems.",
   "target_roles": [
     "iOS developer",
     "Forward Deployed Engineer",

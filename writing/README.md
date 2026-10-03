@@ -50,3 +50,18 @@ Robin connected the Medium and Hashnode accounts on October 3, 2026. The origina
 - **[TORos at Yukon Systems: a multi-model decision prototype](../work/yukon-systems.md)** — October 3, 2026. Robin's confirmed contribution and the dated Yukon company article, with prototype status and attribution limits retained. [Medium](https://medium.com/@robin_61077/toros-at-yukon-systems-a-multi-model-decision-prototype-6f3a2aa9b345) · [Hashnode](https://robinwinters.hashnode.dev/toros-at-yukon-systems-a-multi-model-decision-prototype).
 
 - **[ShowFlex: event discovery connects native interaction with structured data](../work/showflex-event-discovery.md)** — original account October 2, 2026; Medium edition October 3. Native interaction, data work and dated iPhone release evidence, with AI prototype limits preserved. [Medium](https://medium.com/@robin_61077/showflex-event-discovery-connects-native-interaction-with-structured-data-462c47c716ca).
+
+## DEV editions — October 3, 2026
+
+Ten editions are published under my existing [DEV account](https://dev.to/robinwinters): seven original LinkedIn articles, two educational Swift walkthroughs, and a ShowFlex work account with public iPhone release evidence. Original wording and artwork are retained in the seven republications. Canonical links point to each original source; publication does not establish search indexing.
+
+- [Shipping ShowFlex: native iOS event discovery with SwiftUI, MapKit and Firebase](https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l)
+- [Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase](https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg)
+- [Kinematics Lab Part II: You Don't Need Another...](https://dev.to/robinwinters/kinematics-lab-part-ii-you-dont-need-another-o9e)
+- [In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.](https://dev.to/robinwinters/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-3d90)
+- [What if Myspace Had It Right?](https://dev.to/robinwinters/what-if-myspace-had-it-right-30oh)
+- [The “Any Given Tuesday” Theory of AI Startups](https://dev.to/robinwinters/the-any-given-tuesday-theory-of-ai-startups-1341)
+- [How to Get Around AI Chat App Boundaries (and prevent it from happening)](https://dev.to/robinwinters/how-to-get-around-ai-chat-app-boundaries-and-prevent-it-from-happening-4hgf)
+- [Swift search: cancellation needs an ownership check](https://dev.to/robinwinters/swift-search-cancellation-needs-an-ownership-check-44m4)
+- [Fitness event feeds: explicit dates, stable identity and visible conflicts](https://dev.to/robinwinters/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-161p)
+- [Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit](https://dev.to/robinwinters/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-1bl)

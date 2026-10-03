@@ -1,6 +1,6 @@
 # Robin Winters
 
-I build native iOS software and applied AI systems, with a focus on fitness technology. I'm based in San Francisco.
+I'm an iOS engineer at ShowFlex, a shipped iPhone fitness product [available on the App Store](https://apps.apple.com/us/app/showflex/id6757890910). I build native apps with Swift, SwiftUI, MapKit and Firebase, alongside applied AI systems. I'm based in San Francisco.
 
 ## Work
 
@@ -45,6 +45,7 @@ I'm interested in iOS developer, Forward Deployed Engineer, and fitness-technolo
 - [Codeberg](https://codeberg.org/RobinWinters)
 - [Medium — original technical articles](https://medium.com/@robin_61077)
 - [Hashnode — iOS, applied AI and fitness](https://robinwinters.hashnode.dev/)
+- [DEV — iOS engineering and technical writing](https://dev.to/robinwinters)
 
 My repositories include forks and upstream projects. Those retain their original authorship; a fork on this account is not a claim that I created its upstream work.
 
