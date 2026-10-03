@@ -10,7 +10,11 @@ The export includes approved responsibilities, professional-profile URLs and sco
 
 The export's canonical source is this repository's public `professional/resume.json`. The [official registry hosting workflow](https://jsonresume.org/getting-started) can render a public `resume.json` Gist belonging to the existing GitHub account. A rendered resume is another self-authored surface; it is not independent background verification or a universal ATS registration.
 
-## Reading the evidence
+## Hosted rendering
+
+The [hosted resume](https://registry.jsonresume.org/RobinWinters) is rendered from a [public Gist on the existing GitHub account](https://gist.github.com/RobinWinters/2b52055db3cf1f0697ffefb2e5e27a6e). The separate [registry rendering copy](registry-resume.json) is also schema-valid and places year ranges directly in visible work summaries. It omits numeric date fields to prevent themes from expanding a year into January or inventing durations. The original [standard export](resume.json) retains structured year-only date fields. The reference theme was checked to preserve the three work titles and dates without inferred months.
+
+## Evidence boundaries
 
 The App Store source establishes the public iPhone product and its publisher, rather than individual sole authorship. LinkedIn bylines and dates establish publication; technical results remain author-reported. The standalone Swift search package was prepared with coding-assistant support and tested on macOS; it is not private ShowFlex source or a signed-device release.
 
