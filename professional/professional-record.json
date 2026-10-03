@@ -1,0 +1,117 @@
+{
+  "format": "robin-winters-professional-record",
+  "format_version": 1,
+  "record_updated": "2026-10-02",
+  "approval": "Supported professional claims approved by Robin Winters on October 2, 2026; unresolved qualifications omitted",
+  "identity": {
+    "name": "Robin Winters",
+    "website": "https://robin.ac/",
+    "professional_location": "San Francisco",
+    "public_professional_email": "robin@showflex.pro",
+    "profiles": {
+      "github": "https://github.com/RobinWinters",
+      "linkedin": "https://www.linkedin.com/in/robinwinters-sf/",
+      "codeberg": "https://codeberg.org/RobinWinters",
+      "linktree": "https://linktr.ee/robin.winters",
+      "x": "https://x.com/R0BINWinters"
+    }
+  },
+  "summary": "Robin Winters builds native iOS software and applied AI systems, with a focus on fitness technology.",
+  "target_roles": [
+    "iOS developer",
+    "Forward Deployed Engineer",
+    "fitness-technology roles"
+  ],
+  "target_role_status": "Interests, not previously held job titles",
+  "work": [
+    {
+      "organization": "ShowFlex",
+      "title": "iOS/Full Stack Engineer",
+      "start_year": 2024,
+      "end_year": null,
+      "current": true,
+      "responsibilities": [
+        "Swift and SwiftUI engineering, mobile architecture and product direction",
+        "MapKit event discovery, search, filtering, geocoding and detail interactions",
+        "Firebase-backed data and ingestion pipelines",
+        "Interaction quality and beta release execution"
+      ],
+      "experimental_work": [
+        "AI-assisted physique and posing feedback",
+        "Predictive competition features"
+      ],
+      "evidence_url": "https://robin.ac/"
+    },
+    {
+      "organization": "Yukon Systems",
+      "title": "Product Development Manager",
+      "start_year": 2023,
+      "end_year": 2025,
+      "current": false,
+      "responsibilities": [
+        "Technical prioritization and cross-functional delivery of AI systems",
+        "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
+        "Agent and consensus-modeling workflows"
+      ],
+      "evidence_url": "https://robin.ac/"
+    },
+    {
+      "organization": "Organic Alkaloids",
+      "title": "Co-owner",
+      "start_year": 2017,
+      "end_year": 2023,
+      "current": false,
+      "responsibilities": [
+        "International import strategy, procurement and logistics",
+        "Client relationships, marketing and financial management"
+      ],
+      "evidence_url": "https://robin.ac/"
+    }
+  ],
+  "date_precision": "year; no month-level dates inferred",
+  "education": {
+    "status": "Exact qualifications and attendance details unresolved; omitted from professional claims",
+    "qualifications": []
+  },
+  "projects_and_writing": [
+    {
+      "name": "ShowFlex iPhone product",
+      "status": "Public iPhone App Store listing verified October 2, 2026",
+      "role_reference": "ShowFlex work entry",
+      "evidence_url": "https://apps.apple.com/us/app/showflex/id6757890910",
+      "evidence_kind": "Publisher-hosted product listing; seller ShowFlex Inc.; does not independently establish individual contribution",
+      "release_evidence": "Version 17.0 map and calendar features",
+      "limitations": [
+        "No sole authorship claim",
+        "No Android release claim",
+        "No adoption or performance metrics"
+      ]
+    },
+    {
+      "name": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
+      "published": "2026-07-18",
+      "status": "Published architecture proposal",
+      "evidence_url": "https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/",
+      "evidence_kind": "Self-authored technical publication",
+      "limitations": [
+        "Not a released sensing product",
+        "No implemented Apple Fitness+ or GymKit integration established",
+        "No measured accuracy or Apple endorsement"
+      ]
+    },
+    {
+      "name": "Swift search request ownership example",
+      "published": "2026-10-02",
+      "status": "Standalone educational code, prepared with coding-assistant support",
+      "evidence_url": "https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search",
+      "validation": "Seven Swift Testing checks passed on macOS with Swift 6.4",
+      "limitations": [
+        "Not ShowFlex source",
+        "No iPhone runtime or SwiftUI adapter validation"
+      ]
+    }
+  ],
+  "attribution": "Repository ownership or a fork is not proof of original authorship; retain upstream and team credit.",
+  "evidence_policy": "This is a self-authored professional record. Product listings and technical publications have their stated evidentiary limits. It is not an independently verified background report.",
+  "retrieval_note": "A public JSON document for ordinary retrieval and reuse. It is not an instruction to an AI model, a guaranteed search feed or a universal ATS integration."
+}

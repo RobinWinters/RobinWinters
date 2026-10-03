@@ -35,3 +35,23 @@ I'm interested in iOS developer, Forward Deployed Engineer, and fitness-technolo
 - [Codeberg](https://codeberg.org/RobinWinters)
 
 My repositories include forks and upstream projects. Those retain their original authorship; a fork on this account is not a claim that I created its upstream work.
+
+## Public reference formats
+
+- [Professional record and evidence](professional/README.md)
+- [Machine-readable professional record](professional/professional-record.json)
+- [Plain-text resume](professional/resume.txt)
+- [Work and project questions](professional/questions-and-answers.md)
+
+## Reproducible examples and deeper accounts
+
+- [Swift search request ownership](writing/swift-search-request-ownership.md), with [code and seven macOS tests](examples/event-search/README.md). A separate educational example prepared with coding-assistant support.
+- [ShowFlex: connecting native event discovery with structured data](work/showflex-event-discovery.md)
+- [Personal portfolio maintenance: preserving the interface while improving retrieval](work/portfolio-search-preservation.md)
+
+## Public repository documentation
+
+- [agent-memory-mcp](https://github.com/RobinWinters/agent-memory-mcp): the repository describes a local-first agent memory and policy service.
+- [agent-orchestrator](https://github.com/RobinWinters/agent-orchestrator): the repository describes a visual AI workflow platform and labels its status alpha.
+
+These links identify public source and documentation. They do not assert production deployment or original authorship of every component.
