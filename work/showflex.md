@@ -22,6 +22,8 @@ The [ShowFlex iPhone App Store listing](https://apps.apple.com/us/app/showflex/i
 
 This verifies the public iPhone product listing. It does not establish sole authorship, an Android release, release of the AI prototypes above, adoption figures, benchmarks, or measured performance improvements.
 
+The [ShowFlex public About section](https://showflex.pro/#about), checked October 3, 2026, names Robin Winters under Engineering. This is a company-published credit supporting the engineering attribution above. The page describes its department cards as a playful presentation of a very small operation; they are not evidence of four separate staff members. This credit is primary project evidence, not independent editorial coverage or verification of every responsibility and date in this account.
+
 [Portfolio and work details](https://robin.ac/) · [ShowFlex](https://showflex.pro/) · [Professional profile](https://www.linkedin.com/in/robinwinters-sf/)
 
-Updated October 2, 2026. Self-authored professional account.
+Updated October 3, 2026. Self-authored professional account.
