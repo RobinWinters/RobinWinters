@@ -4,7 +4,9 @@ The approved work record is available as [plain text](resume.txt), a [detailed p
 
 ## Printable PDF
 
-The [PDF resume](resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
+The [current PDF resume](resume-current.pdf), dated October 3, 2026, preserves every line of the current approved [plain-text record](resume.txt), including TORos and the issuer-linked NASM PBC credential. It contains selectable text and ordinary clickable source links. Both pages were rendered and visually reviewed; text extraction preserved all 48 nonempty source lines after whitespace normalization. A particular ATS has not been tested, and PDF/UA tagging is not claimed.
+
+The [original PDF resume](resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
 
 ## Standard export
 
@@ -31,3 +33,7 @@ The JSON and plain-text formats now include the approved issuer-hosted NASM PBC 
 ## October 3 TORos update
 
 The JSON and plain-text records include Robin's confirmed TORos prototype contribution, with the dated Yukon Systems article and explicit evidence boundaries. Project dates and collaborators remain unresolved. The original PDF remains the earlier approved Word conversion and does not include TORos or the later NASM PBC addition.
+
+## Current PDF edition
+
+The original Word conversion remains available unchanged. The separate current PDF includes the later approved additions already present in JSON and plain text. It introduces no new work title, education qualification, collaborator attribution, development date, release status or performance result.
