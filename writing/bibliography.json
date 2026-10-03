@@ -43,6 +43,16 @@
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored technical writing",
       "datePrecision": "day"
+    },
+    {
+      "title": "Fitness event feeds: explicit dates, stable identity and visible conflicts",
+      "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/fitness-event-data-contracts.md",
+      "datePublished": "2026-10-02",
+      "scope": "Educational Swift data-contract example with synthetic fixtures, conflict receipts and 12 passing macOS tests. Prepared with coding-assistant support; separate from private product code.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day"
     }
   ]
 }

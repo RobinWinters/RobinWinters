@@ -1,0 +1,53 @@
+ROBIN WINTERS
+Native iOS development | Applied AI systems | Fitness technology
+San Francisco
+Portfolio: https://robin.ac/
+Public professional contact: robin@showflex.pro
+GitHub: https://github.com/RobinWinters
+Codeberg: https://codeberg.org/RobinWinters
+LinkedIn: https://www.linkedin.com/in/robinwinters-sf/
+
+APPLICATION FOCUS
+Native iOS developer opportunities
+
+PROFESSIONAL SUMMARY
+Native iOS engineering across Swift, SwiftUI, MapKit and Firebase, with mobile architecture, interaction quality and beta release execution at ShowFlex. Applied AI delivery experience at Yukon Systems complements this product-engineering focus.
+
+WORK EXPERIENCE
+ShowFlex | iOS/Full Stack Engineer | 2024-present
+- Swift and SwiftUI engineering, mobile architecture and product direction
+- MapKit event discovery, search, filtering, geocoding and detail interactions
+- Firebase-backed data and ingestion pipelines
+- Interaction quality and beta release execution
+- Prototype work: AI-assisted physique and posing feedback; Predictive competition features.
+
+Yukon Systems | Product Development Manager | 2023-2025
+- Technical prioritization and cross-functional delivery of AI systems
+- Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance
+- Agent and consensus-modeling workflows
+
+Organic Alkaloids | Co-owner | 2017-2023
+- International import strategy, procurement and logistics
+- Client relationships, marketing and financial management
+
+TECHNICAL FOCUS
+Swift, SwiftUI, MapKit, Firebase, native iOS architecture, structured data pipelines, applied AI workflows, product delivery.
+
+PROJECT AND WRITING EVIDENCE
+ShowFlex iPhone product: https://apps.apple.com/us/app/showflex/id6757890910
+Distributed sensing architecture proposal, July 18, 2026:
+https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/
+Swift teaching example and seven macOS tests:
+https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search
+
+ADDITIONAL APPLICATION EVIDENCE
+Swift fitness-event data pipeline: synthetic fixtures and 12 passing macOS tests.
+Standalone educational code prepared with coding-assistant support.
+https://github.com/RobinWinters/fitness-event-data-pipeline
+
+ROLE INTERESTS
+iOS developer, Forward Deployed Engineer and fitness-technology opportunities. These are target roles.
+
+RECORD NOTES
+Year-level dates only. No degree or certificate claim included. No sole authorship, prototype release or performance metrics asserted.
+Updated October 2, 2026. Self-authored professional record.

@@ -42,12 +42,14 @@ My repositories include forks and upstream projects. Those retain their original
 
 - [Professional record and evidence](professional/README.md)
 - [Machine-readable professional record](professional/professional-record.json)
-- [Plain-text resume](professional/resume.txt)
+- [Plain-text resume](professional/resume.txt) and [three application-focused variants](professional/resumes/README.md)
 - [JSON Resume export](professional/resume.json) and [format notes](professional/resume-formats.md)
 - [Work and project questions](professional/questions-and-answers.md)
 - [Role interests and relevant evidence](professional/role-focus.md)
 
 ## Reproducible examples and deeper accounts
+
+- [Fitness event data contracts](writing/fitness-event-data-contracts.md), with a [Swift library, command-line tool, synthetic fixtures and 12 passing macOS tests](https://github.com/RobinWinters/fitness-event-data-pipeline). A separate educational example prepared with coding-assistant support.
 
 - [Swift search request ownership](writing/swift-search-request-ownership.md), with [code and seven macOS tests](examples/event-search/README.md), also hosted on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership). A separate educational example prepared with coding-assistant support.
 - [ShowFlex: connecting native event discovery with structured data](work/showflex-event-discovery.md)

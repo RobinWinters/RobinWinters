@@ -110,6 +110,19 @@
         "No iPhone runtime or SwiftUI adapter validation"
       ],
       "additional_public_copy": "https://codeberg.org/RobinWinters/swift-search-request-ownership"
+    },
+    {
+      "name": "Swift fitness event data pipeline",
+      "published": "2026-10-02",
+      "status": "Standalone educational code, prepared with coding-assistant support",
+      "evidence_url": "https://github.com/RobinWinters/fitness-event-data-pipeline",
+      "validation": "12 Swift Testing checks passed on macOS with Swift 6.4; command-line fixture and malformed-JSON failure checked",
+      "limitations": [
+        "Synthetic event fixtures only",
+        "Not ShowFlex source or a deployed product integration",
+        "No iPhone-device or Linux execution established",
+        "No customer deployment or measured product outcome"
+      ]
     }
   ],
   "attribution": "Repository ownership or a fork is not proof of original authorship; retain upstream and team credit.",

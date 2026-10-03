@@ -22,6 +22,14 @@ My fitness-technology work connects native product engineering with event inform
 
 My [distributed sensing article](../work/technical-writing.md) proposes an architecture involving Apple devices, workout context and fitness frameworks. It is a technical proposal. It does not establish a released sensing system, measured exercise-recognition accuracy or a fitness certification.
 
+## Reproducible data-contract example
+
+The [Swift fitness event pipeline](https://github.com/RobinWinters/fitness-event-data-pipeline) validates explicit timestamps, source identity, retransmissions and conflicts. It includes synthetic fixtures, a command-line executable and 12 passing macOS tests. This is standalone educational code prepared with coding-assistant support, separate from private ShowFlex work. The [technical account](../writing/fitness-event-data-contracts.md) explains its decisions.
+
+## Application formats
+
+[Three plain-text resume variants](resumes/README.md) emphasize these role interests while preserving the same held titles, dates and approved responsibilities.
+
 ## Professional record
 
 [Work and evidence](README.md) · [JSON record](professional-record.json) · [Plain-text resume](resume.txt) · [Portfolio](https://robin.ac/)

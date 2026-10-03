@@ -7,6 +7,8 @@ A public index of writing about native Apple software, applied AI and fitness te
 - **[Kinematics Lab Part II: You Don't Need Another...](https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/)** — 2026-07-30. Follow-up technical report discussing capture integrity, prototype limitations and device coordination. Experiments and results are author-reported, not independently reproduced.
 - **[Swift search request ownership](https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/swift-search-request-ownership.md)** — 2026-10-02. Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code.
 
+- **[Fitness event feeds: explicit dates, stable identity and visible conflicts](fitness-event-data-contracts.md)** — 2026-10-02. A reproducible Swift data-contract example with synthetic fixtures, conflict receipts and 12 passing macOS tests. Prepared with coding-assistant support; separate from private product code.
+
 The bylines establish publication and authorship, rather than independent confirmation of implementation claims. No credentials, deployment outcomes or performance figures are inferred from these articles.
 
 [Machine-readable bibliography](bibliography.json) · [Atom feed](feed.atom) · [Professional record](../professional/README.md) · [Portfolio](https://robin.ac/)
