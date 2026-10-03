@@ -31,7 +31,7 @@ Seven original articles, with images and captions, republished October 2, 2026. 
 
 ## Other published editions
 
-Robin connected the Medium and Hashnode accounts on October 3, 2026. The originals remain on LinkedIn; these copies retain their canonical attribution. Nine Medium and six Hashnode articles are currently published, including the two educational Swift walkthroughs. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
+Robin connected the Medium and Hashnode accounts on October 3, 2026. The original LinkedIn essays remain on LinkedIn; the Swift and Yukon accounts originate in this repository. Publisher copies retain canonical attribution. Ten Medium and seven Hashnode articles are currently published, including the two educational Swift walkthroughs and the TORos work account. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
 
 - Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase: [Medium](https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7) · [Hashnode](https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase)
 - Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit: [Medium](https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b) · [Hashnode](https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit)
@@ -44,3 +44,7 @@ Robin connected the Medium and Hashnode accounts on October 3, 2026. The origina
 - Swift search: cancellation needs an ownership check: [Medium](https://medium.com/@robin_61077/swift-search-cancellation-needs-an-ownership-check-c2c6cd598ffc) · [Hashnode](https://robinwinters.hashnode.dev/swift-search-cancellation-needs-an-ownership-check)
 
 - Fitness event feeds: explicit dates, stable identity and visible conflicts: [Medium](https://medium.com/@robin_61077/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-deaff1e6be83) · [Hashnode](https://robinwinters.hashnode.dev/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts)
+
+## Project accounts
+
+- **[TORos at Yukon Systems: a multi-model decision prototype](../work/yukon-systems.md)** — October 3, 2026. Robin's confirmed contribution and the dated Yukon company article, with prototype status and attribution limits retained. [Medium](https://medium.com/@robin_61077/toros-at-yukon-systems-a-multi-model-decision-prototype-6f3a2aa9b345) · [Hashnode](https://robinwinters.hashnode.dev/toros-at-yukon-systems-a-multi-model-decision-prototype).
