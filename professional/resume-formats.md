@@ -1,10 +1,10 @@
 # Robin Winters: reusable resume formats
 
-The approved work record is available as [plain text](resume.txt), a [detailed professional record](professional-record.json), and a [JSON Resume export](resume.json). All preserve the three held titles and their approved year ranges. Current ShowFlex work is distinguished from former Yukon Systems and Organic Alkaloids roles. Forward Deployed Engineer remains a role interest. Exact education qualifications and additional credentials remain omitted.
+The approved work record is available as [plain text](resume.txt), a [detailed professional record](professional-record.json), and a [JSON Resume export](resume.json). All preserve the three held titles and their approved year ranges. Current ShowFlex work is distinguished from former Yukon Systems and Organic Alkaloids roles. Forward Deployed Engineer remains a role interest. Exact academic qualifications remain omitted; confirmed NASM credentials are included without inferred dates.
 
 ## Printable PDF
 
-The [current PDF resume](resume-current.pdf), dated October 3, 2026, preserves every line of the current approved [plain-text record](resume.txt), including TORos and the issuer-linked NASM PBC credential. It contains selectable text and ordinary clickable source links. Both pages were rendered and visually reviewed; text extraction preserved all 48 nonempty source lines after whitespace normalization. A particular ATS has not been tested, and PDF/UA tagging is not claimed.
+The [current PDF resume](resume-current.pdf), dated October 3, 2026, preserves every line of the current approved [plain-text record](resume.txt), including TORos and all three confirmed NASM credentials. It contains selectable text and ordinary clickable source links. Both pages were rendered and visually reviewed; text extraction preserved all 50 nonempty source lines after whitespace normalization. A particular ATS has not been tested, and PDF/UA tagging is not claimed.
 
 The [original PDF resume](resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
 
@@ -37,3 +37,7 @@ The JSON and plain-text records include Robin's confirmed TORos prototype contri
 ## Current PDF edition
 
 The original Word conversion remains available unchanged. The separate current PDF includes the later approved additions already present in JSON and plain text. It introduces no new work title, education qualification, collaborator attribution, development date, release status or performance result.
+
+## October 3 additional NASM credentials
+
+Robin confirmed Certified Personal Trainer (NASM-CPT) and the exact title NASM Certified Nutritionist and requested their inclusion now. These accompany the issuer-linked PBC credential in the current plain-text and JSON records; individual verification links, issue and expiry dates for the additions will follow. The original Word-conversion PDF stays unchanged.

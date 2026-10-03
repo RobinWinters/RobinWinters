@@ -19,3 +19,5 @@ Updated October 3, 2026. This index distinguishes self-authored professional cla
 Same-name profiles and secondary people directories require a matching identity and supporting evidence before their claims are reused. Unresolved education and the unconfirmed portfolio at robinwintersportfolio.com are excluded from this record.
 
 [Professional record](README.md) · [Portfolio](https://robin.ac/)
+
+| Robin’s October 3, 2026 credential statement | First-person professional statement; exact nutrition title confirmed | NASM Certified Personal Trainer (NASM-CPT) and NASM Certified Nutritionist | Individual issuer verification, issue/expiry dates, degree or licensure |

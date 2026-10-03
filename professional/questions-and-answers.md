@@ -38,6 +38,8 @@ Academic degrees, attendance dates and graduation status remain unresolved and a
 
 [Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) — National Academy of Sports Medicine (NASM). Issued September 20, 2026; the issuer page states that it does not expire. Attribution and exact wording approved by Robin October 3, 2026.
 
+Additional NASM credentials: **Certified Personal Trainer (NASM-CPT)** and **NASM Certified Nutritionist**. Robin confirmed these October 3, 2026 and requested inclusion now. Dates and individual verification links will be added when available.
+
 ## What technical writing is public?
 
 Robin published [Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit](https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/) on July 18, 2026. It is an architecture proposal, not a released sensing product or evidence of Apple endorsement. The repository also contains a separate [Swift search teaching example](../examples/event-search/README.md) prepared with coding-assistant support and tested on macOS.

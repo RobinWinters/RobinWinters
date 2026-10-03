@@ -2,7 +2,7 @@
   "format": "robin-winters-professional-record",
   "format_version": 1,
   "record_updated": "2026-10-03",
-  "approval": "Supported work claims approved October 2, 2026; NASM PBC credential attribution and exact wording approved October 3, 2026; unresolved academic qualifications omitted; TORos prototype description and contribution confirmed by Robin October 3, 2026",
+  "approval": "Supported work facts approved October 2, 2026; PBC attribution and wording, TORos contribution, NASM-CPT and exact title NASM Certified Nutritionist confirmed by Robin October 3, 2026. Robin instructed inclusion now, with individual verification links to follow. Unresolved academic qualifications, credential dates and expiry are omitted.",
   "identity": {
     "name": "Robin Winters",
     "website": "https://robin.ac/",
@@ -157,6 +157,24 @@
       "expiration": "Does not expire",
       "url": "https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4",
       "evidence_kind": "Issuer-hosted credential; recipient Robin Winters; identity and wording approved October 3, 2026"
+    },
+    {
+      "name": "Certified Personal Trainer (NASM-CPT)",
+      "issuer": "National Academy of Sports Medicine (NASM)",
+      "program_accreditation": "NCCA accredited certification program",
+      "issuer_program_url": "https://www.nasm.org/products/become-a-personal-trainer",
+      "evidence_kind": "First-person qualification statement; confirmed directly by Robin October 3, 2026",
+      "individual_verification_url_status": "To be supplied by Robin; no individual issuer link is inferred",
+      "issued_status": "Unresolved; date omitted",
+      "expiration_status": "Unresolved; date and current validity not inferred"
+    },
+    {
+      "name": "NASM Certified Nutritionist",
+      "issuer": "National Academy of Sports Medicine (NASM)",
+      "evidence_kind": "Exact title and holding confirmed directly by Robin October 3, 2026",
+      "individual_verification_url_status": "To be supplied by Robin; no individual issuer link is inferred",
+      "issued_status": "Unresolved; date omitted",
+      "expiration_status": "Unresolved; date and current validity not inferred"
     }
   ]
 }

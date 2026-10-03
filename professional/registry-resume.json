@@ -180,6 +180,14 @@
       "issuer": "National Academy of Sports Medicine (NASM)",
       "date": "2026-09-20",
       "url": "https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4"
+    },
+    {
+      "name": "Certified Personal Trainer (NASM-CPT)",
+      "issuer": "National Academy of Sports Medicine (NASM)"
+    },
+    {
+      "name": "NASM Certified Nutritionist",
+      "issuer": "National Academy of Sports Medicine (NASM)"
     }
   ]
 }

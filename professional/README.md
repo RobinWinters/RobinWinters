@@ -18,16 +18,18 @@ Robin is interested in iOS developer, Forward Deployed Engineer and fitness-tech
 
 Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus. [Work account](../work/yukon-systems.md) · [Yukon company article, May 5, 2025](https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/). Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented.
 
-## Fitness credential
+## Fitness credentials
 
 [Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4) — National Academy of Sports Medicine (NASM). Issued September 20, 2026; the issuer page states that it does not expire. Attribution and exact wording approved by Robin October 3, 2026.
+
+Additional NASM credentials: **Certified Personal Trainer (NASM-CPT)** and **NASM Certified Nutritionist**. Robin confirmed these October 3, 2026 and requested inclusion now. Dates and individual verification links will be added when available.
 
 ## Useful formats
 
 - [Readable professional reference and HTML writing](https://robinwinters.github.io/): approved work history, scoped project evidence and resume downloads on GitHub Pages.
 
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
-- [Current PDF resume](resume-current.pdf): the October 3 approved text record, including TORos and NASM PBC, with selectable text and source links.
+- [Current PDF resume](resume-current.pdf): the October 3 approved text record, including TORos and all three confirmed NASM credentials, with selectable text and source links.
 - [Original PDF resume](resume.pdf): the preserved one-page, tagged conversion of the earlier approved Word resume.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
 - [Three application-focused resume variants](resumes/README.md): native iOS, Forward Deployed Engineer targets and fitness technology, using identical held roles and dates.
