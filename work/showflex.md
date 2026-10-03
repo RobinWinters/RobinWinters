@@ -16,7 +16,11 @@ I create ingestion pipelines that normalize global event calendars, athlete meta
 
 I also prototype AI-assisted physique and posing feedback and predictive competition features. These are experimental workflows; this account does not describe them as released product capabilities. Their purpose is to turn model output into clear, useful consumer interactions.
 
-This account describes my responsibilities and contributions. It does not claim sole authorship of the product, current App Store availability, adoption figures, benchmarks, or measured performance improvements.
+## Public product evidence
+
+The [ShowFlex iPhone App Store listing](https://apps.apple.com/us/app/showflex/id6757890910) was checked on October 2, 2026. Apple lists ShowFlex Inc. as the developer and seller. The current listing shows version 17.0 and describes an interactive IFBB events map and calendar import tools for IFBB Pro and NPC events.
+
+This verifies the public iPhone product listing. It does not establish sole authorship, an Android release, release of the AI prototypes above, adoption figures, benchmarks, or measured performance improvements.
 
 [Portfolio and work details](https://robin.ac/) · [ShowFlex](https://showflex.pro/) · [Professional profile](https://www.linkedin.com/in/robinwinters-sf/)
 
