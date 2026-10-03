@@ -18,6 +18,8 @@ These are self-authored accounts. Experimental features, role interests, and for
 
 ## Technical writing
 
+[Full writing index](writing/README.md) · [Bibliography JSON](writing/bibliography.json) · [Atom feed](writing/feed.atom)
+
 - [Distributed sensing for strength training](work/technical-writing.md): a published architecture proposal across Apple Watch, AirPods, iPhone and Apple fitness frameworks. This is technical writing, not a claim of a released sensing product.
 
 ## Engineering focus

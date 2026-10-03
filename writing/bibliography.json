@@ -1,0 +1,48 @@
+{
+  "format": "public-writing-bibliography",
+  "author": "Robin Winters",
+  "authorUrl": "https://robin.ac/",
+  "reviewedOn": "2026-10-02",
+  "articles": [
+    {
+      "title": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
+      "url": "https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/",
+      "datePublished": "2026-04-02",
+      "scope": "Technical article describing a hybrid on-device and Firebase moderation architecture. Publication does not independently verify a deployment.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day"
+    },
+    {
+      "title": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
+      "url": "https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/",
+      "datePublished": "2026-07-18",
+      "scope": "Architecture proposal about coordinating Apple-device sensing and workout context. It does not establish a released sensing product or Apple endorsement.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day"
+    },
+    {
+      "title": "Kinematics Lab Part II: You Don't Need Another...",
+      "url": "https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/",
+      "datePublished": "2026-07-30",
+      "scope": "Follow-up technical report discussing capture integrity, prototype limitations and device coordination. Experiments and results are author-reported, not independently reproduced.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day"
+    },
+    {
+      "title": "Swift search request ownership",
+      "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/swift-search-request-ownership.md",
+      "datePublished": "2026-10-02",
+      "scope": "Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day"
+    }
+  ]
+}
