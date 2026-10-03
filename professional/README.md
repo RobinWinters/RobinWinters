@@ -19,6 +19,7 @@ Robin is interested in iOS developer, Forward Deployed Engineer and fitness-tech
 - [Readable professional reference and HTML writing](https://robinwinters.github.io/): approved work history, scoped project evidence and resume downloads on GitHub Pages.
 
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
+- [PDF resume](resume.pdf): a one-page, tagged and searchable version of the approved Word resume.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
 - [Three application-focused resume variants](resumes/README.md): native iOS, Forward Deployed Engineer targets and fitness technology, using identical held roles and dates.
 - [JSON Resume export](resume.json): a schema-validated representation for compatible resume tools. [Format notes](resume-formats.md) explain dates and source boundaries.

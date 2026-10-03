@@ -2,6 +2,10 @@
 
 The approved work record is available as [plain text](resume.txt), a [detailed professional record](professional-record.json), and a [JSON Resume export](resume.json). All preserve the three held titles and their approved year ranges. Current ShowFlex work is distinguished from former Yukon Systems and Organic Alkaloids roles. Forward Deployed Engineer remains a role interest. Exact education qualifications and additional credentials remain omitted.
 
+## Printable PDF
+
+The [PDF resume](resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
+
 ## Standard export
 
 [JSON Resume](https://jsonresume.org/schema) is a community-maintained format for compatible resume tooling. The export was validated on October 2, 2026 against the official Draft-07 schema in [jsonresume.org/packages/schema](https://github.com/jsonresume/jsonresume.org/blob/master/packages/schema/schema.json), using jsonschema 4.26.0 with format checking. Validation returned zero errors. The schema accepts year-only employment dates, so no start or end month was invented.
