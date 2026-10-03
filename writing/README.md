@@ -11,7 +11,7 @@ A public index of writing about native Apple software, applied AI and fitness te
 
 The bylines establish publication and authorship, rather than independent confirmation of implementation claims. No credentials, deployment outcomes or performance figures are inferred from these articles.
 
-[Machine-readable bibliography](bibliography.json) · [Atom feed](feed.atom) · [Professional record](../professional/README.md) · [Portfolio](https://robin.ac/)
+[Machine-readable bibliography](bibliography.json) · [Atom feed](feed.atom) · [Full-text RSS feed](https://robinwinters.github.io/feed.xml) · [Professional record](../professional/README.md) · [Portfolio](https://robin.ac/)
 
 The feed is an ordinary syndication format. Publishing it does not register it with search engines, ATS vendors or AI systems.
 

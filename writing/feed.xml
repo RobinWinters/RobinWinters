@@ -1,22 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://robinwinters.github.io/writing/</id>
-  <title>Robin Winters: technical writing</title>
-  <updated>2026-10-03T06:02:07Z</updated>
-  <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />
-  <link rel="alternate" href="https://robinwinters.github.io/writing/" />
-  <author>
-    <name>Robin Winters</name>
-    <uri>https://robin.ac/</uri>
-  </author>
-  <entry>
-    <id>https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/</id>
-    <title>Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters on hybrid on-device text moderation with Apple Foundation Models and Firebase. Original April 2026 article, republished with images and code.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/moderation.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 2, 2026 on &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Robin Winters: technical writing</title>
+    <link>https://robinwinters.github.io/writing/</link>
+    <description>Native Apple software, applied AI and fitness technology. Full article editions with original images and source attribution.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2026 06:02:07 GMT</lastBuildDate>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <atom:link rel="self" href="https://robinwinters.github.io/feed.xml" type="application/rss+xml" />
+    <item>
+      <title>Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase</title>
+      <link>https://robinwinters.github.io/writing/moderation.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 2, 2026 on &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Painting of a man pinning a printed document to a door while two onlookers stand beside him." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-2.png"/&gt;
 &lt;figcaption&gt;
             "YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS"
@@ -354,16 +350,15 @@ export const submitContent = onCall(
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/</id>
-    <title>Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters proposes coordinated Apple Watch, AirPods and iPhone sensing for strength training. Original July 2026 article with diagrams and source links.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/distributed-kinematic-sensing.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 18, 2026 on &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-04-02</dc:date>
+    </item>
+    <item>
+      <title>Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit</title>
+      <link>https://robinwinters.github.io/writing/distributed-kinematic-sensing.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 18, 2026 on &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Cover illustration of a dumbbell lateral raise and overlaid movement phases beside the title Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-5.png"/&gt;
 &lt;figcaption&gt;
             Really need to work on the title.
@@ -1365,16 +1360,15 @@ export const submitContent = onCall(
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/</id>
-    <title>Kinematics Lab Part II: You Don't Need Another...</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters reports Kinematics prototype capture results, integrity problems and next steps. Original July 2026 article with images.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/kinematics-lab-part-ii.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Kinematics Lab Part II: You Don't Need Another...&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-07-18</dc:date>
+    </item>
+    <item>
+      <title>Kinematics Lab Part II: You Don't Need Another...</title>
+      <link>https://robinwinters.github.io/writing/kinematics-lab-part-ii.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;Kinematics Lab Part II: You Don't Need Another...&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Pink cover collage with the words You Don&amp;#x27;t Need Another, a watch, wireless earbuds and a phone displaying activity graphics, surrounded by fitness symbols and crossed-out accessories." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-3.png"/&gt;
 &lt;figcaption&gt;
             FitTech Has a Junk Drawer Problem
@@ -1786,15 +1780,15 @@ export const submitContent = onCall(
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://robinwinters.github.io/writing/swift-search-request-ownership.html</id>
-    <title>Swift search request ownership</title>
-    <updated>2026-10-03T06:01:31Z</updated>
-    <summary>Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/swift-search-request-ownership.html" />
-  <content type="html">&lt;article class="prose"&gt;&lt;h1&gt;Swift search: cancellation needs an ownership check&lt;/h1&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-07-30</dc:date>
+    </item>
+    <item>
+      <title>Swift search request ownership</title>
+      <link>https://robinwinters.github.io/writing/swift-search-request-ownership.html</link>
+      <guid isPermaLink="false">https://robinwinters.github.io/writing/swift-search-request-ownership.html</guid>
+      <description>&lt;article class="prose"&gt;&lt;h1&gt;Swift search: cancellation needs an ownership check&lt;/h1&gt;
 &lt;p&gt;Robin Winters · October 2, 2026 · Educational example prepared with coding-assistant support&lt;/p&gt;
 &lt;p&gt;Search often looks simple until two requests finish in the wrong order. A user enters “San”, changes the query to “San Francisco”, and sees the shorter query's results arrive last. The newer request may have finished correctly; the older task still owns enough code to replace the result list.&lt;/p&gt;
 &lt;p&gt;Debouncing reduces the number of requests. Cancellation tells an obsolete task to stop. Neither operation alone states which request is allowed to change the current interface. That ownership rule is the useful part of the &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;standalone example&lt;/a&gt;.&lt;/p&gt;
@@ -1819,14 +1813,15 @@ self.pending = nil
 &lt;p&gt;The seven tests use a controlled asynchronous fetcher. A test waits until a request starts, starts a second request, and chooses exactly when each one succeeds or fails. The fetcher intentionally ignores cancellation until the test resolves its continuation. This tests the failure mode that a polite mock service would conceal.&lt;/p&gt;
 &lt;p&gt;The checks cover late successful results, obsolete failures, stale cleanup, an empty query, selection by identifier, a current error, and cancellation during debounce. They passed with Swift 6.4 on macOS on October 2, 2026. No live server, iPhone runtime, SwiftUI adapter or performance benchmark was part of that validation.&lt;/p&gt;
 &lt;p&gt;The pattern applies anywhere an interface can supersede asynchronous work: search suggestions, filters, geocoding or remote detail loading. Each product still needs its own rules for retaining results, displaying errors, leaving a screen and restoring selection. The package makes one such set of rules explicit and testable.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Code and tests&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Robin's professional background&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content></entry>
-  <entry>
-    <id>https://robinwinters.github.io/writing/fitness-event-data-contracts.html</id>
-    <title>Fitness event feeds: explicit dates, stable identity and visible conflicts</title>
-    <updated>2026-10-03T06:01:31Z</updated>
-    <summary>Educational Swift data-contract example with synthetic fixtures, conflict receipts and 12 passing macOS tests. Prepared with coding-assistant support; separate from private product code.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/fitness-event-data-contracts.html" />
-  <content type="html">&lt;article class="prose"&gt;&lt;h1&gt;Fitness event feeds: explicit dates, stable identity and visible conflicts&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Code and tests&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Robin's professional background&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-10-02</dc:date>
+    </item>
+    <item>
+      <title>Fitness event feeds: explicit dates, stable identity and visible conflicts</title>
+      <link>https://robinwinters.github.io/writing/fitness-event-data-contracts.html</link>
+      <guid isPermaLink="false">https://robinwinters.github.io/writing/fitness-event-data-contracts.html</guid>
+      <description>&lt;article class="prose"&gt;&lt;h1&gt;Fitness event feeds: explicit dates, stable identity and visible conflicts&lt;/h1&gt;
 &lt;p&gt;Robin Winters · October 2, 2026 · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A map can look polished while the events behind it are ambiguous. Two feeds may repeat a record, supply different start times for the same event, or omit the timezone. Guessing produces a neat interface at the cost of hiding uncertainty. A better starting point is a small contract that makes each decision inspectable.&lt;/p&gt;
 &lt;p&gt;This article accompanies a &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;standalone Swift teaching package&lt;/a&gt;, prepared with coding-assistant support. Its fixtures are synthetic. It is separate from private ShowFlex code and does not claim a customer deployment, an implemented product integration or measured performance improvements.&lt;/p&gt;
@@ -1850,15 +1845,15 @@ self.pending = nil
 &lt;h2&gt;Evidence a reviewer can inspect&lt;/h2&gt;
 &lt;p&gt;On October 2, 2026, the package passed 12 Swift Testing checks on macOS with Swift 6.4. The checks cover timezone equivalence, retransmissions, conflict propagation and ordering, source-scoped identity, malformed dates, missing offsets, end-time rules, URL restrictions, unknown ends and sorted output. The command-line fixture and malformed-JSON failure path were also exercised. The repository includes &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/tree/Radpository/Fixtures"&gt;fixtures&lt;/a&gt; and &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/blob/Radpository/verification.json"&gt;verification details&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;These results describe this educational package. They do not establish iPhone-device execution, Linux execution, an App Store release or an improvement to an existing product. The value of the example is that its contracts and failure decisions are small enough to inspect and reproduce.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Professional work and evidence&lt;/a&gt; · &lt;a href="/writing/"&gt;Full writing index&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;Source package&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content></entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/</id>
-    <title>In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/ios-27-liquid-glass.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published June 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Professional work and evidence&lt;/a&gt; · &lt;a href="/writing/"&gt;Full writing index&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;Source package&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-10-02</dc:date>
+    </item>
+    <item>
+      <title>In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.</title>
+      <link>https://robinwinters.github.io/writing/ios-27-liquid-glass.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published June 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Translucent rounded sliders, a green toggle, a plus button and a shape-selection panel labeled One, Two and Three, over a pale grid." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-2.jpg"/&gt;
 &lt;figcaption&gt;
             Apple's Liquid Glass Design Language
@@ -2038,16 +2033,15 @@ self.pending = nil
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/</id>
-    <title>What if Myspace Had It Right?</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;What if Myspace Had It Right?&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 1, 2026 on &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-06-30</dc:date>
+    </item>
+    <item>
+      <title>What if Myspace Had It Right?</title>
+      <link>https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;What if Myspace Had It Right?&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 1, 2026 on &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Photo montage of two people wearing white gloves holding an ornate gold frame around a familiar Myspace profile portrait." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/what-if-myspace-had-it-right-2.jpg"/&gt;
 &lt;figcaption&gt;
             Tom. Friend to all.
@@ -2290,16 +2284,15 @@ self.pending = nil
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/</id>
-    <title>The “Any Given Tuesday” Theory of AI Startups</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;The “Any Given Tuesday” Theory of AI Startups&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published February 21, 2026 on &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-04-01</dc:date>
+    </item>
+    <item>
+      <title>The “Any Given Tuesday” Theory of AI Startups</title>
+      <link>https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;The “Any Given Tuesday” Theory of AI Startups&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published February 21, 2026 on &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Film still of a large rounded robot standing beside two uniformed crew members in a room." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/any-given-tuesday-ai-startups-1.jpg"/&gt;
 &lt;figcaption&gt;
             Cool robot on the outside, sad guy named Frank on the inside. 
@@ -2758,16 +2751,15 @@ self.pending = nil
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-  <entry>
-    <id>https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/</id>
-    <title>How to Get Around AI Chat App Boundaries (and prevent it from happening)</title>
-    <updated>2026-10-03T05:53:48Z</updated>
-    <summary>Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover.</summary>
-    <link rel="alternate" href="https://robinwinters.github.io/writing/ai-chat-app-boundaries.html" />
-    <link rel="related" href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/" />
-    <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;How to Get Around AI Chat App Boundaries (and prevent it from happening)&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2025 on &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-02-21</dc:date>
+    </item>
+    <item>
+      <title>How to Get Around AI Chat App Boundaries (and prevent it from happening)</title>
+      <link>https://robinwinters.github.io/writing/ai-chat-app-boundaries.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;How to Get Around AI Chat App Boundaries (and prevent it from happening)&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2025 on &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
 &lt;img alt="Blue-and-white Laughing Man emblem: a smiling face inside concentric circles, with a long horizontal hat brim." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ai-chat-app-boundaries-1.png"/&gt;
 &lt;figcaption&gt;
             The Laughing Man
@@ -2914,6 +2906,9 @@ self.pending = nil
 &lt;!-- --&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</content>
-  </entry>
-</feed>
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2025-07-30</dc:date>
+    </item>
+  </channel>
+</rss>
