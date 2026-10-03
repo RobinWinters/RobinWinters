@@ -6,7 +6,7 @@ By Robin Winters · First published April 2, 2026 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-!["YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS"](images/moderation-2.png)
+![Painting of a man pinning a printed document to a door while two onlookers stand beside him.](images/moderation-2.png)
 
 
 "YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS"
@@ -81,7 +81,7 @@ Here’s a fun little diagram for flowchart fans:
 
 
 
- ![Article content](images/moderation-1.png)
+ ![Moderation architecture diagram: a SwiftUI composer sends text through on-device Apple Foundation Models preflight to Firebase Functions. Decision, trust and rules layers support publishing, blocking or editing, visibility limits and human review. Cloud uploads have a separate media-moderation path, with appeals and client-state feedback.](images/moderation-1.png)
 
 
 Fun is a relative term.

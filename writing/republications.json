@@ -18,13 +18,15 @@
           "path": "writing/images/moderation-1.png",
           "sha256": "75387a1644288d530ac00e3820dd77b2a12aaff0afa3472f31077f3201396277",
           "bytes": 106861,
-          "alt": "Article content"
+          "alt": "Moderation architecture diagram: a SwiftUI composer sends text through on-device Apple Foundation Models preflight to Firebase Functions. Decision, trust and rules layers support publishing, blocking or editing, visibility limits and human review. Cloud uploads have a separate media-moderation path, with appeals and client-state feedback.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/moderation-2.png",
           "sha256": "650181b4ef4d9eb7fe7f3598430ec407765414645cec793d54f21a57991da015",
           "bytes": 1302786,
-          "alt": "\"YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS\""
+          "alt": "Painting of a man pinning a printed document to a door while two onlookers stand beside him.",
+          "originalAlt": "\"YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS\""
         }
       ],
       "originalTextSha256": "9b712c045fed8a9027e3a5c41b431f79e756b7f6b86a3c220b4159931dc47fd6",
@@ -48,31 +50,36 @@
           "path": "writing/images/distributed-kinematic-sensing-1.png",
           "sha256": "68f03775ad54c76e99e156fb4b58557d863b51529103bb960eed17603cb1376d",
           "bytes": 1836578,
-          "alt": "Article content"
+          "alt": "Illustration of a dumbbell squat, with earbuds, a wristwatch and a phone in a shorts pocket. Colored arcs and joint markers depict distributed motion sensing.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/distributed-kinematic-sensing-2.png",
           "sha256": "065a2826c77dcf81789f5b0d8a22eed9a23d37e2272e451c5167cdbaa5b45983",
           "bytes": 2142041,
-          "alt": "Article content"
+          "alt": "Collage of two people performing dumbbell lateral raises, with earbuds, a wristwatch, joint markers and colored movement traces.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/distributed-kinematic-sensing-3.png",
           "sha256": "3dc0f51e4cd9f58e2b15ee238345db78f1d42bd1f1bfb421c24f6fa417425260",
           "bytes": 2084625,
-          "alt": "Article content"
+          "alt": "Illustration of a person curling a dumbbell while wearing earbuds, a wristwatch and a phone at the hip, alongside signal traces, an anatomical sketch and a sequence of squat positions.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/distributed-kinematic-sensing-4.png",
           "sha256": "ef45e7af25139411fb094610f2f611c685fb8519ce19e4cd7a8514dc1f73112e",
           "bytes": 2197724,
-          "alt": "Article content"
+          "alt": "Collage of a barbell deadlift, a wristwatch, earbuds and a phone, connected by colored joint markers to gym equipment, signal traces and an anatomical sketch.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/distributed-kinematic-sensing-5.png",
           "sha256": "bef3ed6d3a6435aed0af447db6ecfc380e11072c95422ba6e4f39453be57e3dd",
           "bytes": 1695041,
-          "alt": "Really need to work on the title."
+          "alt": "Cover illustration of a dumbbell lateral raise and overlaid movement phases beside the title Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit.",
+          "originalAlt": "Really need to work on the title."
         }
       ],
       "originalTextSha256": "b2319833ab814c229263a24e743337796c586edf2e00da8e9a4b9254ec90e8ce",
@@ -96,19 +103,22 @@
           "path": "writing/images/kinematics-lab-part-ii-1.jpg",
           "sha256": "8e6445f19fef6da09233634665da2f4d8584a94988a12038b423b3830b6ebc2c",
           "bytes": 129793,
-          "alt": "Article content"
+          "alt": "Chart labeled 3 devices, 3,737 samples and approximately 50 Hz compares watch, earbuds and phone traces with six marked lateral raises. Highlighted windows show shared movement; the graphic labels watch-to-AirPods alignment and corroboration results.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/kinematics-lab-part-ii-2.png",
           "sha256": "5cd7a2cd783fbb00cbdb8da2a01130f78fef873e86d4e753aa9833e09cdc8c1a",
           "bytes": 2422829,
-          "alt": "Article content"
+          "alt": "Illustrated drawer filled with wearable sensors, rings, watches and cables. Pink crosses mark several devices, surrounding an empty outlined space in the center.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/kinematics-lab-part-ii-3.png",
           "sha256": "90e74bd230cb024a0cc47a30631adef2c0d6aad123f896fce279a14031110628",
           "bytes": 1583867,
-          "alt": "FitTech Has a Junk Drawer Problem"
+          "alt": "Pink cover collage with the words You Don't Need Another, a watch, wireless earbuds and a phone displaying activity graphics, surrounded by fitness symbols and crossed-out accessories.",
+          "originalAlt": "FitTech Has a Junk Drawer Problem"
         }
       ],
       "originalTextSha256": "94df4d87b91758abba34c0ba4413140bdae1adbebe9eb2152c9be5ace5f75305",
@@ -132,13 +142,15 @@
           "path": "writing/images/ios-27-liquid-glass-1.png",
           "sha256": "eaf90d673ea5d18e1ad77371b3f2f0bf84e646631dc54d2c6c7306adb1519d21",
           "bytes": 569751,
-          "alt": "Article content"
+          "alt": "ShowFlex sign-in screen in an iPhone simulator beside controls for Dark appearance, Clear Liquid Glass and accessibility options. The selected simulator is labeled iPhone 17 Pro Max, iOS 26.5.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/ios-27-liquid-glass-2.jpg",
           "sha256": "603600acabc3913f71baef98e7688a11ccc0e521261a34e759cff4d3b52817a0",
           "bytes": 87851,
-          "alt": "Apple's Liquid Glass Design Language"
+          "alt": "Translucent rounded sliders, a green toggle, a plus button and a shape-selection panel labeled One, Two and Three, over a pale grid.",
+          "originalAlt": "Apple's Liquid Glass Design Language"
         }
       ],
       "originalTextSha256": "39d91f41b7fc6cd780fb784c83ba816828cc37cfec87df25588c8c2e396f9462",
@@ -162,13 +174,15 @@
           "path": "writing/images/what-if-myspace-had-it-right-1.jpg",
           "sha256": "81713be7723289c9b632d224989ce63e256f616a7fdff89c8589b040e7632a8c",
           "bytes": 145546,
-          "alt": "Article content"
+          "alt": "Stacked browser windows showing a customized Myspace profile with skull-and-heart wallpaper, a profile photo, music player, video and personal panels.",
+          "originalAlt": "Article content"
         },
         {
           "path": "writing/images/what-if-myspace-had-it-right-2.jpg",
           "sha256": "2b22aa1a172195455a45fff26fb12e8f1c9870cda710b1387b473536c91eb7ca",
           "bytes": 209892,
-          "alt": "Tom. Friend to all."
+          "alt": "Photo montage of two people wearing white gloves holding an ornate gold frame around a familiar Myspace profile portrait.",
+          "originalAlt": "Tom. Friend to all."
         }
       ],
       "originalTextSha256": "f15303d8b3348d80836f8df636d188f86efe3e6de52ed6b599e2769223064dde",
@@ -180,7 +194,7 @@
     },
     {
       "slug": "any-given-tuesday-ai-startups",
-      "title": "The \u201cAny Given Tuesday\u201d Theory of AI Startups",
+      "title": "The “Any Given Tuesday” Theory of AI Startups",
       "originalUrl": "https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/",
       "originalDate": "2026-02-21",
       "originalDatePrecision": "day, as displayed in authenticated browser in America/Los_Angeles",
@@ -192,7 +206,8 @@
           "path": "writing/images/any-given-tuesday-ai-startups-1.jpg",
           "sha256": "661a63a1c92638fd97b649bbee685c33a77ba00d6ea5862fd0031a90dbaa8118",
           "bytes": 25187,
-          "alt": "Cool robot on the outside, sad guy named Frank on the inside. "
+          "alt": "Film still of a large rounded robot standing beside two uniformed crew members in a room.",
+          "originalAlt": "Cool robot on the outside, sad guy named Frank on the inside. "
         }
       ],
       "originalTextSha256": "7059e98b3d787e4c08ec955b91c6234adfd7f6521becaffdca5774d61465eb25",
@@ -216,7 +231,8 @@
           "path": "writing/images/ai-chat-app-boundaries-1.png",
           "sha256": "a7589cde895efb6e0f40c7e00e7f0079004da84230e92d8fe3cb894ba9fe1a91",
           "bytes": 72304,
-          "alt": "The Laughing Man"
+          "alt": "Blue-and-white Laughing Man emblem: a smiling face inside concentric circles, with a long horizontal hat brim.",
+          "originalAlt": "The Laughing Man"
         }
       ],
       "originalTextSha256": "ba78d62263ec896359aec8af0f3be5b824dfe837a0473c16e50dbeb2a883f378",
@@ -226,5 +242,6 @@
       "html": "writing/ai-chat-app-boundaries.html",
       "markdown": "writing/ai-chat-app-boundaries.md"
     }
-  ]
+  ],
+  "imageDescriptionPolicy": "Descriptions written from direct visual inspection of the original sixteen image files. They describe illustrations and image labels, not independently verified product features or experimental results. Original captions and image bytes are preserved."
 }

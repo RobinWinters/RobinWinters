@@ -6,7 +6,7 @@ By Robin Winters · First published July 18, 2026 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![Really need to work on the title.](images/distributed-kinematic-sensing-5.png)
+![Cover illustration of a dumbbell lateral raise and overlaid movement phases beside the title Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit.](images/distributed-kinematic-sensing-5.png)
 
 
 Really need to work on the title.
@@ -64,7 +64,7 @@ By coordinating Apple Watch, motion capable AirPods and iPhone, supplementing th
 
 
 
- ![Article content](images/distributed-kinematic-sensing-1.png)
+ ![Illustration of a dumbbell squat, with earbuds, a wristwatch and a phone in a shorts pocket. Colored arcs and joint markers depict distributed motion sensing.](images/distributed-kinematic-sensing-1.png)
 
 
 Dumbbell Front Squat, for the curious.
@@ -165,7 +165,7 @@ Apple already exposes much of the necessary plumbing through [Core Motion](https
 
 
 
- ![Article content](images/distributed-kinematic-sensing-2.png)
+ ![Collage of two people performing dumbbell lateral raises, with earbuds, a wristwatch, joint markers and colored movement traces.](images/distributed-kinematic-sensing-2.png)
 
 
 When I move you move, just like that?
@@ -500,7 +500,7 @@ A patent does not guarantee that a product will ship. It does, however, demonstr
 
 
 
- ![Article content](images/distributed-kinematic-sensing-3.png)
+ ![Illustration of a person curling a dumbbell while wearing earbuds, a wristwatch and a phone at the hip, alongside signal traces, an anatomical sketch and a sequence of squat positions.](images/distributed-kinematic-sensing-3.png)
 
 
 How is the phone staying connected to her hip?
@@ -931,7 +931,7 @@ The progression might look like this:
 
 
 
- ![Article content](images/distributed-kinematic-sensing-4.png)
+ ![Collage of a barbell deadlift, a wristwatch, earbuds and a phone, connected by colored joint markers to gym equipment, signal traces and an anatomical sketch.](images/distributed-kinematic-sensing-4.png)
 
 
 Straight Leg Deadlifts with about a buck'80 in plates is no joke

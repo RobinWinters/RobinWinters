@@ -6,7 +6,7 @@ By Robin Winters · First published April 1, 2026 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![Tom. Friend to all.](images/what-if-myspace-had-it-right-2.jpg)
+![Photo montage of two people wearing white gloves holding an ornate gold frame around a familiar Myspace profile portrait.](images/what-if-myspace-had-it-right-2.jpg)
 
 
 Tom. Friend to all.
@@ -144,7 +144,7 @@ I don't want the center of gravity to be some endless feed, shoveling algorithmi
 
 
 
- ![Article content](images/what-if-myspace-had-it-right-1.jpg)
+ ![Stacked browser windows showing a customized Myspace profile with skull-and-heart wallpaper, a profile photo, music player, video and personal panels.](images/what-if-myspace-had-it-right-1.jpg)
 
 
 Avril Lavigne vibes. So complicated. So frustrated

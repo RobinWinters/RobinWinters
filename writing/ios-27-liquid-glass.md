@@ -6,7 +6,7 @@ By Robin Winters · First published June 30, 2026 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![Apple's Liquid Glass Design Language](images/ios-27-liquid-glass-2.jpg)
+![Translucent rounded sliders, a green toggle, a plus button and a shape-selection panel labeled One, Two and Three, over a pale grid.](images/ios-27-liquid-glass-2.jpg)
 
 
 Apple's Liquid Glass Design Language
@@ -56,7 +56,7 @@ Like a lot of other devs, I've been tinkering with all the new fine tuning featu
 
 
 
- ![Article content](images/ios-27-liquid-glass-1.png)
+ ![ShowFlex sign-in screen in an iPhone simulator beside controls for Dark appearance, Clear Liquid Glass and accessibility options. The selected simulator is labeled iPhone 17 Pro Max, iOS 26.5.](images/ios-27-liquid-glass-1.png)
 
 
 It's...glorious.

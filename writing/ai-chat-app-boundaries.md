@@ -6,7 +6,7 @@ By Robin Winters · First published July 30, 2025 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![The Laughing Man](images/ai-chat-app-boundaries-1.png)
+![Blue-and-white Laughing Man emblem: a smiling face inside concentric circles, with a long horizontal hat brim.](images/ai-chat-app-boundaries-1.png)
 
 
 The Laughing Man

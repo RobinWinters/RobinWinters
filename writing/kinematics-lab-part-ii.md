@@ -6,7 +6,7 @@ By Robin Winters · First published July 30, 2026 · Republished October 2, 2026
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![FitTech Has a Junk Drawer Problem](images/kinematics-lab-part-ii-3.png)
+![Pink cover collage with the words You Don't Need Another, a watch, wireless earbuds and a phone displaying activity graphics, surrounded by fitness symbols and crossed-out accessories.](images/kinematics-lab-part-ii-3.png)
 
 
 FitTech Has a Junk Drawer Problem
@@ -56,7 +56,7 @@ I think I can build something better that doesn't require buying any new equipme
 
 
 
- ![Article content](images/kinematics-lab-part-ii-1.jpg)
+ ![Chart labeled 3 devices, 3,737 samples and approximately 50 Hz compares watch, earbuds and phone traces with six marked lateral raises. Highlighted windows show shared movement; the graphic labels watch-to-AirPods alignment and corroboration results.](images/kinematics-lab-part-ii-1.jpg)
 
 
 Waves, y'all. Waves.
@@ -142,7 +142,7 @@ So the Apple Watch capture path was rebuilt around batch acknowledgement. Watch 
 
 
 
- ![Article content](images/kinematics-lab-part-ii-2.png)
+ ![Illustrated drawer filled with wearable sensors, rings, watches and cables. Pink crosses mark several devices, surrounding an empty outlined space in the center.](images/kinematics-lab-part-ii-2.png)
 
 
 The Kitchen Junk Drawer. Everyone has one.

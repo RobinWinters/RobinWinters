@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://robinwinters.github.io/writing/</id>
   <title>Robin Winters: technical writing</title>
-  <updated>2026-10-03T04:36:41Z</updated>
+  <updated>2026-10-03T05:53:48Z</updated>
   <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://robinwinters.github.io/writing/" />
   <author>
@@ -12,12 +12,12 @@
   <entry>
     <id>https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/</id>
     <title>Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters on hybrid on-device text moderation with Apple Foundation Models and Firebase. Original April 2026 article, republished with images and code.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/moderation.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 2, 2026 on &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="&amp;quot;YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS&amp;quot;" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-2.png"/&gt;
+&lt;img alt="Painting of a man pinning a printed document to a door while two onlookers stand beside him." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-2.png"/&gt;
 &lt;figcaption&gt;
             "YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS"
           &lt;/figcaption&gt;
@@ -98,7 +98,7 @@
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-1.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Moderation architecture diagram: a SwiftUI composer sends text through on-device Apple Foundation Models preflight to Firebase Functions. Decision, trust and rules layers support publishing, blocking or editing, visibility limits and human review. Cloud uploads have a separate media-moderation path, with appeals and client-state feedback." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-1.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;Fun is a relative term. 
 &lt;/figcaption&gt;
@@ -359,12 +359,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/</id>
     <title>Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters proposes coordinated Apple Watch, AirPods and iPhone sensing for strength training. Original July 2026 article with diagrams and source links.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/distributed-kinematic-sensing.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 18, 2026 on &lt;a href="https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="Really need to work on the title." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-5.png"/&gt;
+&lt;img alt="Cover illustration of a dumbbell lateral raise and overlaid movement phases beside the title Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-5.png"/&gt;
 &lt;figcaption&gt;
             Really need to work on the title.
           &lt;/figcaption&gt;
@@ -424,7 +424,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-1.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Illustration of a dumbbell squat, with earbuds, a wristwatch and a phone in a shorts pocket. Colored arcs and joint markers depict distributed motion sensing." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-1.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;Dumbbell Front Squat, for the curious.&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -533,7 +533,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-2.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Collage of two people performing dumbbell lateral raises, with earbuds, a wristwatch, joint markers and colored movement traces." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-2.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;When I move you move, just like that?&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -885,7 +885,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-3.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Illustration of a person curling a dumbbell while wearing earbuds, a wristwatch and a phone at the hip, alongside signal traces, an anatomical sketch and a sequence of squat positions." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-3.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;How is the phone staying connected to her hip?&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -1318,7 +1318,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-4.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Collage of a barbell deadlift, a wristwatch, earbuds and a phone, connected by colored joint markers to gym equipment, signal traces and an anatomical sketch." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/distributed-kinematic-sensing-4.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;Straight Leg Deadlifts with about a buck'80 in plates is no joke&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -1370,12 +1370,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/</id>
     <title>Kinematics Lab Part II: You Don't Need Another...</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters reports Kinematics prototype capture results, integrity problems and next steps. Original July 2026 article with images.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/kinematics-lab-part-ii.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;Kinematics Lab Part II: You Don't Need Another...&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="FitTech Has a Junk Drawer Problem" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-3.png"/&gt;
+&lt;img alt="Pink cover collage with the words You Don&amp;#x27;t Need Another, a watch, wireless earbuds and a phone displaying activity graphics, surrounded by fitness symbols and crossed-out accessories." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-3.png"/&gt;
 &lt;figcaption&gt;
             FitTech Has a Junk Drawer Problem
           &lt;/figcaption&gt;
@@ -1426,7 +1426,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-1.jpg"/&gt;
+&lt;!-- --&gt; &lt;img alt="Chart labeled 3 devices, 3,737 samples and approximately 50 Hz compares watch, earbuds and phone traces with six marked lateral raises. Highlighted windows show shared movement; the graphic labels watch-to-AirPods alignment and corroboration results." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-1.jpg"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;Waves, y'all. Waves. 
 &lt;/figcaption&gt;
@@ -1508,7 +1508,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-2.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="Illustrated drawer filled with wearable sensors, rings, watches and cables. Pink crosses mark several devices, surrounding an empty outlined space in the center." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/kinematics-lab-part-ii-2.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;The Kitchen Junk Drawer. Everyone has one.&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -1805,12 +1805,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/</id>
     <title>In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/ios-27-liquid-glass.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published June 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="Apple's Liquid Glass Design Language" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-2.jpg"/&gt;
+&lt;img alt="Translucent rounded sliders, a green toggle, a plus button and a shape-selection panel labeled One, Two and Three, over a pale grid." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-2.jpg"/&gt;
 &lt;figcaption&gt;
             Apple's Liquid Glass Design Language
           &lt;/figcaption&gt;
@@ -1861,7 +1861,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-1.png"/&gt;
+&lt;!-- --&gt; &lt;img alt="ShowFlex sign-in screen in an iPhone simulator beside controls for Dark appearance, Clear Liquid Glass and accessibility options. The selected simulator is labeled iPhone 17 Pro Max, iOS 26.5." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-1.png"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;It's...glorious.&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -1994,12 +1994,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/</id>
     <title>What if Myspace Had It Right?</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/what-if-myspace-had-it-right.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;What if Myspace Had It Right?&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 1, 2026 on &lt;a href="https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="Tom. Friend to all." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/what-if-myspace-had-it-right-2.jpg"/&gt;
+&lt;img alt="Photo montage of two people wearing white gloves holding an ornate gold frame around a familiar Myspace profile portrait." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/what-if-myspace-had-it-right-2.jpg"/&gt;
 &lt;figcaption&gt;
             Tom. Friend to all.
           &lt;/figcaption&gt;
@@ -2149,7 +2149,7 @@ export const submitContent = onCall(
 &lt;figure&gt;
 &lt;!-- --&gt;
 &lt;!-- --&gt;
-&lt;!-- --&gt; &lt;img alt="Article content" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/what-if-myspace-had-it-right-1.jpg"/&gt;
+&lt;!-- --&gt; &lt;img alt="Stacked browser windows showing a customized Myspace profile with skull-and-heart wallpaper, a profile photo, music player, video and personal panels." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/what-if-myspace-had-it-right-1.jpg"/&gt;
 &lt;figcaption&gt;
 &lt;!-- --&gt;Avril Lavigne vibes. So complicated. So frustrated&lt;!-- --&gt;
 &lt;/figcaption&gt;
@@ -2246,12 +2246,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/</id>
     <title>The “Any Given Tuesday” Theory of AI Startups</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/any-given-tuesday-ai-startups.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;The “Any Given Tuesday” Theory of AI Startups&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published February 21, 2026 on &lt;a href="https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="Cool robot on the outside, sad guy named Frank on the inside. " decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/any-given-tuesday-ai-startups-1.jpg"/&gt;
+&lt;img alt="Film still of a large rounded robot standing beside two uniformed crew members in a room." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/any-given-tuesday-ai-startups-1.jpg"/&gt;
 &lt;figcaption&gt;
             Cool robot on the outside, sad guy named Frank on the inside. 
           &lt;/figcaption&gt;
@@ -2714,12 +2714,12 @@ export const submitContent = onCall(
   <entry>
     <id>https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/</id>
     <title>How to Get Around AI Chat App Boundaries (and prevent it from happening)</title>
-    <updated>2026-10-03T04:36:41Z</updated>
+    <updated>2026-10-03T05:53:48Z</updated>
     <summary>Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover.</summary>
     <link rel="alternate" href="https://robinwinters.github.io/writing/ai-chat-app-boundaries.html" />
     <link rel="related" href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/" />
     <content type="html">&lt;article class="prose republished"&gt;&lt;h1&gt;How to Get Around AI Chat App Boundaries (and prevent it from happening)&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published July 30, 2025 on &lt;a href="https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
-&lt;img alt="The Laughing Man" decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ai-chat-app-boundaries-1.png"/&gt;
+&lt;img alt="Blue-and-white Laughing Man emblem: a smiling face inside concentric circles, with a long horizontal hat brim." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ai-chat-app-boundaries-1.png"/&gt;
 &lt;figcaption&gt;
             The Laughing Man
           &lt;/figcaption&gt;

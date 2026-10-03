@@ -6,7 +6,7 @@ By Robin Winters · First published February 21, 2026 · Republished October 2, 
 
 Original wording, images and captions. Technical observations and opinions retain their original context.
 
-![Cool robot on the outside, sad guy named Frank on the inside. ](images/any-given-tuesday-ai-startups-1.jpg)
+![Film still of a large rounded robot standing beside two uniformed crew members in a room.](images/any-given-tuesday-ai-startups-1.jpg)
 
 
 Cool robot on the outside, sad guy named Frank on the inside.
