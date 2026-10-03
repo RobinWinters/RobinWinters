@@ -2,7 +2,7 @@
 
 Robin Winters — iOS/Full Stack Engineer, 2024–present
 
-My approved professional record describes work across Swift and SwiftUI engineering, mobile architecture, product direction, MapKit event discovery, Firebase-backed data, interaction quality and beta release execution. This account explains that scope and links public evidence. It does not publish private application code or establish sole authorship.
+I’m an iOS / Full Stack Engineer at ShowFlex, a shipped iPhone fitness product available on the App Store. Since 2024, my work has spanned Swift and SwiftUI engineering, mobile architecture, MapKit event discovery, Firebase-backed data, interaction quality and release execution. Here is how native interaction and structured event data meet in that work.
 
 ## A map is one part of a discovery flow
 
