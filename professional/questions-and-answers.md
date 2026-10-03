@@ -14,6 +14,10 @@ The approved record lists iOS/Full Stack Engineer at ShowFlex, 2024–present. W
 
 Product Development Manager at Yukon Systems, 2023–2025, and Co-owner at Organic Alkaloids, 2017–2023. Yukon work includes technical prioritization, AI-system requirements, architecture tradeoffs and agent workflows. Organic Alkaloids work includes international import operations, procurement, logistics, client relationships, marketing and financial management. Neither former role is described as current.
 
+## What is TORos, and what did Robin build at Yukon?
+
+Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus. Robin confirmed this contribution October 3, 2026. Yukon's [May 5, 2025 article](https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/) shows an early TOROS CLI setup and describes the prototype, but does not name its individual builders. Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented. Consensus does not guarantee correctness. [Project account](../work/yukon-systems.md).
+
 ## What ShowFlex work has public release evidence?
 
 The [iPhone App Store listing](https://apps.apple.com/us/app/showflex/id6757890910), checked October 2, 2026, identifies ShowFlex Inc. as seller and developer. Version 17.0 describes an IFBB events map and calendar import tools for IFBB Pro and NPC events. The listing verifies the public product and stated release; it does not establish Robin's sole authorship or contribution to every feature.

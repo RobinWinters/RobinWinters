@@ -27,3 +27,7 @@ The App Store source establishes the public iPhone product and its publisher, ra
 ## October 3 credential update
 
 The JSON and plain-text formats now include the approved issuer-hosted NASM PBC credential. The existing PDF remains the faithful conversion of the previously approved Word resume; it does not yet include this later addition. Employment years and academic qualification omissions remain unchanged.
+
+## October 3 TORos update
+
+The JSON and plain-text records include Robin's confirmed TORos prototype contribution, with the dated Yukon Systems article and explicit evidence boundaries. Project dates and collaborators remain unresolved. The original PDF remains the earlier approved Word conversion and does not include TORos or the later NASM PBC addition.

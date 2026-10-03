@@ -12,6 +12,8 @@ Evidence for review: the [ShowFlex account](../work/showflex-event-discovery.md)
 
 I want to bring software requirements, applied AI workflows, architecture tradeoffs and product delivery into a Forward Deployed Engineer role. My approved Yukon Systems scope includes technical prioritization and cross-functional delivery of AI systems, requirements, agent workflows, and tradeoffs involving reliability, explainability, latency and performance. That role ended in 2025.
 
+I built [TORos for Yukon Systems](../work/yukon-systems.md), a model-agnostic, multimodal decision-engine prototype using deliberation among models toward consensus. The linked company article provides dated prototype evidence; my contribution is first-person confirmed. Development dates, collaborators and deployment outcomes are not inferred.
+
 My ShowFlex scope adds experience connecting structured data to a consumer interface and making mobile interactions usable. Organic Alkaloids adds an approved background in procurement, logistics and client relationships. These are different roles with different responsibilities; their date ranges are not added together to imply a total number of engineering years.
 
 Evidence for review: the [Yukon account](../work/yukon-systems.md), [ShowFlex account](../work/showflex.md), and the public repository documentation linked from the [profile README](../README.md). A repository contact is not a claim of original authorship or a verified customer deployment. This record does not assert past FDE employment, field engagements, enterprise integrations or deployment metrics.

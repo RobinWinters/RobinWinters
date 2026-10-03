@@ -118,6 +118,16 @@
       ]
     },
     {
+      "name": "TORos \u2014 Yukon Systems prototype",
+      "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
+      "description": "Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.",
+      "highlights": [
+        "Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented.",
+        "Yukon Systems publicly described TOROS on May 5, 2025: https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/",
+        "Contribution confirmed by Robin; company publication does not identify individual builders. No sole authorship claim."
+      ]
+    },
+    {
       "name": "Swift search request ownership example",
       "url": "https://codeberg.org/RobinWinters/swift-search-request-ownership",
       "description": "Standalone educational example prepared with coding-assistant support, separate from private product source.",
@@ -162,7 +172,7 @@
     "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json",
     "recordUpdated": "2026-10-03",
     "datePrecision": "year for employment; no month-level dates inferred",
-    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles.",
+    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles. TORos prototype contribution confirmed by Robin October 3; company article corroborates prototype existence, not individual authorship or measured outcomes.",
     "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json"
   },
   "certificates": [

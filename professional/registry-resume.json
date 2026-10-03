@@ -51,7 +51,7 @@
         "Firebase-backed data and ingestion pipelines",
         "Interaction quality and beta release execution"
       ],
-      "summary": "2024–present. Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
+      "summary": "2024\u2013present. Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
     },
     {
       "name": "Yukon Systems",
@@ -61,7 +61,7 @@
         "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
         "Agent and consensus-modeling workflows"
       ],
-      "summary": "2023–2025."
+      "summary": "2023\u20132025."
     },
     {
       "name": "Organic Alkaloids",
@@ -70,7 +70,7 @@
         "International import strategy, procurement and logistics",
         "Client relationships, marketing and financial management"
       ],
-      "summary": "2017–2023."
+      "summary": "2017\u20132023."
     }
   ],
   "skills": [
@@ -112,6 +112,16 @@
         "Swift/SwiftUI, MapKit event discovery, Firebase-backed data and ingestion pipelines.",
         "AI-assisted physique/posing feedback and predictive competition features are prototypes, not established released product capabilities.",
         "No sole authorship, Android release or measured adoption/performance claim."
+      ]
+    },
+    {
+      "name": "TORos \u2014 Yukon Systems prototype",
+      "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
+      "description": "Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.",
+      "highlights": [
+        "Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented.",
+        "Yukon Systems publicly described TOROS on May 5, 2025: https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/",
+        "Contribution confirmed by Robin; company publication does not identify individual builders. No sole authorship claim."
       ]
     },
     {
@@ -160,7 +170,7 @@
     "theme": "reference",
     "recordUpdated": "2026-10-03",
     "datePrecision": "Approved year ranges appear in visible work summaries. Numeric date fields are omitted in this rendering copy because themes can manufacture January dates from year-only values.",
-    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles.",
+    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles. TORos prototype contribution confirmed by Robin October 3; company article corroborates prototype existence, not individual authorship or measured outcomes.",
     "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json",
     "structuredDateSource": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json"
   },

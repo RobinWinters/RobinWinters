@@ -2,7 +2,7 @@
   "format": "robin-winters-professional-record",
   "format_version": 1,
   "record_updated": "2026-10-03",
-  "approval": "Supported work claims approved October 2, 2026; NASM PBC credential attribution and exact wording approved October 3, 2026; unresolved academic qualifications omitted",
+  "approval": "Supported work claims approved October 2, 2026; NASM PBC credential attribution and exact wording approved October 3, 2026; unresolved academic qualifications omitted; TORos prototype description and contribution confirmed by Robin October 3, 2026",
   "identity": {
     "name": "Robin Winters",
     "website": "https://robin.ac/",
@@ -87,6 +87,25 @@
         "No sole authorship claim",
         "No Android release claim",
         "No adoption or performance metrics"
+      ]
+    },
+    {
+      "name": "TORos",
+      "public_name_variant": "TOROS",
+      "organization": "Yukon Systems",
+      "status": "Prototype; publicly described by Yukon Systems May 5, 2025",
+      "description": "Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.",
+      "contribution": "Built the system for Yukon Systems; confirmed by Robin October 3, 2026",
+      "contribution_evidence_kind": "First-person statement; the company article does not name individual builders",
+      "development_dates": "Unresolved; article publication date is not a development date range",
+      "evidence_url": "https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/",
+      "evidence_kind": "Company-published technical article with early TOROS CLI screenshot; not independent evaluation",
+      "public_work_account": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
+      "limitations": [
+        "No sole authorship claim; collaborator credits unresolved",
+        "No public code or reproducible demo established",
+        "No production release, customer deployment or measured performance established",
+        "Consensus is a design mechanism, not a guarantee of correctness"
       ]
     },
     {

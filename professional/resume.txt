@@ -31,6 +31,14 @@ TECHNICAL FOCUS
 Swift, SwiftUI, MapKit, Firebase, native iOS architecture, structured data pipelines, applied AI workflows, product delivery.
 
 PROJECT AND WRITING EVIDENCE
+TORos | Yukon Systems | Prototype
+Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.
+Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented.
+Company article (published May 5, 2025; not a development date range):
+https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/
+Project account and attribution boundaries:
+https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md
+
 ShowFlex iPhone product: https://apps.apple.com/us/app/showflex/id6757890910
 Distributed sensing architecture proposal, July 18, 2026:
 https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/
@@ -41,8 +49,8 @@ ROLE INTERESTS
 iOS developer, Forward Deployed Engineer and fitness-technology opportunities. These are target roles.
 
 RECORD NOTES
-Year-level dates only. No degree or certificate claim included. No sole authorship, prototype release or performance metrics asserted.
-Updated October 2, 2026. Self-authored professional record.
+Year-level dates only. Unresolved academic qualifications and additional credentials omitted; the approved NASM PBC credential appears below. No sole authorship, prototype release or performance metrics asserted.
+Updated October 3, 2026. Self-authored professional record.
 
 FITNESS CREDENTIAL
 Physique and Bodybuilding Coach (PBC) — National Academy of Sports Medicine (NASM)

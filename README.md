@@ -16,6 +16,10 @@ I build native iOS software and applied AI systems, with a focus on fitness tech
 
 These are self-authored accounts. Experimental features, role interests, and former positions are identified explicitly.
 
+## Named applied AI prototype
+
+[TORos at Yukon Systems](work/yukon-systems.md): I built a prototype, model-agnostic, multimodal decision engine using deliberation among models toward consensus. A [May 5, 2025 company article](https://www.linkedin.com/pulse/part-one-orchestration-alignment-through-agentic-consensus-lh2tf/) describes the early TOROS setup. Prototype status; no deployment or measured accuracy claim.
+
 ## Technical writing
 
 [Full writing index](writing/README.md) · [Bibliography JSON](writing/bibliography.json) · [Atom feed](writing/feed.atom)
