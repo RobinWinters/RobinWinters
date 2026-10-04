@@ -5,11 +5,19 @@ final class EventSearchDemoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+    }
+
+    @MainActor
+    private func launch(slowSeconds: Double? = nil) {
         app = XCUIApplication()
+        if let slowSeconds {
+            app.launchEnvironment["DEMO_UI_TEST_SLOW_SECONDS"] = String(slowSeconds)
+        }
         app.launch()
         XCTAssertTrue(app.textFields["search-query"].waitForExistence(timeout: 10))
     }
 
+    @MainActor
     private func capture(_ name: String) {
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = name
@@ -18,13 +26,16 @@ final class EventSearchDemoUITests: XCTestCase {
     }
 
     // Observe past the fixture's 1.5-second non-cooperative completion.
-    private func assertNeverAppears(_ element: XCUIElement) {
+    @MainActor
+    private func assertNeverAppears(_ element: XCUIElement, timeout: TimeInterval = 2.5) {
         let appeared = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == true"), object: element)
         appeared.isInverted = true
-        wait(for: [appeared], timeout: 2.5)
+        wait(for: [appeared], timeout: timeout)
     }
 
+    @MainActor
     func testSearchSelectionAndClear() {
+        launch()
         app.buttons["strength-search"].tap()
         let event = app.buttons["event-strength"]
         XCTAssertTrue(event.waitForExistence(timeout: 5))
@@ -40,7 +51,9 @@ final class EventSearchDemoUITests: XCTestCase {
         capture("cleared-results")
     }
 
+    @MainActor
     func testErrorAndRetry() {
+        launch()
         let query = app.textFields["search-query"]
         query.tap()
         query.typeText("error\n")
@@ -53,7 +66,9 @@ final class EventSearchDemoUITests: XCTestCase {
         capture("successful-retry")
     }
 
+    @MainActor
     func testRaceKeepsLatestRequestOnScreen() {
+        launch()
         app.buttons["race-search"].tap()
         let latest = app.buttons["event-fast"]
         XCTAssertTrue(latest.waitForExistence(timeout: 5))
@@ -63,16 +78,19 @@ final class EventSearchDemoUITests: XCTestCase {
         capture("latest-request-after-slow-completion")
     }
 
+    @MainActor
     func testCancelRejectsLateCompletion() {
+        launch(slowSeconds: 6)
         let query = app.textFields["search-query"]
         query.tap()
         query.typeText("slow\n")
-        XCTAssertTrue(app.progressIndicators["search-progress"].waitForExistence(timeout: 5))
+        let progress = app.descendants(matching: .any)["search-progress"]
+        XCTAssertTrue(progress.waitForExistence(timeout: 2))
         app.buttons["cancel-search"].tap()
         let cancelled = app.staticTexts["search-activity"]
         XCTAssertTrue(cancelled.label.hasPrefix("Cancelled."))
-        assertNeverAppears(app.buttons["event-slow"])
-        XCTAssertFalse(app.progressIndicators["search-progress"].exists)
+        assertNeverAppears(app.buttons["event-slow"], timeout: 7.5)
+        XCTAssertFalse(progress.exists)
         capture("cancelled-after-late-completion")
     }
 }

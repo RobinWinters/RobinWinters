@@ -14,7 +14,11 @@ final class DemoSearchModel: ObservableObject {
     private let controller = EventSearchController(debounce: .milliseconds(180)) { query in
         // Deliberately non-cooperative: cancellation does not stop this fixture.
         // The controller must still refuse to publish its stale completion.
-        let delay = query == "slow" ? 1.5 : 0.2
+        // A bounded test-only delay lets UI automation cancel work before it settles.
+        // Interactive runs keep the original 1.5-second fixture.
+        let uiTestDelay = ProcessInfo.processInfo.environment["DEMO_UI_TEST_SLOW_SECONDS"]
+            .flatMap(Double.init) ?? 1.5
+        let delay = query == "slow" ? min(max(uiTestDelay, 1.5), 30) : 0.2
         await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
             DispatchQueue.global().asyncAfter(deadline: .now() + delay) { continuation.resume() }
         }

@@ -68,3 +68,18 @@ The [native teaching-demo workflow](https://github.com/RobinWinters/RobinWinters
 | macOS 26 ARM64 | 6.3.3 | 26.6 (17F113) | 26.5 | The same 7 controller tests; the same 4 adapter checks |
 
 Both jobs compiled the ARM64 iOS simulator app, verified its IOSSIMULATOR platform and iOS 16 minimum target, and passed strict verification of its ad hoc signature. The build still emits a sysroot warning. These jobs do not launch the simulator UI, run on a physical device or test private ShowFlex code. The earlier partial local UI inspection is separate evidence. An initial workflow run failed because the architecture-check command had its arguments in the wrong order; the linked successful revision corrects that check.
+
+## Reproduce native interface checks
+
+Open `Demo/EventSearchDemo.xcodeproj` and use its shared `EventSearchDemo` scheme, or run with an existing compatible iPhone simulator:
+
+```sh
+xcodebuild test -project Demo/EventSearchDemo.xcodeproj \
+  -scheme EventSearchDemo \
+  -destination 'platform=iOS Simulator,id=YOUR_SIMULATOR_UDID' \
+  -parallel-testing-enabled NO \
+  -derivedDataPath .build/ui-testing \
+  -resultBundlePath .build/ui-tests.xcresult CODE_SIGNING_ALLOWED=NO
+```
+
+The UI test target exercises search/selection/clear, synthetic error/retry, fast-request ownership after a slow completion, and cancellation while work is pending. The cancellation test extends the synthetic slow fixture to six seconds using a bounded launch-environment setting and observes for 7.5 seconds after cancelling; ordinary interactive runs retain the 1.5-second fixture. Its screenshots are captured by XCTest from the running simulator. Test definitions and a successful test-target build are preparation; the recorded execution result must be checked separately. The workflow retains a small, capped evidence artifact for one day. Accessibility identifiers support test selection; they do not establish a VoiceOver or accessibility audit.
