@@ -53,7 +53,7 @@ Robin connected the Medium and Hashnode accounts on October 3, 2026. The origina
 
 ## DEV editions — October 3, 2026
 
-Eleven editions are published under my existing [DEV account](https://dev.to/robinwinters): seven original LinkedIn articles, two educational Swift walkthroughs, a ShowFlex work account with public iPhone release evidence, and the TORos prototype account. Original wording and artwork are retained in the seven republications. Canonical links point to each original source; publication does not establish search indexing.
+Twelve editions are published under my existing [DEV account](https://dev.to/robinwinters): seven original LinkedIn articles, three educational Swift walkthroughs, a ShowFlex work account with public iPhone release evidence, and the TORos prototype account. Original wording and artwork are retained in the seven republications. Canonical links point to each original source; publication does not establish search indexing.
 
 - [Shipping ShowFlex: native iOS event discovery with SwiftUI, MapKit and Firebase](https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l)
 - [Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase](https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg)
@@ -69,7 +69,7 @@ Eleven editions are published under my existing [DEV account](https://dev.to/rob
 
 ## Native SwiftUI demonstration
 
-[A SwiftUI search adapter needs its own request ownership](swiftui-search-ownership-demo.md) — October 3, 2026. Public teaching code, seven controller tests and four adapter checks; simulator UI inspection and recording remain pending. [Canonical HTML](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html).
+[A SwiftUI search adapter needs its own request ownership](swiftui-search-ownership-demo.md) — October 3, 2026. Public teaching code, seven controller tests and four adapter checks; a later partial simulator inspection confirmed initial UI, one Strength result and selection by identity. Actual unaltered captures are in the article and its DEV, Medium and Hashnode editions. Full UI/accessibility review and recording remain incomplete. [Canonical HTML](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html).
 
 [Import the verified public writing feeds into a feed reader](https://robinwinters.github.io/feeds.opml): professional reference, DEV and Medium. Hashnode is excluded because its RSS endpoint returned HTTP 403 in this check. These subscriptions are a reading option, not a special ranking mechanism.
 
