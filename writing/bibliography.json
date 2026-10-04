@@ -425,7 +425,16 @@
       "evidenceClass": "self-authored technical writing",
       "datePrecision": "day",
       "fullTextMarkdown": "swift-package-compatibility.md",
-      "editions": []
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/verify-a-swift-packages-minimum-toolchain-and-cli-contract-4n51",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "Same self-authored work; no independent endorsement or indexing proof. Medium edition remains an unpublished draft under the platform 24-hour publication limit."
     }
   ]
 }

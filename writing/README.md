@@ -31,7 +31,7 @@ Seven original articles, with images and captions, republished October 2, 2026. 
 
 ## Other published editions
 
-Robin connected the Medium and Hashnode accounts on October 3, 2026. The original LinkedIn essays remain on LinkedIn; the Swift, Yukon and ShowFlex accounts originate in this repository. Publisher copies retain canonical attribution. Eleven Medium and eight Hashnode articles are currently published, including the two educational Swift walkthroughs and the TORos and ShowFlex work accounts. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
+Robin connected the Medium and Hashnode accounts on October 3, 2026. The original LinkedIn essays remain on LinkedIn; the Swift, Yukon and ShowFlex accounts originate in this repository. Publisher copies retain canonical attribution. Twelve Medium and nine Hashnode articles are currently published, including three educational Swift walkthroughs and the TORos and ShowFlex work accounts. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
 
 - Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase: [Medium](https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7) · [Hashnode](https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase)
 - Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit: [Medium](https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b) · [Hashnode](https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit)
@@ -53,7 +53,7 @@ Robin connected the Medium and Hashnode accounts on October 3, 2026. The origina
 
 ## DEV editions — October 3, 2026
 
-Twelve editions are published under my existing [DEV account](https://dev.to/robinwinters): seven original LinkedIn articles, three educational Swift walkthroughs, a ShowFlex work account with public iPhone release evidence, and the TORos prototype account. Original wording and artwork are retained in the seven republications. Canonical links point to each original source; publication does not establish search indexing.
+Thirteen editions are published under my existing [DEV account](https://dev.to/robinwinters): seven original LinkedIn articles, four educational Swift walkthroughs, a ShowFlex work account with public iPhone release evidence, and the TORos prototype account. Original wording and artwork are retained in the seven republications. Canonical links point to each original source; publication does not establish search indexing.
 
 - [Shipping ShowFlex: native iOS event discovery with SwiftUI, MapKit and Firebase](https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l)
 - [Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase](https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg)
@@ -75,7 +75,7 @@ Twelve editions are published under my existing [DEV account](https://dev.to/rob
 
 ## Citation and subject-feed exports — October 3, 2026
 
-Twelve original writing/work-account records. Export formats preserve original publication dates, author and source URLs; mirrors are not additional works or independent corroboration. Educational code retains assistant-support disclosures.
+Thirteen original writing/work-account records. Export formats preserve original publication dates, author and source URLs; mirrors are not additional works or independent corroboration. Educational code retains assistant-support disclosures.
 
 [Browse citations](https://robinwinters.github.io/writing/citations.html) · [CSL JSON](https://robinwinters.github.io/bibliography.csl.json) · [RIS](https://robinwinters.github.io/bibliography.ris) · [BibTeX](https://robinwinters.github.io/bibliography.bib)
 
@@ -84,3 +84,5 @@ Topic RSS: [iOS](https://robinwinters.github.io/feeds/ios.xml), [applied AI](htt
 The HTML editions expose Dublin Core metadata following [Zotero documentation](https://www.zotero.org/support/dev/exposing_metadata). Import files are available; no actual external library adoption or search ranking improvement is established. Bibliography source: writing/bibliography.json.
 
 [Verify a Swift package’s minimum toolchain and CLI contract](https://robinwinters.github.io/writing/swift-package-compatibility.html): reproducible macOS/Linux evidence and explicit CLI cases, with assistant-support and synthetic-fixture disclosures.
+
+New verified DEV edition: [Verify a Swift package’s minimum toolchain and CLI contract](https://dev.to/robinwinters/verify-a-swift-packages-minimum-toolchain-and-cli-contract-4n51). The Medium import is a saved draft awaiting its existing account’s 24-hour publishing limit; it is not counted as live.

@@ -1,6 +1,6 @@
 # Robin Winters — reference-manager imports and topic feeds
 
-Twelve original writing/work-account records. Export formats preserve original publication dates, author and source URLs; mirrors are not additional works or independent corroboration. Educational code retains assistant-support disclosures.
+Thirteen original writing/work-account records. Export formats preserve original publication dates, author and source URLs; mirrors are not additional works or independent corroboration. Educational code retains assistant-support disclosures.
 
 [Browse citations](https://robinwinters.github.io/writing/citations.html) · [CSL JSON](https://robinwinters.github.io/bibliography.csl.json) · [RIS](https://robinwinters.github.io/bibliography.ris) · [BibTeX](https://robinwinters.github.io/bibliography.bib)
 
