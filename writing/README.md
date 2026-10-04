@@ -86,3 +86,7 @@ The HTML editions expose Dublin Core metadata following [Zotero documentation](h
 [Verify a Swift package’s minimum toolchain and CLI contract](https://robinwinters.github.io/writing/swift-package-compatibility.html): reproducible macOS/Linux evidence and explicit CLI cases, with assistant-support and synthetic-fixture disclosures.
 
 New verified DEV edition: [Verify a Swift package’s minimum toolchain and CLI contract](https://dev.to/robinwinters/verify-a-swift-packages-minimum-toolchain-and-cli-contract-4n51). The Medium import is a saved draft awaiting its existing account’s 24-hour publishing limit; it is not counted as live.
+
+## Portable reading copy
+
+[Download the October 3 technical writing collection](https://robinwinters.github.io/downloads/technical-writing.html): thirteen existing works, all eighteen article images and simulator captures, preserved prose/code, and source attribution. The EPUB is a dated compilation, not a new article, independent endorsement or additional artwork license. [Repository copy](technical-writing-2026-10-03.epub).
