@@ -1,6 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <entry><title>A SwiftUI search adapter needs its own request ownership</title><id>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</id><updated>2026-10-04T01:09:34.919539+00:00</updated><published>2026-10-04T01:09:34.919539+00:00</published><link href="https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html" /><author><name>Robin Winters</name><uri>https://robin.ac/</uri></author><content type="html">&lt;h1&gt;A SwiftUI search adapter needs its own request ownership&lt;/h1&gt;
+  <entry>
+    <title>A SwiftUI search adapter needs its own request ownership</title>
+    <id>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</id>
+    <updated>2026-10-04T01:09:34.919539+00:00</updated>
+    <published>2026-10-04T01:09:34.919539+00:00</published>
+    <link href="https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html" />
+    <author>
+      <name>Robin Winters</name>
+      <uri>https://robin.ac/</uri>
+    </author>
+    <content type="html">&lt;h1&gt;A SwiftUI search adapter needs its own request ownership&lt;/h1&gt;
 &lt;p&gt;Robin Winters · October 3, 2026 · Native iOS engineering and fitness technology&lt;/p&gt;
 &lt;p&gt;This standalone teaching example and article were prepared with coding-assistant support. The events are synthetic. The code is separate from ShowFlex, whose shipped iPhone product is &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;available on the App Store&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A search controller can correctly reject stale requests while its view adapter still publishes the wrong state. The useful question is not only whether the controller owns its result: it is whether the task waiting for that result still owns the screen.&lt;/p&gt;
@@ -34,7 +44,12 @@ sh Demo/build-simulator.sh
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. UI inspection, recording, accessibility, live-network behavior and physical-device execution remain unverified.&lt;/p&gt;
 &lt;p&gt;The code is MIT licensed within the teaching example. It grants no access or license to private ShowFlex code. Build and test evidence belongs to this example; the separate App Store listing is evidence of the shipped ShowFlex product.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;Code and executable checks&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/swift-search-request-ownership.html"&gt;Original controller explanation&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional"&gt;Robin Winters professional record&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;</content></entry><id>https://robinwinters.github.io/writing/</id>
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;Code and executable checks&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/swift-search-request-ownership.html"&gt;Original controller explanation&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional"&gt;Robin Winters professional record&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;</content>
+    <link rel="related" href="https://dev.to/robinwinters/a-swiftui-search-adapter-needs-its-own-request-ownership-jdh" type="text/html" title="DEV edition" />
+    <link rel="related" href="https://medium.com/@robin_61077/a-swiftui-search-adapter-needs-its-own-request-ownership-fc8ef2aff277" type="text/html" title="Medium edition" />
+    <link rel="related" href="https://robinwinters.hashnode.dev/a-swiftui-search-adapter-needs-its-own-request-ownership" type="text/html" title="Hashnode edition" />
+  </entry>
+  <id>https://robinwinters.github.io/writing/</id>
   <title>Robin Winters: technical writing</title>
   <updated>2026-10-04T01:09:34.919539+00:00</updated>
   <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />

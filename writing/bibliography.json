@@ -389,7 +389,31 @@
       "authorUrl": "https://robin.ac/",
       "evidenceClass": "self-authored educational technical writing prepared with coding-assistant support",
       "datePrecision": "day",
-      "fullTextMarkdown": "swiftui-search-ownership-demo.md"
+      "fullTextMarkdown": "swiftui-search-ownership-demo.md",
+      "editions": [
+        {
+          "publisher": "DEV",
+          "url": "https://dev.to/robinwinters/a-swiftui-search-adapter-needs-its-own-request-ownership-jdh",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Medium",
+          "url": "https://medium.com/@robin_61077/a-swiftui-search-adapter-needs-its-own-request-ownership-fc8ef2aff277",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        },
+        {
+          "publisher": "Hashnode",
+          "url": "https://robinwinters.hashnode.dev/a-swiftui-search-adapter-needs-its-own-request-ownership",
+          "relation": "self-authored republication",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-03"
+        }
+      ],
+      "editionEvidenceNote": "These are copies of the same work prepared with coding-assistant support, not independent endorsements. Publication verification does not establish search indexing."
     }
   ]
 }

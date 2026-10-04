@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this educational example, cite this source and retain its scope and coding-assistant disclosure."
+type: software
+title: "Swift search request ownership — a native SwiftUI teaching example"
+authors:
+  - family-names: Winters
+    given-names: Robin
+    website: "https://robin.ac/"
+url: "https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html"
+repository-code: "https://codeberg.org/RobinWinters/swift-search-request-ownership"
+license: MIT
+abstract: "Standalone teaching software published by Robin Winters with coding-assistant support. Synthetic events illustrate cancellation, stale-result ownership, stable selection and an observable SwiftUI adapter. This is separate from private ShowFlex code and its shipped iPhone product. Seven controller tests and four adapter checks passed on macOS; simulator compilation, installation and launch succeeded. UI review, accessibility, live-network behavior and physical-device execution remain unverified."
+keywords:
+  - Swift
+  - SwiftUI
+  - iOS
+  - structured concurrency
+  - request ownership
