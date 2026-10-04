@@ -90,3 +90,5 @@ Verified additional editions: [DEV](https://dev.to/robinwinters/verify-a-swift-p
 ## Portable reading copy
 
 [Download the October 3 technical writing collection](https://robinwinters.github.io/downloads/technical-writing.html): thirteen existing works, all eighteen article images and simulator captures, preserved prose/code, and source attribution. The EPUB is a dated compilation, not a new article, independent endorsement or additional artwork license. [Repository copy](technical-writing-2026-10-03.epub).
+
+Public feed delivery: [canonical topics and push-update instructions](feed-delivery.md).
