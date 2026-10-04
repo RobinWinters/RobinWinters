@@ -1,0 +1,91 @@
+name: Native SwiftUI teaching demo checks
+
+on:
+  push:
+    branches: [Radpository]
+    paths:
+      - 'examples/event-search/**'
+      - '.github/workflows/event-search-demo.yml'
+  pull_request:
+    branches: [Radpository]
+    paths:
+      - 'examples/event-search/**'
+      - '.github/workflows/event-search-demo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: event-search-demo-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  native-demo:
+    name: Native demo (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-26]
+    defaults:
+      run:
+        shell: bash
+        working-directory: examples/event-search
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Record observed Apple tools
+        run: |
+          sw_vers
+          uname -m
+          swift --version
+          xcodebuild -version
+          xcrun --sdk iphonesimulator --show-sdk-version
+      - name: Run controller unit tests
+        run: |
+          mkdir -p .build/demo
+          swift test 2>&1 | tee .build/demo/controller-check.log
+      - name: Run executable adapter checks
+        run: sh Demo/check-model.sh 2>&1 | tee .build/demo/adapter-check.log
+      - name: Compile and ad-hoc sign ARM64 iOS simulator app
+        run: sh Demo/build-simulator.sh
+      - name: Check executable architecture and bundle signature
+        run: |
+          file .build/demo/EventSearchDemo.app/EventSearchDemo
+          lipo -verify_arch arm64 .build/demo/EventSearchDemo.app/EventSearchDemo
+          codesign --verify --strict --verbose=2 .build/demo/EventSearchDemo.app
+      - name: Record successful scope
+        env:
+          DEMO_SOURCE_SHA: ${{ github.sha }}
+          DEMO_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from pathlib import Path
+          controller_result = re.search(r'Test run with (\d+) tests?.*?passed', Path('.build/demo/controller-check.log').read_text())
+          assert controller_result, 'Observed Swift Testing pass count missing'
+          adapter_results = [line for line in Path('.build/demo/adapter-check.log').read_text().splitlines() if line.startswith('PASS ')]
+          assert adapter_results, 'Observed adapter-check output missing'
+          record = {
+              'sourceRevision': os.environ['DEMO_SOURCE_SHA'],
+              'run': os.environ['DEMO_RUN_URL'],
+              'swift': subprocess.check_output(['swift', '--version'], text=True).strip(),
+              'xcode': subprocess.check_output(['xcodebuild', '-version'], text=True).strip(),
+              'simulatorSDK': subprocess.check_output(['xcrun', '--sdk', 'iphonesimulator', '--show-sdk-version'], text=True).strip(),
+              'controllerTests': int(controller_result.group(1)),
+              'adapterChecks': len(adapter_results),
+              'adapterResults': adapter_results,
+              'simulatorTarget': 'arm64-apple-ios16.0-simulator',
+              'buildAndAdHocSignatureVerified': True,
+              'simulatorUIExecuted': False,
+              'physicalDeviceExecuted': False,
+              'privateShowFlexTested': False,
+              'scope': 'Assistant-supported public teaching example with synthetic events'
+          }
+          print(json.dumps(record, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## Native SwiftUI teaching demo\n\n```json\n' + json.dumps(record, indent=2) + '\n```\n')
+          PY
