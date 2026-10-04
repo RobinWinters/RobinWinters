@@ -1,0 +1,120 @@
+{
+  "checkedAtUTC": "2026-10-04T16:52:37.397025+00:00",
+  "run": "https://github.com/RobinWinters/RobinWinters/actions/runs/37217793499",
+  "testedSourceRevision": "9a5aee6177eeebeac05280fd5174dd59ac4026be",
+  "environment": {
+    "device": "iPhone Air",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+    "udid": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+    "sourceRevision": "9a5aee6177eeebeac05280fd5174dd59ac4026be",
+    "swift": "swift-driver version: 1.148.6 Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\nTarget: arm64-apple-macosx26.0",
+    "xcode": "Xcode 26.6\nBuild version 17F113",
+    "simulatorSDK": "26.5",
+    "scope": "Synthetic public teaching demo; no private ShowFlex or physical device"
+  },
+  "summary": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+          "deviceName": "iPhone Air",
+          "modelName": "iPhone Air",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 4,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "EventSearchDemo \u00b7 Built with macOS 26.6.2",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791132560.738,
+    "passedTests": 4,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1791132222.064,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - EventSearchDemo",
+    "topInsights": [],
+    "totalTestCount": 4
+  },
+  "screenshots": [
+    {
+      "name": "strength-selected",
+      "file": "search-demo-strength-selected-2026-10-04.png",
+      "sha256": "d0dc3fa54e9952f3cfda05cc1e9a2b4c50815b9882ff58eb2002d0b944f25136",
+      "sourceAttachment": "15D01A02-204F-4CF3-A9F5-0DE0A66A30AA.png",
+      "sourceTest": "EventSearchDemoUITests/testSearchSelectionAndClear()",
+      "timestamp": 1791132558.083,
+      "caption": "Strength meet selected by identity; checkmark and Selection agree."
+    },
+    {
+      "name": "cleared-results",
+      "file": "search-demo-cleared-results-2026-10-04.png",
+      "sha256": "a114646cb94a01856a4e3e16aa0674e734b35234a6a958226e1ced1bd1ddbdad",
+      "sourceAttachment": "DB53AFF7-DF61-47D8-910D-063C27A85BD6.png",
+      "sourceTest": "EventSearchDemoUITests/testSearchSelectionAndClear()",
+      "timestamp": 1791132558.896,
+      "caption": "Clear resets the query, results and selected event."
+    },
+    {
+      "name": "synthetic-error",
+      "file": "search-demo-synthetic-error-2026-10-04.png",
+      "sha256": "720afe72ce81c5c8a212247cb49723339d832f13c005813a7e66c3229a187052",
+      "sourceAttachment": "0837271A-72CA-4BCA-BE58-BE9AA514ED2D.png",
+      "sourceTest": "EventSearchDemoUITests/testErrorAndRetry()",
+      "timestamp": 1791132536.489,
+      "caption": "The synthetic error appears in the current request section."
+    },
+    {
+      "name": "successful-retry",
+      "file": "search-demo-successful-retry-2026-10-04.png",
+      "sha256": "519c3acb07e6695573b717168b76c2a77d6670d6fd172222ab41e0c59575d9ca",
+      "sourceAttachment": "DB624D0E-E912-4DE7-B2A9-A176DBC056B4.png",
+      "sourceTest": "EventSearchDemoUITests/testErrorAndRetry()",
+      "timestamp": 1791132538.263,
+      "caption": "Strength search succeeds after the synthetic error."
+    },
+    {
+      "name": "latest-request-after-slow-completion",
+      "file": "search-demo-latest-request-after-slow-completion-2026-10-04.png",
+      "sha256": "97f85095fec9e1a8fad19a9f80c059f9c247b17a736a06f5bfe9b0e4ec7fac0f",
+      "sourceAttachment": "ED60CA14-AE50-4B36-B6B5-8CA02A4CEFC5.png",
+      "sourceTest": "EventSearchDemoUITests/testRaceKeepsLatestRequestOnScreen()",
+      "timestamp": 1791132548.708,
+      "caption": "The fast result still owns the screen after the older slow request completes."
+    },
+    {
+      "name": "cancelled-after-late-completion",
+      "file": "search-demo-cancelled-after-late-completion-2026-10-04.png",
+      "sha256": "526c7de02a0b569a91385d7c4b994ca97f9bafe26637fb261d5aaf8143455716",
+      "sourceAttachment": "89AF572D-A314-4D82-9951-9CE129F83B1C.png",
+      "sourceTest": "EventSearchDemoUITests/testCancelRejectsLateCompletion()",
+      "timestamp": 1791132514.983,
+      "caption": "The cancelled pending request does not publish its late result."
+    }
+  ],
+  "uniqueUITests": 4,
+  "ordinarySlowFixtureSeconds": 1.5,
+  "cancellationUITestSlowFixtureSeconds": 30,
+  "afterCancelObservationSeconds": 32.5,
+  "physicalDeviceTested": false,
+  "privateShowFlexTested": false,
+  "accessibilityAuditPerformed": false,
+  "recordingOfSuccessfulSuitePublished": false,
+  "scope": "Public assistant-supported teaching demo with synthetic events; actual XCTest iPhone simulator screenshots, unmodified",
+  "initialAttemptFailed": true,
+  "initialFailureRun": 37216321124,
+  "secondAttemptFailureRun": 37217131739,
+  "previousFailureCause": "Hosted XCTest delivered Cancel after the short fixture had settled; only the test fixture delay was extended, with a longer post-cancel observation"
+}

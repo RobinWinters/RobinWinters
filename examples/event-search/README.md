@@ -83,3 +83,7 @@ xcodebuild test -project Demo/EventSearchDemo.xcodeproj \
 ```
 
 The UI test target exercises search/selection/clear, synthetic error/retry, fast-request ownership after a slow completion, and cancellation while work is pending. The cancellation test extends the synthetic slow fixture to 30 seconds using a bounded launch-environment setting and observes for 32.5 seconds after cancelling; ordinary interactive runs retain the 1.5-second fixture. Its screenshots are captured by XCTest from the running simulator. Test definitions and a successful test-target build are preparation; the recorded execution result must be checked separately. The workflow retains a small, capped evidence artifact for one day. Accessibility identifiers support test selection; they do not establish a VoiceOver or accessibility audit.
+
+## Observed native interface execution — October 4, 2026
+
+Four UI tests passed on an iPhone Air simulator running iOS 26.5 in [the public run](https://github.com/RobinWinters/RobinWinters/actions/runs/37217793499). The tests cover selection/clear, error/retry, slow/fast ownership and pending cancellation. [Exact observed scope and screenshot provenance](Demo/ui-verification-2026-10-04.json) · [Unmodified runtime captures](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). Physical-device, accessibility, performance and private ShowFlex verification remain separate.

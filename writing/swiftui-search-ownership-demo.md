@@ -66,3 +66,21 @@ A later Xcode Device Hub inspection showed the initial native interface, a Stren
 ![Strength meet selected in the native teaching demo](images/search-demo-selected-2026-10-03.jpg)
 
 The remaining race, clear, cancel, error/retry, scrolling and accessibility review is incomplete. No recording, live-network or physical-device result is established. This assistant-supported teaching demo is separate from private ShowFlex code.
+
+## Automated native interface execution — October 4, 2026
+
+Four Xcode UI tests passed on the hosted iPhone Air simulator running iOS 26.5: search/selection/clear, error/retry, latest-request ownership after a slow completion, and cancellation of pending work. The actual execution is in this public CI run; the recorded environment and screenshot provenance identify the tested source revision. XCTest captured the six unaltered images below from the running app. [Public CI](https://github.com/RobinWinters/RobinWinters/actions/runs/37217793499) · [Machine-readable result](https://robinwinters.github.io/writing/native-ui-execution-2026-10-04.json).
+
+![Strength meet selected by identity; checkmark and Selection agree.](images/search-demo-strength-selected-2026-10-04.png)
+
+![Clear resets the query, results and selected event.](images/search-demo-cleared-results-2026-10-04.png)
+
+![The synthetic error appears in the current request section.](images/search-demo-synthetic-error-2026-10-04.png)
+
+![Strength search succeeds after the synthetic error.](images/search-demo-successful-retry-2026-10-04.png)
+
+![The fast result still owns the screen after the older slow request completes.](images/search-demo-latest-request-after-slow-completion-2026-10-04.png)
+
+![The cancelled pending request does not publish its late result.](images/search-demo-cancelled-after-late-completion-2026-10-04.png)
+
+The cancellation test uses a bounded 30-second synthetic fixture so hosted automation can deliver the tap while work is pending, then observes for 32.5 seconds after cancelling. Ordinary interactive runs keep the original 1.5-second fixture. These are interface checks of this separate teaching demo, not private ShowFlex tests, a physical-device run, a VoiceOver/accessibility audit, a performance result or a complete product walkthrough.
