@@ -49,7 +49,7 @@ Swift teaching example and seven macOS tests:
 https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search
 
 ADDITIONAL APPLICATION EVIDENCE
-Swift fitness-event data pipeline: synthetic fixtures and 12 passing macOS tests.
+Swift fitness-event data pipeline: synthetic fixtures and 12 passing tests on macOS and Linux, including Swift 6.0.3.
 Standalone educational code prepared with coding-assistant support.
 https://github.com/RobinWinters/fitness-event-data-pipeline
 

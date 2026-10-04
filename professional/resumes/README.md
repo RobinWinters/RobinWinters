@@ -15,3 +15,9 @@ Updated October 2, 2026. Self-authored professional positioning prepared with ed
 ## October 3 additional NASM credentials
 
 Robin confirmed Certified Personal Trainer (NASM-CPT) and the exact title NASM Certified Nutritionist and requested their inclusion now. These accompany the issuer-linked PBC credential in the current plain-text and JSON records; individual verification links, issue and expiry dates for the additions will follow. The original Word-conversion PDF stays unchanged.
+
+## Application and editorial material
+
+[ShowFlex product reference](https://robinwinters.github.io/discovery/showflex.html) · [Speaker and editor biographies](https://robinwinters.github.io/discovery/speaker.html)
+
+Role-focused Word files: [iOS](https://robinwinters.github.io/resumes/ios.docx), [Forward Deployed Engineer target](https://robinwinters.github.io/resumes/forward-deployed.docx), [fitness technology](https://robinwinters.github.io/resumes/fitness-tech.docx). These reproduce the corresponding text variants; no particular ATS parsing or application submission is established.

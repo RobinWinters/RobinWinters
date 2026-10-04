@@ -82,3 +82,7 @@ NASM Certified Personal Trainer (NASM-CPT), NASM Certified Nutritionist, and [Ph
 ## Focused evidence review
 
 [Native iOS engineering](https://robinwinters.github.io/review/ios.html) · [Applied AI and delivery](https://robinwinters.github.io/review/applied-ai.html) · [Fitness technology](https://robinwinters.github.io/review/fitness-tech.html). [Public professional contact card](professional/contact.vcf) · [JSON writing feed](writing/feed.json). My blog is also listed in the [iOS Dev Directory](https://iosdevdirectory.com/).
+
+[ShowFlex product and engineering reference](https://robinwinters.github.io/discovery/showflex.html) · [Reusable source](discovery/showflex.md)
+
+[Robin Winters speaker and editorial reference](https://robinwinters.github.io/discovery/speaker.html) · [Reusable source](discovery/speaker.md)
