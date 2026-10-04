@@ -87,3 +87,9 @@ The UI test target exercises search/selection/clear, synthetic error/retry, fast
 ## Observed native interface execution — October 4, 2026
 
 Four UI tests passed on an iPhone Air simulator running iOS 26.5 in [the public run](https://github.com/RobinWinters/RobinWinters/actions/runs/37217793499). The tests cover selection/clear, error/retry, slow/fast ownership and pending cancellation. [Exact observed scope and screenshot provenance](Demo/ui-verification-2026-10-04.json) · [Unmodified runtime captures](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). Physical-device, accessibility, performance and private ShowFlex verification remain separate.
+
+## Record the actual interface run
+
+The workflow now builds the test bundle first, then uses Apple's `simctl recordVideo` to capture the real simulator framebuffer while those same four XCTest interactions run. The recorder waits for the first-frame acknowledgment and stops with SIGINT so the MP4 can be finalized. The one-day artifact includes the original recording, recorder log, source revision, tool/device environment, XCTest summary and screenshots, with a 32 MiB total cap. A recorder receipt alone does not prove a successful test suite or playable video; inspect the actual run, results and playback before relying on it.
+
+After the `build-for-testing` command used in the workflow, run `DEMO_SIMULATOR_UDID=YOUR_SIMULATOR_UDID bash Demo/record-interface-run.sh` from this package directory. This is synthetic teaching-demo footage. A ShowFlex product walkthrough, physical-device testing and accessibility/performance review remain separate work. [Apple's simulator recording guidance](https://developer.apple.com/videos/play/wwdc2020/10647/).

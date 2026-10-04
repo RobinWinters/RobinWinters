@@ -133,16 +133,17 @@ jobs:
           Path('.build/ui-evidence/environment.json').write_text(json.dumps(observed, indent=2) + '\n')
           print(json.dumps(observed, indent=2))
           PY
-      - name: Execute native interface tests
+      - name: Build the native interface test bundle before recording
         run: |
-          xcodebuild test \
+          xcodebuild build-for-testing \
             -project Demo/EventSearchDemo.xcodeproj \
             -scheme EventSearchDemo \
             -destination "platform=iOS Simulator,id=$DEMO_SIMULATOR_UDID" \
             -parallel-testing-enabled NO \
             -derivedDataPath .build/ui-testing \
-            -resultBundlePath .build/ui-tests.xcresult \
-            CODE_SIGNING_ALLOWED=NO 2>&1 | tee .build/ui-test.log
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee .build/ui-build.log
+      - name: Record actual native interface test interactions
+        run: bash Demo/record-interface-run.sh
       - name: Export observed results and screenshot attachments
         id: export-ui
         if: always()
@@ -157,7 +158,7 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
               out.write('## Actual native interface test result\n\n```json\n' + json.dumps(summary, indent=2) + '\n```\n')
           size = sum(p.stat().st_size for p in Path('.build/ui-evidence').rglob('*') if p.is_file())
-          assert size <= 20 * 1024 * 1024, 'Evidence exceeds the 20 MiB storage cap; retain results in logs without uploading'
+          assert size <= 32 * 1024 * 1024, 'Evidence exceeds the 32 MiB storage cap; retain results in logs without uploading'
           print('Evidence bytes:', size)
           PY
           fi
