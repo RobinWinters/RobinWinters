@@ -31,7 +31,7 @@ Seven original articles, with images and captions, republished October 2, 2026. 
 
 ## Other published editions
 
-Robin connected the Medium and Hashnode accounts on October 3, 2026. The original LinkedIn essays remain on LinkedIn; the Swift, Yukon and ShowFlex accounts originate in this repository. Publisher copies retain canonical attribution. Twelve Medium and nine Hashnode articles are currently published, including three educational Swift walkthroughs and the TORos and ShowFlex work accounts. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
+Robin connected the Medium and Hashnode accounts on October 3, 2026. The original LinkedIn essays remain on LinkedIn; the Swift, Yukon and ShowFlex accounts originate in this repository. Publisher copies retain canonical attribution. Twelve Medium and ten Hashnode articles are currently public, including Swift teaching accounts and the TORos and ShowFlex work accounts. Hashnode has archived Kinematics Lab Part II, What if Myspace Had It Right? and The “Any Given Tuesday” Theory of AI Startups through AutoMod; those Hashnode editions are excluded from live links and totals. Their Medium editions remain available. The Swift originals are on GitHub.
 
 - Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase: [Medium](https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7) · [Hashnode](https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase)
 - Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit: [Medium](https://medium.com/@robin_61077/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-f3f12c59497b) · [Hashnode](https://robinwinters.hashnode.dev/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit)
@@ -85,7 +85,7 @@ The HTML editions expose Dublin Core metadata following [Zotero documentation](h
 
 [Verify a Swift package’s minimum toolchain and CLI contract](https://robinwinters.github.io/writing/swift-package-compatibility.html): reproducible macOS/Linux evidence and explicit CLI cases, with assistant-support and synthetic-fixture disclosures.
 
-New verified DEV edition: [Verify a Swift package’s minimum toolchain and CLI contract](https://dev.to/robinwinters/verify-a-swift-packages-minimum-toolchain-and-cli-contract-4n51). The Medium import is a saved draft awaiting its existing account’s 24-hour publishing limit; it is not counted as live.
+Verified additional editions: [DEV](https://dev.to/robinwinters/verify-a-swift-packages-minimum-toolchain-and-cli-contract-4n51) · [Hashnode](https://robinwinters.hashnode.dev/verify-a-swift-package-s-minimum-toolchain-and-cli-contract). The Medium import is a saved draft awaiting its existing account’s 24-hour publishing limit; it is not counted as live.
 
 ## Portable reading copy
 
