@@ -13,17 +13,17 @@ struct DemoSearchView: View {
                         .textInputAutocapitalization(.never)
                         .accessibilityIdentifier("search-query")
                     HStack {
-                        Button("Strength") { model.search("strength") }
+                        Button("Strength") { model.search("strength") }.accessibilityIdentifier("strength-search")
                         Spacer()
-                        Button("Race demo") { model.runRace() }
+                        Button("Race demo") { model.runRace() }.accessibilityIdentifier("race-search")
                         Spacer()
-                        Button("Clear") { model.search("") }
+                        Button("Clear") { model.search("") }.accessibilityIdentifier("clear-search")
                     }.buttonStyle(.borderless)
                 }
                 Section("Current request") {
-                    if model.isSearching { ProgressView("Searching…") }
-                    Text(model.activity).font(.subheadline)
-                    if let error = model.error { Text(error).foregroundStyle(.red) }
+                    if model.isSearching { ProgressView("Searching…").accessibilityIdentifier("search-progress") }
+                    Text(model.activity).font(.subheadline).accessibilityIdentifier("search-activity")
+                    if let error = model.error { Text(error).foregroundStyle(.red).accessibilityIdentifier("search-error") }
                 }
                 Section("Results") {
                     if model.results.isEmpty && !model.isSearching {
@@ -36,11 +36,11 @@ struct DemoSearchView: View {
                                 Spacer()
                                 if model.selected?.id == event.id { Image(systemName: "checkmark") }
                             }
-                        }.buttonStyle(.borderless)
+                        }.buttonStyle(.borderless).accessibilityIdentifier("event-\(event.id)")
                     }
                 }
                 if let selected = model.selected {
-                    Section("Selection") { Text(selected.title) }
+                    Section("Selection") { Text(selected.title).accessibilityIdentifier("selected-event") }
                 }
                 Section("About this example") {
                     Text("Robin Winters · native iOS engineering")
@@ -51,7 +51,7 @@ struct DemoSearchView: View {
                 }
             }
             .navigationTitle("Search ownership")
-            .toolbar { Button("Cancel") { model.cancel() } }
+            .toolbar { Button("Cancel") { model.cancel() }.accessibilityIdentifier("cancel-search") }
             .onDisappear { model.cancel() }
         }
     }

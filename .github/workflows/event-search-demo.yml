@@ -90,3 +90,82 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('## Native SwiftUI teaching demo\n\n```json\n' + json.dumps(record, indent=2) + '\n```\n')
           PY
+
+  native-ui:
+    name: Native interface (macos-26)
+    runs-on: macos-26
+    timeout-minutes: 18
+    defaults:
+      run:
+        shell: bash
+        working-directory: examples/event-search
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Select an installed iPhone simulator and record tools
+        run: |
+          mkdir -p .build/ui-evidence
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from pathlib import Path
+          inventory = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '--json'], text=True))
+          candidates = []
+          for runtime, devices in inventory['devices'].items():
+              match = re.search(r'iOS-(\d+)-(\d+)', runtime)
+              if not match:
+                  continue
+              for device in devices:
+                  if device.get('isAvailable') and device['name'].startswith('iPhone'):
+                      candidates.append(((int(match[1]), int(match[2])), device['name'], runtime, device))
+          assert candidates, 'No available iPhone simulator; do not invent a test result'
+          _, _, runtime, device = sorted(candidates, key=lambda x: (x[0], x[1]))[-1]
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write('DEMO_SIMULATOR_UDID=' + device['udid'] + '\n')
+          observed = {
+              'device': device['name'], 'runtime': runtime, 'udid': device['udid'],
+              'sourceRevision': os.environ['GITHUB_SHA'],
+              'swift': subprocess.check_output(['swift', '--version'], text=True, stderr=subprocess.STDOUT).strip(),
+              'xcode': subprocess.check_output(['xcodebuild', '-version'], text=True).strip(),
+              'simulatorSDK': subprocess.check_output(['xcrun', '--sdk', 'iphonesimulator', '--show-sdk-version'], text=True).strip(),
+              'scope': 'Synthetic public teaching demo; no private ShowFlex or physical device'
+          }
+          Path('.build/ui-evidence/environment.json').write_text(json.dumps(observed, indent=2) + '\n')
+          print(json.dumps(observed, indent=2))
+          PY
+      - name: Execute native interface tests
+        run: |
+          xcodebuild test \
+            -project Demo/EventSearchDemo.xcodeproj \
+            -scheme EventSearchDemo \
+            -destination "platform=iOS Simulator,id=$DEMO_SIMULATOR_UDID" \
+            -parallel-testing-enabled NO \
+            -derivedDataPath .build/ui-testing \
+            -resultBundlePath .build/ui-tests.xcresult \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee .build/ui-test.log
+      - name: Export observed results and screenshot attachments
+        id: export-ui
+        if: always()
+        run: |
+          if [ -d .build/ui-tests.xcresult ]; then
+            xcrun xcresulttool get test-results summary --path .build/ui-tests.xcresult > .build/ui-evidence/test-summary.json
+            xcrun xcresulttool export attachments --path .build/ui-tests.xcresult --output-path .build/ui-evidence/screenshots
+            python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          summary = json.loads(Path('.build/ui-evidence/test-summary.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+              out.write('## Actual native interface test result\n\n```json\n' + json.dumps(summary, indent=2) + '\n```\n')
+          size = sum(p.stat().st_size for p in Path('.build/ui-evidence').rglob('*') if p.is_file())
+          assert size <= 20 * 1024 * 1024, 'Evidence exceeds the 20 MiB storage cap; retain results in logs without uploading'
+          print('Evidence bytes:', size)
+          PY
+          fi
+      - name: Retain small synthetic test evidence for one day
+        if: always() && steps.export-ui.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: native-demo-ui-evidence
+          path: examples/event-search/.build/ui-evidence/
+          if-no-files-found: warn
+          retention-days: 1
