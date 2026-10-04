@@ -80,7 +80,7 @@ final class EventSearchDemoUITests: XCTestCase {
 
     @MainActor
     func testCancelRejectsLateCompletion() {
-        launch(slowSeconds: 6)
+        launch(slowSeconds: 30)
         let query = app.textFields["search-query"]
         query.tap()
         query.typeText("slow\n")
@@ -89,7 +89,7 @@ final class EventSearchDemoUITests: XCTestCase {
         app.buttons["cancel-search"].tap()
         let cancelled = app.staticTexts["search-activity"]
         XCTAssertTrue(cancelled.label.hasPrefix("Cancelled."))
-        assertNeverAppears(app.buttons["event-slow"], timeout: 7.5)
+        assertNeverAppears(app.buttons["event-slow"], timeout: 32.5)
         XCTAssertFalse(progress.exists)
         capture("cancelled-after-late-completion")
     }
