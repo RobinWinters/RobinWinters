@@ -3,7 +3,7 @@
   <entry>
     <title>A SwiftUI search adapter needs its own request ownership</title>
     <id>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</id>
-    <updated>2026-10-04T01:09:34.919539+00:00</updated>
+    <updated>2026-10-04T02:05:10.022526+00:00</updated>
     <published>2026-10-04T01:09:34.919539+00:00</published>
     <link href="https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html" />
     <author>
@@ -42,7 +42,12 @@ Task { [weak self] in
 sh Demo/check-model.sh
 sh Demo/build-simulator.sh
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. UI inspection, recording, accessibility, live-network behavior and physical-device execution remain unverified.&lt;/p&gt;
+&lt;p&gt;The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. At this initial build checkpoint, UI inspection, recording, accessibility, live-network behavior and physical-device execution were unverified; the later partial inspection is documented below.&lt;/p&gt;
+&lt;h2&gt;Observed iPhone simulator interaction — October 3, 2026&lt;/h2&gt;
+&lt;p&gt;A later inspection in Xcode Device Hub showed the initial screen on the isolated iPhone 17 Pro simulator running iOS 27.0. Tapping Strength returned one synthetic Strength meet result. Selecting it showed both the checkmark and the Selection section. These are actual, unaltered simulator-window screenshots, captured with coding-assistant support.&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://robinwinters.github.io/writing/images/search-demo-initial-2026-10-03.jpg" alt="Initial native SwiftUI teaching demo in Xcode Device Hub, with empty results and search controls" width="758" loading="lazy" style="max-width:100%;height:auto"&gt;&lt;figcaption&gt;Initial state: synthetic event search controls and no selected result.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://robinwinters.github.io/writing/images/search-demo-selected-2026-10-03.jpg" alt="Strength search result selected, with a checkmark and Strength meet displayed in the Selection section" width="758" loading="lazy" style="max-width:100%;height:auto"&gt;&lt;figcaption&gt;Observed search and selection: one Strength meet result, selected by identity.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This partial inspection adds evidence beyond build and launch. It does not complete the race, clear, cancel, error/retry, scrolling or accessibility review. Recording, live-network and physical-device behavior remain unverified. The separate macOS checks above cover controller and adapter contracts.&lt;/p&gt;
 &lt;p&gt;The code is MIT licensed within the teaching example. It grants no access or license to private ShowFlex code. Build and test evidence belongs to this example; the separate App Store listing is evidence of the shipped ShowFlex product.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;Code and executable checks&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/swift-search-request-ownership.html"&gt;Original controller explanation&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional"&gt;Robin Winters professional record&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;</content>
     <link rel="related" href="https://dev.to/robinwinters/a-swiftui-search-adapter-needs-its-own-request-ownership-jdh" type="text/html" title="DEV edition" />

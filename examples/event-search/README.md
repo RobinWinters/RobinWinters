@@ -53,3 +53,7 @@ xcrun simctl launch YOUR_SIMULATOR_UDID ac.robin.teaching.searchownership
 ```
 
 October 3, 2026 checks: seven controller tests passed again on macOS; four executable adapter checks passed (non-cooperative race, selection/clear, error/retry and cancellation). The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro with iOS 27.0. UI inspection, recording, accessibility and physical-device checks remain pending. The simulator build emitted a sysroot warning; successful compilation and launch are not a claim that those remaining checks passed.
+
+## Later native capture — October 3, 2026
+
+A partial Xcode Device Hub inspection confirmed the initial interface, a Strength search with one synthetic result and selection by identity. [Actual unaltered screenshots and scope](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). The rest of the UI review, accessibility, recording, live-network and physical-device checks remain incomplete.

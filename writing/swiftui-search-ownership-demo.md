@@ -51,8 +51,18 @@ sh Demo/check-model.sh
 sh Demo/build-simulator.sh
 ```
 
-The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. UI inspection, recording, accessibility, live-network behavior and physical-device execution remain unverified.
+The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. At this initial build checkpoint, UI inspection, recording, accessibility, live-network behavior and physical-device execution were unverified; the later partial inspection is documented below.
 
 The code is MIT licensed within the teaching example. It grants no access or license to private ShowFlex code. Build and test evidence belongs to this example; the separate App Store listing is evidence of the shipped ShowFlex product.
 
 [Code and executable checks](https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo) · [Original controller explanation](https://robinwinters.github.io/writing/swift-search-request-ownership.html) · [Robin Winters professional record](https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional) · [robin.ac](https://robin.ac/)
+
+## Observed simulator interaction — October 3, 2026
+
+A later Xcode Device Hub inspection showed the initial native interface, a Strength search with one synthetic Strength meet result, and selection by identity with a checkmark and the Selection section. These unaltered screenshots document that limited interaction.
+
+![Initial native teaching demo](images/search-demo-initial-2026-10-03.jpg)
+
+![Strength meet selected in the native teaching demo](images/search-demo-selected-2026-10-03.jpg)
+
+The remaining race, clear, cancel, error/retry, scrolling and accessibility review is incomplete. No recording, live-network or physical-device result is established. This assistant-supported teaching demo is separate from private ShowFlex code.

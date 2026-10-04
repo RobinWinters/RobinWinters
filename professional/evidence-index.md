@@ -25,3 +25,7 @@ Same-name profiles and secondary people directories require a matching identity 
 ## Persistent source archive
 
 The standalone educational [fitness-event-data-pipeline package](https://github.com/RobinWinters/fitness-event-data-pipeline) has a completed Software Heritage archive of public revision `8d0fe1fc66f6fc867ec7ffed55d75284b4c198ee`, inspected October 3, 2026. [Archived revision](https://archive.softwareheritage.org/swh:1:rev:8d0fe1fc66f6fc867ec7ffed55d75284b4c198ee/) · [Snapshot](https://archive.softwareheritage.org/swh:1:snp:d3b077ccc8e2c90f6249ca7807b2cf863128e718/). Archival preserves source and attribution; it is not an endorsement, published ShowFlex source, or proof of search indexing.
+
+## Later native capture — October 3, 2026
+
+A partial Xcode Device Hub inspection confirmed the initial interface, a Strength search with one synthetic result and selection by identity. [Actual unaltered screenshots and scope](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). The rest of the UI review, accessibility, recording, live-network and physical-device checks remain incomplete.

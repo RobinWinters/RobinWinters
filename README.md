@@ -78,3 +78,7 @@ These links identify public source and documentation. They do not assert product
 ## Fitness credentials
 
 NASM Certified Personal Trainer (NASM-CPT), NASM Certified Nutritionist, and [Physique and Bodybuilding Coach (PBC)](https://credentials.nasm.org/1fbcae42-b595-4fc8-a1ad-ac09fdc542b4). [Credential details and evidence](professional/README.md).
+
+## Focused evidence review
+
+[Native iOS engineering](https://robinwinters.github.io/review/ios.html) · [Applied AI and delivery](https://robinwinters.github.io/review/applied-ai.html) · [Fitness technology](https://robinwinters.github.io/review/fitness-tech.html). [Public professional contact card](professional/contact.vcf) · [JSON writing feed](writing/feed.json). My blog is also listed in the [iOS Dev Directory](https://iosdevdirectory.com/).

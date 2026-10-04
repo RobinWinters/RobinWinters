@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Robin Winters
+N:Winters;Robin;;;
+TITLE:iOS/Full Stack Engineer
+ORG:ShowFlex
+EMAIL;TYPE=work:robin@showflex.pro
+URL:https://robin.ac/
+URL:https://github.com/RobinWinters
+URL:https://www.linkedin.com/in/robinwinters-sf/
+NOTE:Public professional contact. No private contact details included.
+END:VCARD

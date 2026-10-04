@@ -41,3 +41,11 @@ The [Swift fitness event pipeline](https://github.com/RobinWinters/fitness-event
 [Work and evidence](README.md) · [JSON record](professional-record.json) · [Plain-text resume](resume.txt) · [Portfolio](https://robin.ac/)
 
 Updated October 3, 2026. Self-authored professional positioning prepared with editorial assistance.
+
+## Later native capture — October 3, 2026
+
+A partial Xcode Device Hub inspection confirmed the initial interface, a Strength search with one synthetic result and selection by identity. [Actual unaltered screenshots and scope](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). The rest of the UI review, accessibility, recording, live-network and physical-device checks remain incomplete.
+
+## Focused employer review routes
+
+[Native iOS](review-guides/ios.md) · [Applied AI and delivery](review-guides/applied-ai.md) · [Fitness technology](review-guides/fitness-tech.md). These routes connect the specific work evidence and relevant application formats. [Public contact card](contact.vcf) · [JSON writing feed](../writing/feed.json).

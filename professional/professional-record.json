@@ -126,12 +126,14 @@
       "published": "2026-10-02",
       "status": "Standalone educational code, prepared with coding-assistant support",
       "evidence_url": "https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search",
-      "validation": "Seven Swift Testing checks passed on macOS with Swift 6.4",
+      "validation": "Seven controller tests and four executable SwiftUI adapter checks passed on macOS October 3, 2026; ARM64 iOS simulator build, installation and launch; partial native search and selection inspection.",
       "limitations": [
-        "Not ShowFlex source",
-        "No iPhone runtime or SwiftUI adapter validation"
+        "Synthetic educational code prepared with coding-assistant support; not private ShowFlex source",
+        "Full UI, accessibility, recording, live-network and physical-device review incomplete"
       ],
-      "additional_public_copy": "https://codeberg.org/RobinWinters/swift-search-request-ownership"
+      "additional_public_copy": "https://codeberg.org/RobinWinters/swift-search-request-ownership",
+      "native_demo": "https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo",
+      "native_capture": "https://robinwinters.github.io/writing/images/search-demo-selected-2026-10-03.jpg"
     },
     {
       "name": "Swift fitness event data pipeline",
