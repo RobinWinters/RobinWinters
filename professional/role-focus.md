@@ -8,6 +8,10 @@ My ShowFlex work covers Swift and SwiftUI, mobile architecture, MapKit event dis
 
 Evidence for review: the [ShowFlex account](../work/showflex-event-discovery.md), its linked iPhone product listing, and the separate [Swift asynchronous search example](../examples/event-search/README.md). The teaching example makes request ownership and state transitions inspectable without disclosing private application code. Its macOS tests are distinct from iPhone product validation.
 
+For a short engineering review, start with the shipped [ShowFlex iPhone product](https://apps.apple.com/us/app/showflex/id6757890910) and the [ShowFlex company attribution](https://showflex.pro/#about). Then inspect the separate [native SwiftUI teaching demo](../examples/event-search/Demo) and its [adapter explanation](../writing/swiftui-search-ownership-demo.md). The example exposes observable state, stable selection, error/retry and a deliberately non-cooperative request race. Its source is also available on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership).
+
+The demo's seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. An ARM64 iOS simulator build installed and launched on an isolated iPhone 17 Pro running iOS 27.0. UI review, accessibility, live-network behavior and physical-device execution remain unverified; a compiler sysroot warning is recorded. This assistant-supported educational example is inspectable evidence of the documented contracts, separate from private ShowFlex source and the evidence that ShowFlex shipped.
+
 ## Forward Deployed Engineer opportunities
 
 I want to bring software requirements, applied AI workflows, architecture tradeoffs and product delivery into a Forward Deployed Engineer role. My approved Yukon Systems scope includes technical prioritization and cross-functional delivery of AI systems, requirements, agent workflows, and tradeoffs involving reliability, explainability, latency and performance. That role ended in 2025.
@@ -36,4 +40,4 @@ The [Swift fitness event pipeline](https://github.com/RobinWinters/fitness-event
 
 [Work and evidence](README.md) · [JSON record](professional-record.json) · [Plain-text resume](resume.txt) · [Portfolio](https://robin.ac/)
 
-Updated October 2, 2026. Self-authored professional positioning prepared with editorial assistance.
+Updated October 3, 2026. Self-authored professional positioning prepared with editorial assistance.
