@@ -55,7 +55,8 @@ jobs:
       - name: Check executable architecture and bundle signature
         run: |
           file .build/demo/EventSearchDemo.app/EventSearchDemo
-          lipo -verify_arch arm64 .build/demo/EventSearchDemo.app/EventSearchDemo
+          lipo .build/demo/EventSearchDemo.app/EventSearchDemo -verify_arch arm64
+          xcrun vtool -show-build .build/demo/EventSearchDemo.app/EventSearchDemo
           codesign --verify --strict --verbose=2 .build/demo/EventSearchDemo.app
       - name: Record successful scope
         env:
