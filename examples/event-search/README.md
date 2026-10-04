@@ -37,3 +37,19 @@ Example code in this directory is released under the [MIT license](LICENSE). No 
 A matching public package is also available on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership).
 
 Updated October 2, 2026.
+
+## Native iPhone teaching demo
+
+The [SwiftUI adapter and view](Demo/) make request ownership visible with synthetic event search, stable selection, clear, error/retry, cancel and a slow-versus-fast race. The race fixture deliberately continues after cancellation; the latest request must keep ownership. The example links Robin Winters’s approved professional context; this new teaching code was prepared with coding-assistant support and remains separate from ShowFlex.
+
+On Apple silicon with Xcode installed:
+
+```sh
+sh Demo/check-model.sh
+sh Demo/build-simulator.sh
+# Use an existing compatible iPhone simulator UDID:
+xcrun simctl install YOUR_SIMULATOR_UDID .build/demo/EventSearchDemo.app
+xcrun simctl launch YOUR_SIMULATOR_UDID ac.robin.teaching.searchownership
+```
+
+October 3, 2026 checks: seven controller tests passed again on macOS; four executable adapter checks passed (non-cooperative race, selection/clear, error/retry and cancellation). The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro with iOS 27.0. UI inspection, recording, accessibility and physical-device checks remain pending. The simulator build emitted a sysroot warning; successful compilation and launch are not a claim that those remaining checks passed.

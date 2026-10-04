@@ -1,8 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://robinwinters.github.io/writing/</id>
+  <entry><title>A SwiftUI search adapter needs its own request ownership</title><id>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</id><updated>2026-10-04T01:09:34.919539+00:00</updated><published>2026-10-04T01:09:34.919539+00:00</published><link href="https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html" /><author><name>Robin Winters</name><uri>https://robin.ac/</uri></author><content type="html">&lt;h1&gt;A SwiftUI search adapter needs its own request ownership&lt;/h1&gt;
+&lt;p&gt;Robin Winters · October 3, 2026 · Native iOS engineering and fitness technology&lt;/p&gt;
+&lt;p&gt;This standalone teaching example and article were prepared with coding-assistant support. The events are synthetic. The code is separate from ShowFlex, whose shipped iPhone product is &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;available on the App Store&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A search controller can correctly reject stale requests while its view adapter still publishes the wrong state. The useful question is not only whether the controller owns its result: it is whether the task waiting for that result still owns the screen.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search"&gt;public controller&lt;/a&gt; already checks a revision before publishing success, failure or cleanup. Its new &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;native SwiftUI demo&lt;/a&gt; makes the surrounding adapter explicit. It searches three synthetic fitness-event titles, selects by identifier and exposes clear, cancel, error/retry and a deliberately troublesome request race.&lt;/p&gt;
+&lt;h2&gt;Keep the observable owner stable&lt;/h2&gt;
+&lt;p&gt;The controller has plain state properties. The adapter conforms to &lt;code&gt;ObservableObject&lt;/code&gt;, publishes the state the interface reads and owns the controller. The view holds the adapter with &lt;code&gt;@StateObject&lt;/code&gt;. These are established &lt;a href="https://developer.apple.com/documentation/swiftui/stateobject"&gt;SwiftUI state-object&lt;/a&gt; and &lt;a href="https://developer.apple.com/documentation/combine/observableobject"&gt;Combine observable-object&lt;/a&gt; mechanisms; this example uses them to preserve the declared iOS 16 minimum.&lt;/p&gt;
+&lt;p&gt;Starting a search immediately copies the controller's loading state, empty results and cleared selection. When the returned task settles, the adapter copies the completed state only if its own version still matches the version captured when it started waiting:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;version += 1
+let ownedVersion = version
+let pending = controller.search(query)
+publish()
+
+Task { [weak self] in
+    await pending?.value
+    guard let self, self.version == ownedVersion else { return }
+    self.publish()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This excerpt shows the ownership rule; the full source also handles an empty query before creating the waiting task. The adapter version protects its activity text and state-copying path. The controller revision protects the underlying results. The two checks sit at different boundaries.&lt;/p&gt;
+&lt;h2&gt;Make the race difficult on purpose&lt;/h2&gt;
+&lt;p&gt;The Race demo control starts a slow request, allows it to enter the fixture fetcher and then starts a fast request. The slow fetch uses a continuation resumed by a dispatch timer. Cancelling its Swift task does not cancel that timer. It really completes after the replacement request, instead of disappearing in a cooperative mock.&lt;/p&gt;
+&lt;p&gt;The accepted result is the fast request. The integration check waits for that result, then waits past the slow completion and verifies that the query and visible adapter results still belong to the fast request. This tests the published state that the SwiftUI list reads, rather than only the controller's internal value.&lt;/p&gt;
+&lt;h2&gt;Selection and leaving the screen are separate policies&lt;/h2&gt;
+&lt;p&gt;Selecting a result passes its identifier to the controller and republishes the resolved selection. Starting another query clears it. Cancel invalidates the adapter's waiting tasks, cancels the scheduled race transition and tells the controller that pending work no longer owns the surface. The view calls that method when it disappears.&lt;/p&gt;
+&lt;p&gt;Those are this demo's policies. A production search flow may retain old results during refresh or restore a selection when returning to a screen. Either choice needs a corresponding state model; it should not arise accidentally from a late completion.&lt;/p&gt;
+&lt;h2&gt;Reproduce the checks&lt;/h2&gt;
+&lt;p&gt;From the &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search"&gt;example directory&lt;/a&gt;, with Xcode on an Apple silicon Mac:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;swift test
+sh Demo/check-model.sh
+sh Demo/build-simulator.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. UI inspection, recording, accessibility, live-network behavior and physical-device execution remain unverified.&lt;/p&gt;
+&lt;p&gt;The code is MIT licensed within the teaching example. It grants no access or license to private ShowFlex code. Build and test evidence belongs to this example; the separate App Store listing is evidence of the shipped ShowFlex product.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;Code and executable checks&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/swift-search-request-ownership.html"&gt;Original controller explanation&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional"&gt;Robin Winters professional record&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;</content></entry><id>https://robinwinters.github.io/writing/</id>
   <title>Robin Winters: technical writing</title>
-  <updated>2026-10-03T23:23:57Z</updated>
+  <updated>2026-10-04T01:09:34.919539+00:00</updated>
   <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://robinwinters.github.io/writing/" />
   <author>

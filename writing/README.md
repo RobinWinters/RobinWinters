@@ -66,3 +66,9 @@ Eleven editions are published under my existing [DEV account](https://dev.to/rob
 - [Fitness event feeds: explicit dates, stable identity and visible conflicts](https://dev.to/robinwinters/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-161p)
 - [Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit](https://dev.to/robinwinters/distributed-kinematic-sensing-and-exercise-intelligence-across-apple-fitness-gymkit-and-healthkit-1bl)
 - [TORos at Yukon Systems: a multi-model decision prototype](https://dev.to/robinwinters/toros-at-yukon-systems-a-multi-model-decision-prototype-9lm)
+
+## Native SwiftUI demonstration
+
+[A SwiftUI search adapter needs its own request ownership](swiftui-search-ownership-demo.md) — October 3, 2026. Public teaching code, seven controller tests and four adapter checks; simulator UI inspection and recording remain pending. [Canonical HTML](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html).
+
+[Import the verified public writing feeds into a feed reader](https://robinwinters.github.io/feeds.opml): professional reference, DEV and Medium. Hashnode is excluded because its RSS endpoint returned HTTP 403 in this check. These subscriptions are a reading option, not a special ranking mechanism.

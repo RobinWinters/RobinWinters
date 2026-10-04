@@ -41,3 +41,7 @@ The original Word conversion remains available unchanged. The separate current P
 ## October 3 additional NASM credentials
 
 Robin confirmed Certified Personal Trainer (NASM-CPT) and the exact title NASM Certified Nutritionist and requested their inclusion now. These accompany the issuer-linked PBC credential in the current plain-text and JSON records; individual verification links, issue and expiry dates for the additions will follow. The original Word-conversion PDF stays unchanged.
+
+## Editable Word resume
+
+The [Word resume](resume.docx) preserves all 50 nonempty lines of the approved October 3 plain-text record. It uses one text column, ordinary paragraphs and clickable public evidence links. Both rendered pages were checked. No tables, text boxes, hidden credentials or new claims were added; parsing by a particular ATS has not been tested.
