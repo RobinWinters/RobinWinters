@@ -57,3 +57,14 @@ October 3, 2026 checks: seven controller tests passed again on macOS; four execu
 ## Later native capture — October 3, 2026
 
 A partial Xcode Device Hub inspection confirmed the initial interface, a Strength search with one synthetic result and selection by identity. [Actual unaltered screenshots and scope](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html). The rest of the UI review, accessibility, recording, live-network and physical-device checks remain incomplete.
+
+## Public continuous checks — October 3, 2026
+
+The [native teaching-demo workflow](https://github.com/RobinWinters/RobinWinters/actions/workflows/event-search-demo.yml) now checks changes to this example. [Verified successful run](https://github.com/RobinWinters/RobinWinters/actions/runs/37178664069), source revision `73e563b44bd33f6c883d814df8d1013fa0dfb9bb`:
+
+| Host | Observed Swift | Observed Xcode | Simulator SDK | Checks |
+|---|---|---|---|---|
+| macOS 15 ARM64 | 6.1.2 | 16.4 (16F6) | 18.5 | 7 controller tests; 4 adapter checks |
+| macOS 26 ARM64 | 6.3.3 | 26.6 (17F113) | 26.5 | The same 7 controller tests; the same 4 adapter checks |
+
+Both jobs compiled the ARM64 iOS simulator app, verified its IOSSIMULATOR platform and iOS 16 minimum target, and passed strict verification of its ad hoc signature. The build still emits a sysroot warning. These jobs do not launch the simulator UI, run on a physical device or test private ShowFlex code. The earlier partial local UI inspection is separate evidence. An initial workflow run failed because the architecture-check command had its arguments in the wrong order; the linked successful revision corrects that check.
