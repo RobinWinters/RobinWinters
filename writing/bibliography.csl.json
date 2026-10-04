@@ -274,5 +274,28 @@
     "URL": "https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html",
     "language": "en",
     "abstract": "Robin Winters presents a native iOS teaching demo with observable search state, non-cooperative request races and four executable adapter checks."
+  },
+  {
+    "id": "winters20261003-13",
+    "type": "post-weblog",
+    "title": "Verify a Swift package’s minimum toolchain and CLI contract",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          3
+        ]
+      ]
+    },
+    "URL": "https://robinwinters.github.io/writing/swift-package-compatibility.html",
+    "language": "en",
+    "abstract": "Assistant-supported account of a synthetic Swift teaching package, with public three-environment CI evidence and explicit runtime limits."
   }
 ]

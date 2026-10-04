@@ -1,6 +1,37 @@
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <entry>
+  <entry><id>https://robinwinters.github.io/writing/swift-package-compatibility.html</id><title>Verify a Swift package’s minimum toolchain and CLI contract</title><published>2026-10-03T20:45:00-07:00</published><updated>2026-10-04T03:48:36.712148+00:00</updated><summary>Assistant-supported account of a synthetic Swift teaching package, with public three-environment CI evidence and explicit runtime limits.</summary><link rel="alternate" href="https://robinwinters.github.io/writing/swift-package-compatibility.html" /><content type="html">&lt;h1&gt;Verify a Swift package’s minimum toolchain and CLI contract&lt;/h1&gt;
+&lt;p&gt;Robin Winters · October 3, 2026&lt;/p&gt;
+&lt;p&gt;I’m an iOS / Full Stack Engineer at ShowFlex, a shipped &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;iPhone fitness product&lt;/a&gt;. This article examines a separate, public Swift teaching package prepared with coding-assistant support. Its fixtures are synthetic; the results below are not a test report for ShowFlex.&lt;/p&gt;
+&lt;p&gt;A package that passes on my current Mac has established something useful. It has not established that another person can build it on the oldest supported tools, on Linux, or with an unexpected command-line input. Those are different questions, and each needs a concrete check.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;fitness event data pipeline&lt;/a&gt; declares Swift tools version 6.0 and provides a library plus a &lt;code&gt;normalize-events&lt;/code&gt; executable. The example turns synthetic event records into normalized events and decision receipts. Release &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/releases/tag/0.1.1"&gt;0.1.1&lt;/a&gt; adds compatibility evidence without changing the library, executable source, tests or fixtures from 0.1.0.&lt;/p&gt;
+&lt;h2&gt;Record what actually ran&lt;/h2&gt;
+&lt;p&gt;The manifest’s &lt;a href="https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html#about-the-swift-tools-version"&gt;Swift tools version&lt;/a&gt; specifies a minimum tools requirement. It is a declaration, rather than evidence that this package was executed with those tools.&lt;/p&gt;
+&lt;p&gt;The public &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/actions/runs/37172573330"&gt;workflow run&lt;/a&gt; records three successful environments:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Environment&lt;/th&gt;&lt;th&gt;Observed compiler&lt;/th&gt;&lt;th&gt;Checks&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Linux, official Swift container&lt;/td&gt;&lt;td&gt;Swift 6.0.3&lt;/td&gt;&lt;td&gt;12 unit tests and an exact fixture-output comparison&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;macOS 15 runner&lt;/td&gt;&lt;td&gt;Apple Swift 6.1.2&lt;/td&gt;&lt;td&gt;12 unit tests and four CLI contract cases&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Ubuntu 24.04 runner&lt;/td&gt;&lt;td&gt;Swift 6.4&lt;/td&gt;&lt;td&gt;12 unit tests and four CLI contract cases&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;These are the same 12 unit tests executed in three environments. They are not 36 distinct tests. Swift 6.0.3 supplies evidence for a specific compiler in the declared 6.0 line; it does not prove an execution on 6.0.0. The package’s iOS deployment declaration likewise does not establish an iPhone runtime result.&lt;/p&gt;
+&lt;p&gt;Each job prints &lt;code&gt;swift --version&lt;/code&gt; before building. Runner labels alone are too imprecise for the compatibility record: the compiler observed on a hosted runner can change.&lt;/p&gt;
+&lt;h2&gt;Test the executable boundary separately&lt;/h2&gt;
+&lt;p&gt;Library tests can pass while the executable’s exit status, output stream or input decoding is wrong. The host-runner jobs invoke &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/blob/6533f5289666f047a3684d6f352468fff8f9bc28/Scripts/check-fixture.py"&gt;Scripts/check-fixture.py&lt;/a&gt;, which checks four cases:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;The complete synthetic fixture succeeds, writes no error, and produces the expected normalized events and receipts.&lt;/li&gt;&lt;li&gt;An empty array succeeds with empty events and receipts.&lt;/li&gt;&lt;li&gt;Malformed JSON exits with status 1, emits no success report, and writes the specified input-contract error to stderr.&lt;/li&gt;&lt;li&gt;An object in place of the expected array produces the same rejection behavior.&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;The fixture assertion compares the complete decoded JSON document. Checking only the event count would miss changes to identities, timestamps or conflict receipts. The rejection checks inspect stdout as well as stderr: an error message is insufficient if the process also emits an apparently successful report.&lt;/p&gt;
+&lt;p&gt;The Swift 6.0.3 job runs a narrower check: it executes the valid fixture and uses &lt;code&gt;diff&lt;/code&gt; against the expected output file. It does &lt;strong&gt;not&lt;/strong&gt; run the other three CLI cases. Keeping that distinction visible makes the evidence easier to trust.&lt;/p&gt;
+&lt;h2&gt;Reproduce the release checks&lt;/h2&gt;
+&lt;p&gt;On a machine with Git, Swift and Python 3, check out the published tag:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;git clone https://github.com/RobinWinters/fitness-event-data-pipeline.git
+cd fitness-event-data-pipeline
+git checkout 0.1.1
+swift --version
+swift build
+swift test
+python3 Scripts/check-fixture.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Python script uses the standard library. Its four-case check expects the debug executable produced by the preceding build. The versioned &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/blob/0.1.1/compatibility.json"&gt;compatibility record&lt;/a&gt; distinguishes these host checks from the container’s narrower comparison.&lt;/p&gt;
+&lt;h2&gt;State the remaining gaps&lt;/h2&gt;
+&lt;p&gt;The workflow uses read-only repository permissions, a pinned checkout action and a pinned minimum-toolchain container. It needs no private application credentials. Those choices make this small public example reproducible without connecting it to a production backend.&lt;/p&gt;
+&lt;p&gt;The checks establish the recorded package behavior in the recorded environments. They do not establish physical-device execution, private product behavior, performance under real event feeds, or automatic compatibility with every later compiler. A useful next compatibility check should answer one of those unresolved questions, rather than add another badge for the same run.&lt;/p&gt;
+&lt;p&gt;For native product work, the habit carries over: distinguish an API declaration, a successful build, a tested boundary and an observed user interaction. Each is valuable; each supports a different claim.&lt;/p&gt;
+&lt;p&gt;Robin Winters works on Swift, SwiftUI, MapKit and Firebase at ShowFlex. &lt;a href="https://robinwinters.github.io/review/ios.html"&gt;Professional reference&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;. This self-authored technical account was prepared with editorial and coding-assistant support.&lt;/p&gt;</content></entry><entry>
     <title>A SwiftUI search adapter needs its own request ownership</title>
     <id>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</id>
     <updated>2026-10-04T02:05:10.022526+00:00</updated>
@@ -56,7 +87,7 @@ sh Demo/build-simulator.sh
   </entry>
   <id>https://robinwinters.github.io/writing/</id>
   <title>Robin Winters: technical writing</title>
-  <updated>2026-10-04T01:09:34.919539+00:00</updated>
+  <updated>2026-10-04T03:48:36.712148+00:00</updated>
   <link rel="self" href="https://robinwinters.github.io/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://robinwinters.github.io/writing/" />
   <author>

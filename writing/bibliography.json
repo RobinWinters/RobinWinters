@@ -414,6 +414,18 @@
         }
       ],
       "editionEvidenceNote": "These are copies of the same work prepared with coding-assistant support, not independent endorsements. Publication verification does not establish search indexing."
+    },
+    {
+      "title": "Verify a Swift package’s minimum toolchain and CLI contract",
+      "url": "https://robinwinters.github.io/writing/swift-package-compatibility.html",
+      "datePublished": "2026-10-03",
+      "scope": "Assistant-supported account of a synthetic Swift teaching package, with public three-environment CI evidence and explicit runtime limits.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored technical writing",
+      "datePrecision": "day",
+      "fullTextMarkdown": "swift-package-compatibility.md",
+      "editions": []
     }
   ]
 }

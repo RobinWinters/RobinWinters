@@ -86,3 +86,5 @@ NASM Certified Personal Trainer (NASM-CPT), NASM Certified Nutritionist, and [Ph
 [ShowFlex product and engineering reference](https://robinwinters.github.io/discovery/showflex.html) · [Reusable source](discovery/showflex.md)
 
 [Robin Winters speaker and editorial reference](https://robinwinters.github.io/discovery/speaker.html) · [Reusable source](discovery/speaker.md)
+
+[Verify a Swift package’s minimum toolchain and CLI contract](https://robinwinters.github.io/writing/swift-package-compatibility.html): reproducible macOS/Linux evidence and explicit CLI cases, with assistant-support and synthetic-fixture disclosures.

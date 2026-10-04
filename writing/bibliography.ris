@@ -141,3 +141,14 @@ AB  - Robin Winters presents a native iOS teaching demo with observable search s
 N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
 LA  - en
 ER  - 
+
+TY  - ELEC
+ID  - winters20261003-13
+TI  - Verify a Swift package’s minimum toolchain and CLI contract
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/03
+UR  - https://robinwinters.github.io/writing/swift-package-compatibility.html
+AB  - Assistant-supported account of a synthetic Swift teaching package, with public three-environment CI evidence and explicit runtime limits.
+LA  - en
+ER  - 

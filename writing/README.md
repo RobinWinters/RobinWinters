@@ -82,3 +82,5 @@ Twelve original writing/work-account records. Export formats preserve original p
 Topic RSS: [iOS](https://robinwinters.github.io/feeds/ios.xml), [applied AI](https://robinwinters.github.io/feeds/applied-ai.xml), [fitness technology](https://robinwinters.github.io/feeds/fitness-tech.xml). These subsets reuse the original identifiers and full text.
 
 The HTML editions expose Dublin Core metadata following [Zotero documentation](https://www.zotero.org/support/dev/exposing_metadata). Import files are available; no actual external library adoption or search ranking improvement is established. Bibliography source: writing/bibliography.json.
+
+[Verify a Swift package’s minimum toolchain and CLI contract](https://robinwinters.github.io/writing/swift-package-compatibility.html): reproducible macOS/Linux evidence and explicit CLI cases, with assistant-support and synthetic-fixture disclosures.
