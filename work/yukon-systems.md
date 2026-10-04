@@ -12,6 +12,12 @@ Yukon Systems published [Part One: Orchestration & Alignment Through Agentic Con
 
 My contribution is recorded from my October 3, 2026 statement. Specific development dates and collaborator credits remain unresolved; the employment years above are not a project date range. No sole authorship, released product, customer deployment, public source code or measured accuracy/reliability is asserted. Consensus describes the intended decision process and does not guarantee that a decision is correct.
 
+## Conceptual overview
+
+![TORos prototype concept: multimodal input, multiple models, deliberation and intended consensus decision](diagrams/toros-concept.svg)
+
+This assistant-prepared illustration translates the approved prototype description into conceptual relationships. It is not a verified runtime trace or a claim about the exact implementation, model count, collaborator credits or measured performance. Consensus describes the intended process and does not guarantee correctness. [Editable Mermaid source](diagrams/toros-concept.mmd). The dated company article above is supporting first-party documentation, not independent technical verification.
+
 ## From requirements to technical decisions
 
 The work connected technical research with product requirements. Reliability, explainability, latency, and performance informed the decisions. My responsibilities included technical priorities, requirements, and delivery around agent and consensus-modeling workflows.
@@ -22,4 +28,4 @@ Requirements, technical tradeoffs, stakeholder coordination, and delivery are re
 
 [Portfolio and work details](https://robin.ac/) · [Yukon Systems company profile](https://www.linkedin.com/company/yukon-systems) · [Professional profile](https://www.linkedin.com/in/robinwinters-sf/)
 
-Updated October 3, 2026. Self-authored professional account with a linked company publication; no confidential source code or partner information is included.
+Updated October 4, 2026. Self-authored professional account with a linked company publication; no confidential source code or partner information is included.

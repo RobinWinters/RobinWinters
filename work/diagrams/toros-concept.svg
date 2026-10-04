@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 460" role="img" aria-labelledby="title description">
+<title id="title">TORos: a confirmed prototype concept</title>
+<desc id="description">A conceptual overview of Robin Winters's confirmed TORos description for Yukon Systems. Multimodal input connects to multiple models, their candidate decisions are discussed and challenged, and deliberation aims at a consensus decision. Boxes and arrows illustrate the concept, not a verified execution trace or production architecture. Model count, development dates, collaborators and measured performance are unresolved.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#375f76"/></marker></defs>
+<rect width="1160" height="460" rx="18" fill="#f6f8fb"/>
+<g font-family="system-ui, -apple-system, sans-serif" fill="#173244">
+<text x="36" y="52" font-size="28" font-weight="700">TORos · prototype concept</text>
+<text x="36" y="86" font-size="18">Built by Robin Winters for Yukon Systems · owner-confirmed contribution</text>
+<g stroke="#9bb4c4" stroke-width="2" fill="#fff">
+<rect x="36" y="126" width="224" height="142" rx="12"/><rect x="322" y="126" width="224" height="142" rx="12"/>
+<rect x="608" y="126" width="224" height="142" rx="12"/><rect x="894" y="126" width="230" height="142" rx="12"/>
+</g>
+<g text-anchor="middle" font-size="21" font-weight="650">
+<text x="148" y="176">Multimodal input</text><text x="434" y="176">Multiple models</text>
+<text x="720" y="176">Deliberation</text><text x="1009" y="176">Consensus decision</text>
+</g>
+<g text-anchor="middle" font-size="16">
+<text x="148" y="216">Input concept</text><text x="434" y="216">Model-agnostic design</text>
+<text x="720" y="207">Discuss and challenge</text><text x="720" y="233">candidate decisions</text>
+<text x="1009" y="216">Intended outcome</text>
+</g>
+<g stroke="#375f76" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#arrow)">
+<path d="M270 197 H310"/><path d="M556 197 H596"/><path d="M842 197 H882"/>
+</g>
+<text x="36" y="312" font-size="18" font-weight="650">Conceptual relationships, not a verified runtime trace.</text>
+<text x="36" y="345" font-size="17">Consensus describes the intended process; agreement does not establish correctness.</text>
+<text x="36" y="378" font-size="16">Exact model count, implementation, project dates, team credits and performance remain unresolved.</text>
+<text x="36" y="414" font-size="15">Assistant-prepared illustration from the approved record · robin.ac · Company article: May 5, 2025</text>
+</g></svg>
