@@ -72,3 +72,13 @@ Eleven editions are published under my existing [DEV account](https://dev.to/rob
 [A SwiftUI search adapter needs its own request ownership](swiftui-search-ownership-demo.md) — October 3, 2026. Public teaching code, seven controller tests and four adapter checks; simulator UI inspection and recording remain pending. [Canonical HTML](https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html).
 
 [Import the verified public writing feeds into a feed reader](https://robinwinters.github.io/feeds.opml): professional reference, DEV and Medium. Hashnode is excluded because its RSS endpoint returned HTTP 403 in this check. These subscriptions are a reading option, not a special ranking mechanism.
+
+## Citation and subject-feed exports — October 3, 2026
+
+Twelve original writing/work-account records. Export formats preserve original publication dates, author and source URLs; mirrors are not additional works or independent corroboration. Educational code retains assistant-support disclosures.
+
+[Browse citations](https://robinwinters.github.io/writing/citations.html) · [CSL JSON](https://robinwinters.github.io/bibliography.csl.json) · [RIS](https://robinwinters.github.io/bibliography.ris) · [BibTeX](https://robinwinters.github.io/bibliography.bib)
+
+Topic RSS: [iOS](https://robinwinters.github.io/feeds/ios.xml), [applied AI](https://robinwinters.github.io/feeds/applied-ai.xml), [fitness technology](https://robinwinters.github.io/feeds/fitness-tech.xml). These subsets reuse the original identifiers and full text.
+
+The HTML editions expose Dublin Core metadata following [Zotero documentation](https://www.zotero.org/support/dev/exposing_metadata). Import files are available; no actual external library adoption or search ranking improvement is established. Bibliography source: writing/bibliography.json.

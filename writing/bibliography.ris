@@ -1,0 +1,143 @@
+TY  - ELEC
+ID  - winters20260402-1
+TI  - Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/04/02
+UR  - https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/
+AB  - Technical article describing a hybrid on-device and Firebase moderation architecture. Publication does not independently verify a deployment.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20260718-2
+TI  - Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/07/18
+UR  - https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/
+AB  - Architecture proposal about coordinating Apple-device sensing and workout context. It does not establish a released sensing product or Apple endorsement.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20260730-3
+TI  - Kinematics Lab Part II: You Don't Need Another...
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/07/30
+UR  - https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/
+AB  - Follow-up technical report discussing capture integrity, prototype limitations and device coordination. Experiments and results are author-reported, not independently reproduced.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20261002-4
+TI  - Swift search request ownership
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/02
+UR  - https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/swift-search-request-ownership.md
+AB  - Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20261002-5
+TI  - Fitness event feeds: explicit dates, stable identity and visible conflicts
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/02
+UR  - https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/fitness-event-data-contracts.md
+AB  - Educational Swift data-contract example with synthetic fixtures, conflict receipts and 12 passing macOS tests. Prepared with coding-assistant support; separate from private product code.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20260630-6
+TI  - In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/06/30
+UR  - https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/
+AB  - Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20260401-7
+TI  - What if Myspace Had It Right?
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/04/01
+UR  - https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/
+AB  - Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20260221-8
+TI  - The “Any Given Tuesday” Theory of AI Startups
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/02/21
+UR  - https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/
+AB  - Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20250730-9
+TI  - How to Get Around AI Chat App Boundaries (and prevent it from happening)
+AU  - Winters, Robin
+PY  - 2025
+DA  - 2025/07/30
+UR  - https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/
+AB  - Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20261002-10
+TI  - ShowFlex: event discovery connects native interaction with structured data
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/02
+UR  - https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex-event-discovery.md
+AB  - Self-authored account of native iOS engineering with dated ShowFlex App Store release evidence; AI workflows remain prototypes.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20261003-11
+TI  - Yukon Systems: AI systems and product delivery
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/03
+UR  - https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md
+AB  - Self-authored account of Robin’s TORos prototype contribution, with dated company publication and attribution limits.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 
+
+TY  - ELEC
+ID  - winters20261003-12
+TI  - A SwiftUI search adapter needs its own request ownership
+AU  - Winters, Robin
+PY  - 2026
+DA  - 2026/10/03
+UR  - https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html
+AB  - Robin Winters presents a native iOS teaching demo with observable search state, non-cooperative request races and four executable adapter checks.
+N1  - Self-authored web writing. Original publication date and attribution retained; not independent verification.
+LA  - en
+ER  - 

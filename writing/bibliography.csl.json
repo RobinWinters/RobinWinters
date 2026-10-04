@@ -1,0 +1,278 @@
+[
+  {
+    "id": "winters20260402-1",
+    "type": "post-weblog",
+    "title": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          2
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/",
+    "language": "en",
+    "abstract": "Technical article describing a hybrid on-device and Firebase moderation architecture. Publication does not independently verify a deployment."
+  },
+  {
+    "id": "winters20260718-2",
+    "type": "post-weblog",
+    "title": "Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          18
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/distributed-kinematic-sensing-exercise-intelligence-across-winters-ek3ec/",
+    "language": "en",
+    "abstract": "Architecture proposal about coordinating Apple-device sensing and workout context. It does not establish a released sensing product or Apple endorsement."
+  },
+  {
+    "id": "winters20260730-3",
+    "type": "post-weblog",
+    "title": "Kinematics Lab Part II: You Don't Need Another...",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          30
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/kinematics-lab-part-ii-you-dont-need-another-robin-winters-lrybc/",
+    "language": "en",
+    "abstract": "Follow-up technical report discussing capture integrity, prototype limitations and device coordination. Experiments and results are author-reported, not independently reproduced."
+  },
+  {
+    "id": "winters20261002-4",
+    "type": "post-weblog",
+    "title": "Swift search request ownership",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ]
+    },
+    "URL": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/swift-search-request-ownership.md",
+    "language": "en",
+    "abstract": "Educational Swift concurrency example with seven passing macOS tests, prepared with coding-assistant support. Separate from private product code."
+  },
+  {
+    "id": "winters20261002-5",
+    "type": "post-weblog",
+    "title": "Fitness event feeds: explicit dates, stable identity and visible conflicts",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ]
+    },
+    "URL": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/writing/fitness-event-data-contracts.md",
+    "language": "en",
+    "abstract": "Educational Swift data-contract example with synthetic fixtures, conflict receipts and 12 passing macOS tests. Prepared with coding-assistant support; separate from private product code."
+  },
+  {
+    "id": "winters20260630-6",
+    "type": "post-weblog",
+    "title": "In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/",
+    "language": "en",
+    "abstract": "Robin Winters discusses Liquid Glass implementation in ShowFlex. Original June 2026 developer-beta observations, republished with images and links to original videos."
+  },
+  {
+    "id": "winters20260401-7",
+    "type": "post-weblog",
+    "title": "What if Myspace Had It Right?",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          1
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/what-myspace-had-right-robin-winters-ykksc/",
+    "language": "en",
+    "abstract": "Robin Winters considers profile-centered social design and the ShowFlex social layer. Original April 2026 essay, republished with images."
+  },
+  {
+    "id": "winters20260221-8",
+    "type": "post-weblog",
+    "title": "The “Any Given Tuesday” Theory of AI Startups",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          21
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/any-given-tuesday-theory-ai-startups-robin-winters-vnkgc/",
+    "language": "en",
+    "abstract": "Robin Winters discusses AI startup differentiation, workflows and distribution. Original February 2026 opinion essay, republished with its cover."
+  },
+  {
+    "id": "winters20250730-9",
+    "type": "post-weblog",
+    "title": "How to Get Around AI Chat App Boundaries (and prevent it from happening)",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          30
+        ]
+      ]
+    },
+    "URL": "https://www.linkedin.com/pulse/how-get-around-ai-chat-app-boundaries-prevent-from-robin-winterschon-a32xf/",
+    "language": "en",
+    "abstract": "Robin Winters discusses AI chat interface boundaries and defensive considerations. Original July 2025 commentary, republished with its cover."
+  },
+  {
+    "id": "winters20261002-10",
+    "type": "post-weblog",
+    "title": "ShowFlex: event discovery connects native interaction with structured data",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ]
+    },
+    "URL": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex-event-discovery.md",
+    "language": "en",
+    "abstract": "Self-authored account of native iOS engineering with dated ShowFlex App Store release evidence; AI workflows remain prototypes."
+  },
+  {
+    "id": "winters20261003-11",
+    "type": "post-weblog",
+    "title": "Yukon Systems: AI systems and product delivery",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          3
+        ]
+      ]
+    },
+    "URL": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
+    "language": "en",
+    "abstract": "Self-authored account of Robin’s TORos prototype contribution, with dated company publication and attribution limits."
+  },
+  {
+    "id": "winters20261003-12",
+    "type": "post-weblog",
+    "title": "A SwiftUI search adapter needs its own request ownership",
+    "author": [
+      {
+        "given": "Robin",
+        "family": "Winters"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          3
+        ]
+      ]
+    },
+    "URL": "https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html",
+    "language": "en",
+    "abstract": "Robin Winters presents a native iOS teaching demo with observable search state, non-cooperative request races and four executable adapter checks."
+  }
+]

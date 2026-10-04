@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <item>
+      <title>A SwiftUI search adapter needs its own request ownership</title>
+      <link>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</link>
+      <guid>https://robinwinters.github.io/writing/swiftui-search-ownership-demo.html</guid>
+      <description>&lt;h1&gt;A SwiftUI search adapter needs its own request ownership&lt;/h1&gt;
+&lt;p&gt;Robin Winters · October 3, 2026 · Native iOS engineering and fitness technology&lt;/p&gt;
+&lt;p&gt;This standalone teaching example and article were prepared with coding-assistant support. The events are synthetic. The code is separate from ShowFlex, whose shipped iPhone product is &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;available on the App Store&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A search controller can correctly reject stale requests while its view adapter still publishes the wrong state. The useful question is not only whether the controller owns its result: it is whether the task waiting for that result still owns the screen.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search"&gt;public controller&lt;/a&gt; already checks a revision before publishing success, failure or cleanup. Its new &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;native SwiftUI demo&lt;/a&gt; makes the surrounding adapter explicit. It searches three synthetic fitness-event titles, selects by identifier and exposes clear, cancel, error/retry and a deliberately troublesome request race.&lt;/p&gt;
+&lt;h2&gt;Keep the observable owner stable&lt;/h2&gt;
+&lt;p&gt;The controller has plain state properties. The adapter conforms to &lt;code&gt;ObservableObject&lt;/code&gt;, publishes the state the interface reads and owns the controller. The view holds the adapter with &lt;code&gt;@StateObject&lt;/code&gt;. These are established &lt;a href="https://developer.apple.com/documentation/swiftui/stateobject"&gt;SwiftUI state-object&lt;/a&gt; and &lt;a href="https://developer.apple.com/documentation/combine/observableobject"&gt;Combine observable-object&lt;/a&gt; mechanisms; this example uses them to preserve the declared iOS 16 minimum.&lt;/p&gt;
+&lt;p&gt;Starting a search immediately copies the controller's loading state, empty results and cleared selection. When the returned task settles, the adapter copies the completed state only if its own version still matches the version captured when it started waiting:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;version += 1
+let ownedVersion = version
+let pending = controller.search(query)
+publish()
+
+Task { [weak self] in
+    await pending?.value
+    guard let self, self.version == ownedVersion else { return }
+    self.publish()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This excerpt shows the ownership rule; the full source also handles an empty query before creating the waiting task. The adapter version protects its activity text and state-copying path. The controller revision protects the underlying results. The two checks sit at different boundaries.&lt;/p&gt;
+&lt;h2&gt;Make the race difficult on purpose&lt;/h2&gt;
+&lt;p&gt;The Race demo control starts a slow request, allows it to enter the fixture fetcher and then starts a fast request. The slow fetch uses a continuation resumed by a dispatch timer. Cancelling its Swift task does not cancel that timer. It really completes after the replacement request, instead of disappearing in a cooperative mock.&lt;/p&gt;
+&lt;p&gt;The accepted result is the fast request. The integration check waits for that result, then waits past the slow completion and verifies that the query and visible adapter results still belong to the fast request. This tests the published state that the SwiftUI list reads, rather than only the controller's internal value.&lt;/p&gt;
+&lt;h2&gt;Selection and leaving the screen are separate policies&lt;/h2&gt;
+&lt;p&gt;Selecting a result passes its identifier to the controller and republishes the resolved selection. Starting another query clears it. Cancel invalidates the adapter's waiting tasks, cancels the scheduled race transition and tells the controller that pending work no longer owns the surface. The view calls that method when it disappears.&lt;/p&gt;
+&lt;p&gt;Those are this demo's policies. A production search flow may retain old results during refresh or restore a selection when returning to a screen. Either choice needs a corresponding state model; it should not arise accidentally from a late completion.&lt;/p&gt;
+&lt;h2&gt;Reproduce the checks&lt;/h2&gt;
+&lt;p&gt;From the &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search"&gt;example directory&lt;/a&gt;, with Xcode on an Apple silicon Mac:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;swift test
+sh Demo/check-model.sh
+sh Demo/build-simulator.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The seven controller tests and four executable adapter checks passed on macOS on October 3, 2026. The adapter checks cover the non-cooperative race, identity selection and clearing, current error and successful retry, and cancellation after a fetch has started. The ARM64 iOS simulator app compiled, installed and launched on an isolated iPhone 17 Pro running iOS 27.0. A compiler sysroot warning was emitted. At this initial build checkpoint, UI inspection, recording, accessibility, live-network behavior and physical-device execution were unverified; the later partial inspection is documented below.&lt;/p&gt;
+&lt;h2&gt;Observed iPhone simulator interaction — October 3, 2026&lt;/h2&gt;
+&lt;p&gt;A later inspection in Xcode Device Hub showed the initial screen on the isolated iPhone 17 Pro simulator running iOS 27.0. Tapping Strength returned one synthetic Strength meet result. Selecting it showed both the checkmark and the Selection section. These are actual, unaltered simulator-window screenshots, captured with coding-assistant support.&lt;/p&gt;
+&lt;figure&gt;&lt;img src="/writing/images/search-demo-initial-2026-10-03.jpg" alt="Initial native SwiftUI teaching demo in Xcode Device Hub, with empty results and search controls" width="758" loading="lazy" style="max-width:100%;height:auto"&gt;&lt;figcaption&gt;Initial state: synthetic event search controls and no selected result.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="/writing/images/search-demo-selected-2026-10-03.jpg" alt="Strength search result selected, with a checkmark and Strength meet displayed in the Selection section" width="758" loading="lazy" style="max-width:100%;height:auto"&gt;&lt;figcaption&gt;Observed search and selection: one Strength meet result, selected by identity.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This partial inspection adds evidence beyond build and launch. It does not complete the race, clear, cancel, error/retry, scrolling or accessibility review. Recording, live-network and physical-device behavior remain unverified. The separate macOS checks above cover controller and adapter contracts.&lt;/p&gt;
+&lt;p&gt;The code is MIT licensed within the teaching example. It grants no access or license to private ShowFlex code. Build and test evidence belongs to this example; the separate App Store listing is evidence of the shipped ShowFlex product.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/examples/event-search/Demo"&gt;Code and executable checks&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/swift-search-request-ownership.html"&gt;Original controller explanation&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/tree/Radpository/professional"&gt;Robin Winters professional record&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 01:10:30 GMT</pubDate>
+      <dc:creator>Robin Winters</dc:creator>
+      <atom:link rel="related" href="https://dev.to/robinwinters/a-swiftui-search-adapter-needs-its-own-request-ownership-jdh" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/a-swiftui-search-adapter-needs-its-own-request-ownership-fc8ef2aff277" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/a-swiftui-search-adapter-needs-its-own-request-ownership" type="text/html" title="Hashnode edition" />
+    </item>
+    <title>Robin Winters: native iOS engineering</title>
+    <link>https://robinwinters.github.io/review/ios.html</link>
+    <description>Selected self-authored writing on native iOS engineering, with original dates, source links and evidence scope.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2026 23:23:57 GMT</lastBuildDate>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <atom:link rel="self" href="https://robinwinters.github.io/feeds/ios.xml" type="application/rss+xml" />
+    <item>
+      <title>ShowFlex: event discovery connects native interaction with structured data</title>
+      <link>https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex-event-discovery.md</link>
+      <guid isPermaLink="true">https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex-event-discovery.md</guid>
+      <description>&lt;article&gt;&lt;h1&gt;ShowFlex: event discovery connects native interaction with structured data&lt;/h1&gt;&lt;p&gt;Robin Winters — iOS/Full Stack Engineer, 2024–present&lt;/p&gt;&lt;p&gt;I’m an iOS / Full Stack Engineer at ShowFlex, a shipped iPhone fitness product available on the App Store. Since 2024, my work has spanned Swift and SwiftUI engineering, mobile architecture, MapKit event discovery, Firebase-backed data, interaction quality and release execution. Here is how native interaction and structured event data meet in that work.&lt;/p&gt;&lt;h2&gt;A map is one part of a discovery flow&lt;/h2&gt;&lt;p&gt;Event discovery connects a user&amp;#x27;s query, active filters, a set of locations and the event currently being inspected. Search results and map markers should refer to the same event identities. A detail sheet should describe the selected event even when the surrounding result order changes.&lt;/p&gt;&lt;p&gt;My work includes MapKit, search and filtering, dynamic geocoding, draggable detail sheets and persistent navigation. The product problem crosses those components: the interface needs clear state transitions as data and selection change. Accessibility, motion and efficient loading are part of the approved engineering scope.&lt;/p&gt;&lt;p&gt;The companion &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Swift search example&lt;/a&gt; demonstrates one general state-management problem: rejecting asynchronous results that belong to an older query. It is a separate educational package, not extracted ShowFlex code and not evidence of the exact implementation shipped in the app.&lt;/p&gt;&lt;h2&gt;Event information needs a usable structure&lt;/h2&gt;&lt;p&gt;The approved data work includes ingestion pipelines that normalize global event calendars, athlete metadata, registration information and media into structured JSON and Firebase-backed product data. Source information and native presentation meet at that boundary.&lt;/p&gt;&lt;p&gt;A calendar entry, location and registration link are useful only when they can be connected to the event a person is viewing. This explains why the work spans both data handling and the consumer interface. No throughput, latency, accuracy or adoption figures are claimed here.&lt;/p&gt;&lt;h2&gt;Public release evidence&lt;/h2&gt;&lt;p&gt;The &lt;a href="https://apps.apple.com/us/app/showflex/id6757890910"&gt;ShowFlex iPhone App Store listing&lt;/a&gt;, checked October 2, 2026, identifies ShowFlex Inc. as developer and seller. Version 17.0 describes an interactive IFBB events map and calendar import tools for IFBB Pro and NPC events. That is public evidence for an iPhone product and the listed map/calendar release.&lt;/p&gt;&lt;p&gt;It does not establish an Android release, individual authorship of every feature, a measured business outcome or release of the AI prototypes below. Store metadata can change; the check date matters.&lt;/p&gt;&lt;h2&gt;Applied AI remains a distinct work stream&lt;/h2&gt;&lt;p&gt;My approved scope also includes prototypes for AI-assisted physique and posing feedback and predictive competition features. These are experimental workflows. They are not described as released product capabilities or validated fitness assessments.&lt;/p&gt;&lt;p&gt;The distinction matters when assessing the portfolio: released iPhone event discovery has public product evidence; AI prototype work has a narrower professional claim and needs additional releasable demonstrations before it can become a detailed implementation case study.&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/showflex.md"&gt;Existing work account&lt;/a&gt; · &lt;a href="https://showflex.pro/"&gt;ShowFlex&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;Portfolio&lt;/a&gt; · &lt;a href="https://www.linkedin.com/in/robinwinters-sf/"&gt;Professional profile&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Updated October 2, 2026. Self-authored professional account prepared with editorial assistance.&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <atom:link rel="related" href="https://dev.to/robinwinters/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase-336l" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/showflex-event-discovery-connects-native-interaction-with-structured-data-462c47c716ca" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/shipping-showflex-native-ios-event-discovery-with-swiftui-mapkit-and-firebase" type="text/html" title="Hashnode edition" />
+    </item>
+    <item>
+      <title>Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase</title>
+      <link>https://robinwinters.github.io/writing/moderation.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published April 2, 2026 on &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;img alt="Painting of a man pinning a printed document to a door while two onlookers stand beside him." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-2.png"&gt;
+&lt;figcaption&gt;
+            "YOU KNOW MARTIN THAT IT'S JUST GOING TO BE TAKEN DOWN AND YOU'LL BE BLOCKED FROM POSTING FOR THE NEXT 30 DAYS"
+          &lt;/figcaption&gt;
+&lt;div class="article-body"&gt;
+
+&lt;p&gt;
+When building out a moderation layer in the Apple ecosystem we have a LOT of tools and guidance to help the process along so we as developers can make something both delightful and safe for the wide range of users we hope to reach.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+I build iOS native products in Swift and SwiftUI, so I care a lot about how a system behaves in hand. I also care about whether it holds up once users start poking at it in weird ways. Moderation is where those things meetup. A bad classifier or a vague rejection banner is a product bug, but users experience both as the same thing.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Below is how I've been going about building a new-ish moderation layer for iOS that can be applied basically anywhere it's needed with a few caveats.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+After messing about with a number of increasingly elaborate designs, I landed on a hybrid architecture where each side does a different job quite well:
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Apple’s &lt;a href="https://developer.apple.com/apple-intelligence/whats-new/"&gt;Foundation Models framework&lt;/a&gt; gives fast, private, on-device text classification and rewrite suggestions.&lt;/li&gt;&lt;li&gt;&lt;a href="https://firebase.google.com/docs/functions/callable"&gt;Firebase callable functions&lt;/a&gt; for server authoritative decision paths with Auth, App Check, audit logs, and review hooks.&lt;/li&gt;&lt;li&gt;Cloud Storage triggers for handling media separately, because images and video are their own special form of pain.&lt;/li&gt;&lt;/ul&gt;
+
+
+
+
+
+
+
+&lt;p&gt;
+&lt;strong&gt;Caveat:&lt;/strong&gt; The main constraint with Apple’s model is that it only runs on Apple Intelligence capable devices in supported regions and Apple explicitly tells developers to check availability before building around it. Their own guidance also says to make sure the experience still works when generative features aren’t available. I definitely don't want moderation to disappear because a user has an unsupported device, region, or language setup, but this should solve itself with time and broader adoption of more modern devices.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Sauce: &lt;a href="https://developer.apple.com/videos/play/wwdc2025/286/"&gt;WWDC25 Foundation Models&lt;/a&gt;, &lt;a href="https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum"&gt;SystemLanguageModel availability&lt;/a&gt;, &lt;a href="https://developer.apple.com/design/human-interface-guidelines/generative-ai"&gt;Generative AI HIG&lt;/a&gt;
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Here’s a fun little diagram for flowchart fans:
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+ &lt;img alt="Moderation architecture diagram: a SwiftUI composer sends text through on-device Apple Foundation Models preflight to Firebase Functions. Decision, trust and rules layers support publishing, blocking or editing, visibility limits and human review. Cloud uploads have a separate media-moderation path, with appeals and client-state feedback." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/moderation-1.png"&gt;
+&lt;figcaption&gt;
+Fun is a relative term.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+
+
+&lt;p&gt;
+On the client side I’m using Apple’s model for text-only moderation signals before the content ever leaves the device. That gives me two preem properties right away. First, it's fast. Second, I can warn a user about obvious problems without dumping every draft to the backend.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Apple’s Foundation Models framework is a good fit for this b/c Apple positions it for tasks like extraction, summarization, and classification. Exactly the kind of narrow job I want on device.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Sauce: &lt;a href="https://developer.apple.com/apple-intelligence/whats-new/"&gt;What’s New in Apple Intelligence&lt;/a&gt;
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+The Swift side looks roughly like this:
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;pre&gt;&lt;code&gt;import FoundationModels
+
+@Generable
+struct ModerationSignal {
+    @Guide(description: "One of: safe, harassment, self_harm, doxxing, spam, sexual_content, review")
+    var label: String
+
+    @Guide(description: "Confidence score from 0 to 100")
+    var confidence: Int
+
+    @Guide(description: "True if the text appears to include personal contact information")
+    var containsPII: Bool
+
+    @Guide(description: "Short user-facing suggestion if the content should be revised")
+    var userMessage: String
+}
+
+@MainActor
+func classifyDraft(_ text: String) async throws -&amp;gt; ModerationSignal? {
+    let model = SystemLanguageModel.default
+    guard case .available = model.availability else {
+        return nil
+    }
+
+    let session = LanguageModelSession()
+    let response = try await session.respond(
+        to: "Classify this user-generated text for moderation: \(text)",
+        generating: ModerationSignal.self
+    )
+
+    return response.content
+} &lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+&lt;p&gt;
+A couple of things I dig about this. The response is structured so I’m not parsing model soup. The feature is private by default, and when the model is unavailable the app still works. It just skips the preflight hint and sends the content to the server.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Apple’s model is great when it's there but I am not building a moderation system that only works for the best case device matrix. Once the user submits content, Firebase takes over. I’m using a callable function so the app sends the content, the local moderation signal if one exists, and the user’s auth context through a standard path. Firebase’s docs call out a useful detail here: callable functions automatically include Auth and App Check tokens when available, and App Check enforcement can be turned on serverside.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Sauce: &lt;a href="https://firebase.google.com/docs/functions/callable"&gt;Callable functions&lt;/a&gt;, &lt;a href="https://firebase.google.com/docs/app-check/cloud-functions"&gt;App Check for Cloud Functions&lt;/a&gt;
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+The server side looks more like infrastructure now. Cool beans.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;pre&gt;&lt;code&gt;import { onCall, HttpsError } from "firebase-functions/v2/https";
+import { getFirestore } from "firebase-admin/firestore";
+
+const db = getFirestore();
+
+export const submitContent = onCall(
+  { region: "us-central1", enforceAppCheck: true },
+  async (request) =&amp;gt; {
+    if (!request.auth) {
+      throw new HttpsError("unauthenticated", "Sign-in required");
+    }
+
+    const { body, localSignal } = request.data as {
+      body: string;
+      localSignal?: {
+        label?: string;
+        confidence?: number;
+        containsPII?: boolean;
+      };
+    };
+
+    const piiHit = /\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b/.test(body);
+    const urlCount = (body.match(/https?:\/\//g) ?? []).length;
+    const likelySpam = urlCount &amp;gt; 2;
+
+    let action: "publish" | "review" | "block" = "publish";
+    let reason: string | null = null;
+
+    if (piiHit || localSignal?.containsPII) {
+      action = "block";
+      reason = "possible_pii";
+    } else if (likelySpam || localSignal?.label === "review") {
+      action = "review";
+      reason = "needs_review";
+    }
+
+    const ref = await db.collection("content").add({
+      uid: request.auth.uid,
+      body,
+      localSignal: localSignal ?? null,
+      action,
+      reason,
+      createdAt: Date.now(),
+    });
+
+    return { id: ref.id, action, reason };
+  }
+); &lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+&lt;p&gt;
+This is where we get consistency. I can layer the review workflows around the model output instead of the model owning everything. I can also log the actual reason for a decision for later when somebody appeals or there's some over-moderation. Also, text and images fail in different ways. A Cloud Storage triggered function can pull the asset, hash it, run the heavier checks, and then write back a moderation state without blocking the client on every large upload. Firebase pushes Storage triggered processing as a standard use case.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Sauce: &lt;a href="https://firebase.google.com/docs/functions/use-cases"&gt;Cloud Functions use cases&lt;/a&gt;
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+A few outside examples:
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Reddit is a good example. It shows what "mature" moderation starts to look like over time. They have &lt;a href="https://support.reddithelp.com/hc/en-us/articles/15484574206484-Automoderator"&gt;AutoModerator&lt;/a&gt;, &lt;a href="https://support.reddithelp.com/hc/en-us/articles/15484574845460-Safety-Filters"&gt;Safety Filters&lt;/a&gt;, and a &lt;a href="https://support.reddithelp.com/hc/en-us/articles/15484440494356-Moderation-Queue"&gt;moderation queue&lt;/a&gt;. They also have a documented flow for &lt;a href="https://support.reddithelp.com/hc/en-us/articles/213099246-How-do-I-report-abuse-of-the-report-system"&gt;abuse of the report system&lt;/a&gt;.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+The Meta example is the &lt;a href="https://www.oversightboard.com/decision/bun-0w49p93l/"&gt;breast cancer awareness case from the Oversight Board&lt;/a&gt;. Automated nudity enforcement caught legitimate health content. If the moderation stack sees skin and loses its mind, the product starts punishing the people it is supposed to help.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+So the build has to stay narrow where it makes sense. On device Foundation Models for fast text preflight, Firebase Functions for final action, hard rules for obvious stuff, review queues for the ugly middle. Fallbacks for unsupported devices, and state driven UI so the user knows what happened.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Hopefully that made sense! Obviously this is just experimenting for now, but I think it's a good way to start thinking about how to layer moderation into whatever your building with Apple's Foundation Model framework.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Be excellent to each other,
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+🤘Robin
+ &lt;/p&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/building-ios-moderation-layer-apple-foundation-models-robin-winters-ejl5f/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-04-02</dc:date>
+      <atom:link rel="related" href="https://dev.to/robinwinters/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-dcg" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase-6241db55fdc7" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/building-an-ios-moderation-layer-with-apple-foundation-models-framework-and-firebase" type="text/html" title="Hashnode edition" />
+    </item>
+    <item>
+      <title>Swift search request ownership</title>
+      <link>https://robinwinters.github.io/writing/swift-search-request-ownership.html</link>
+      <guid isPermaLink="false">https://robinwinters.github.io/writing/swift-search-request-ownership.html</guid>
+      <description>&lt;article class="prose"&gt;&lt;h1&gt;Swift search: cancellation needs an ownership check&lt;/h1&gt;
+&lt;p&gt;Robin Winters · October 2, 2026 · Educational example prepared with coding-assistant support&lt;/p&gt;
+&lt;p&gt;Search often looks simple until two requests finish in the wrong order. A user enters “San”, changes the query to “San Francisco”, and sees the shorter query's results arrive last. The newer request may have finished correctly; the older task still owns enough code to replace the result list.&lt;/p&gt;
+&lt;p&gt;Debouncing reduces the number of requests. Cancellation tells an obsolete task to stop. Neither operation alone states which request is allowed to change the current interface. That ownership rule is the useful part of the &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;standalone example&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Cancellation is cooperative&lt;/h2&gt;
+&lt;p&gt;Swift task cancellation signals a task rather than forcibly terminating arbitrary work. The task and functions it calls must observe that signal. A cancellation-aware sleep can throw before the fetch starts, while an injected fetcher might finish despite being cancelled. Apple's &lt;a href="https://developer.apple.com/documentation/swift/task/cancel()"&gt;Task.cancel documentation&lt;/a&gt; describes this cooperative behavior.&lt;/p&gt;
+&lt;p&gt;The example checks cancellation after the debounce and after the fetch. It also assigns each search a revision. Starting another search or explicitly cancelling advances that revision. Before publishing results, an error, or cleanup, the task verifies that its revision still matches the controller's current revision.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;let found = try await fetch(requestedQuery)
+try Task.checkCancellation()
+guard let self, self.revision == requestRevision else { return }
+self.results = found
+self.isSearching = false
+self.pending = nil
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The controller is isolated to &lt;code&gt;MainActor&lt;/code&gt;, so these state changes happen together in that isolation domain. Fetching remains asynchronous. The revision check is especially useful across an &lt;code&gt;await&lt;/code&gt;, where another search can have started before the old operation resumes.&lt;/p&gt;
+&lt;h2&gt;Errors and cleanup need the same rule&lt;/h2&gt;
+&lt;p&gt;Protecting only successful results leaves two quieter bugs. An obsolete request can fail and replace a valid result with an irrelevant error. Or its cleanup can set &lt;code&gt;isSearching&lt;/code&gt; to false while the newer search is still running. Clearing the stored pending task from stale cleanup can also lose the handle needed to cancel the current request.&lt;/p&gt;
+&lt;p&gt;For that reason, every completion path checks request ownership. Current errors are displayed; obsolete errors are ignored. Only the current request can clear its loading state or pending handle. Explicit cancellation updates the controller immediately rather than waiting for a service to acknowledge the signal.&lt;/p&gt;
+&lt;h2&gt;Selection belongs to an identity&lt;/h2&gt;
+&lt;p&gt;Result order changes. Two events can have the same title. Keeping a selected array index or comparing titles can therefore select a different event after results change. This example stores &lt;code&gt;selectedEventID&lt;/code&gt; and resolves it against the current list.&lt;/p&gt;
+&lt;p&gt;The policy is deliberately simple: starting a new query clears previous results and selection. Clearing the query produces an empty idle state and invalidates pending work. A product could keep previous results while refreshing, but it would need to explain that distinction in its state model and tests.&lt;/p&gt;
+&lt;h2&gt;Test the troublesome ordering directly&lt;/h2&gt;
+&lt;p&gt;The seven tests use a controlled asynchronous fetcher. A test waits until a request starts, starts a second request, and chooses exactly when each one succeeds or fails. The fetcher intentionally ignores cancellation until the test resolves its continuation. This tests the failure mode that a polite mock service would conceal.&lt;/p&gt;
+&lt;p&gt;The checks cover late successful results, obsolete failures, stale cleanup, an empty query, selection by identifier, a current error, and cancellation during debounce. They passed with Swift 6.4 on macOS on October 2, 2026. No live server, iPhone runtime, SwiftUI adapter or performance benchmark was part of that validation.&lt;/p&gt;
+&lt;p&gt;The pattern applies anywhere an interface can supersede asynchronous work: search suggestions, filters, geocoding or remote detail loading. Each product still needs its own rules for retaining results, displaying errors, leaving a screen and restoring selection. The package makes one such set of rules explicit and testable.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/examples/event-search/README.md"&gt;Code and tests&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Robin's professional background&lt;/a&gt; · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-10-02</dc:date>
+      <atom:link rel="related" href="https://dev.to/robinwinters/swift-search-cancellation-needs-an-ownership-check-44m4" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/swift-search-cancellation-needs-an-ownership-check-c2c6cd598ffc" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/swift-search-cancellation-needs-an-ownership-check" type="text/html" title="Hashnode edition" />
+    </item>
+    <item>
+      <title>Fitness event feeds: explicit dates, stable identity and visible conflicts</title>
+      <link>https://robinwinters.github.io/writing/fitness-event-data-contracts.html</link>
+      <guid isPermaLink="false">https://robinwinters.github.io/writing/fitness-event-data-contracts.html</guid>
+      <description>&lt;article class="prose"&gt;&lt;h1&gt;Fitness event feeds: explicit dates, stable identity and visible conflicts&lt;/h1&gt;
+&lt;p&gt;Robin Winters · October 2, 2026 · &lt;a href="https://robin.ac/"&gt;robin.ac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A map can look polished while the events behind it are ambiguous. Two feeds may repeat a record, supply different start times for the same event, or omit the timezone. Guessing produces a neat interface at the cost of hiding uncertainty. A better starting point is a small contract that makes each decision inspectable.&lt;/p&gt;
+&lt;p&gt;This article accompanies a &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;standalone Swift teaching package&lt;/a&gt;, prepared with coding-assistant support. Its fixtures are synthetic. It is separate from private ShowFlex code and does not claim a customer deployment, an implemented product integration or measured performance improvements.&lt;/p&gt;
+&lt;h2&gt;Start with the fields you can actually defend&lt;/h2&gt;
+&lt;p&gt;The example accepts a provider ID, a feed ID, a title, a start timestamp, an optional end timestamp and an HTTPS source URL. The combination of feed ID and provider ID becomes the stable identity. Titles are display text; a matching title does not justify merging records. Different feeds can describe related real-world events, but cross-feed entity resolution requires evidence that this package deliberately does not invent.&lt;/p&gt;
+&lt;p&gt;The package normalizes the feed slug to lowercase and trims provider IDs while preserving their case. Neither ID may contain the colon used to join them. That keeps &lt;code&gt;feed-a:event-17&lt;/code&gt; unambiguous within the stated contract. A real service would also need to establish whether each provider guarantees stable IDs across updates and deletions.&lt;/p&gt;
+&lt;h2&gt;Timezone ambiguity is a data state&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;2027-03-14T10:00:00-07:00&lt;/code&gt; has an explicit offset and can be represented as &lt;code&gt;2027-03-14T17:00:00Z&lt;/code&gt;. A timestamp without an offset does not establish that instant. The example rejects it instead of using the machine's local timezone. It also rejects invalid calendar dates rather than allowing them to roll into a different day.&lt;/p&gt;
+&lt;p&gt;An unknown end time remains absent. Adding a guessed two-hour duration would manufacture information. If an end is supplied, it must be later than the start. Date-only events, recurring schedules, named timezones and fractional seconds need their own policies; unsupported timestamp forms are rejected here.&lt;/p&gt;
+&lt;p&gt;UTC output makes the normalization reproducible. A calendar or mobile interface would still need a deliberate display-timezone policy. That interface work is outside this package's execution evidence.&lt;/p&gt;
+&lt;h2&gt;A duplicate and a conflict deserve different treatment&lt;/h2&gt;
+&lt;p&gt;Two valid rows with the same identity and the same normalized payload are retransmissions. Keep one event and issue a duplicate receipt for the other row. Equivalent explicit-offset timestamps and collapsed title whitespace can produce an identical normalized payload.&lt;/p&gt;
+&lt;p&gt;Two different valid payloads with the same identity are a conflict. The example removes that event from accepted output and marks every related valid row as conflicted, including a duplicate already seen earlier. No row wins simply because it arrived first. Permuting the input order therefore cannot choose a different accepted version of that conflicting identity.&lt;/p&gt;
+&lt;p&gt;This is a teaching policy, not the only useful production policy. A provider revision number, authenticated correction or trusted snapshot might establish a winner. Without that evidence, a quarantine is easier to explain than a silent overwrite.&lt;/p&gt;
+&lt;h2&gt;Return a receipt for every row&lt;/h2&gt;
+&lt;p&gt;The output includes sorted accepted events and one receipt per input row: accepted, duplicate, conflict or rejected. Each receipt records the input index and a reason. A rejected row can therefore be traced to the input rather than disappearing into an apparently successful empty array.&lt;/p&gt;
+&lt;p&gt;The supplied five-row fixture produces one accepted event, one duplicate receipt, two conflict receipts and one invalid-date rejection. Invalid JSON exits with status 1 and produces no successful JSON report. That distinction matters when a command-line tool is used in a larger workflow: malformed input and a valid feed containing no accepted events are different outcomes.&lt;/p&gt;
+&lt;h2&gt;Keep provenance narrower than proof&lt;/h2&gt;
+&lt;p&gt;The source URL is retained as a retrieval pointer. The package rejects non-HTTPS URLs, embedded credentials and fragments. It does not fetch those URLs, authenticate a provider or establish that a claimed event exists. Every fixture URL uses the reserved example.org domain.&lt;/p&gt;
+&lt;p&gt;Storing provenance is a useful first step toward investigating a record. It should not be described as verification of that record. A production ingestion system needs provider authorization, versioned snapshots, update and deletion rules, observability and retry behavior alongside its field validation.&lt;/p&gt;
+&lt;h2&gt;Evidence a reviewer can inspect&lt;/h2&gt;
+&lt;p&gt;On October 2, 2026, the package passed 12 Swift Testing checks on macOS with Swift 6.4. The checks cover timezone equivalence, retransmissions, conflict propagation and ordering, source-scoped identity, malformed dates, missing offsets, end-time rules, URL restrictions, unknown ends and sorted output. The command-line fixture and malformed-JSON failure path were also exercised. The repository includes &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/tree/Radpository/Fixtures"&gt;fixtures&lt;/a&gt; and &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline/blob/Radpository/verification.json"&gt;verification details&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These results describe this educational package. They do not establish iPhone-device execution, Linux execution, an App Store release or an improvement to an existing product. The value of the example is that its contracts and failure decisions are small enough to inspect and reproduce.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/README.md"&gt;Professional work and evidence&lt;/a&gt; · &lt;a href="https://robinwinters.github.io/writing/"&gt;Full writing index&lt;/a&gt; · &lt;a href="https://github.com/RobinWinters/fitness-event-data-pipeline"&gt;Source package&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-10-02</dc:date>
+      <atom:link rel="related" href="https://dev.to/robinwinters/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-161p" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts-deaff1e6be83" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/fitness-event-feeds-explicit-dates-stable-identity-and-visible-conflicts" type="text/html" title="Hashnode edition" />
+    </item>
+    <item>
+      <title>In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.</title>
+      <link>https://robinwinters.github.io/writing/ios-27-liquid-glass.html</link>
+      <guid isPermaLink="false">https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/</guid>
+      <description>&lt;article class="prose republished"&gt;&lt;h1&gt;In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.&lt;/h1&gt;&lt;p&gt;By &lt;a href="https://robin.ac/"&gt;Robin Winters&lt;/a&gt;&lt;/p&gt;&lt;p class="note"&gt;First published June 30, 2026 on &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;LinkedIn&lt;/a&gt;. Republished October 2, 2026 with original wording, images and captions. Technical observations and opinions retain their original context.&lt;/p&gt;
+&lt;img alt="Translucent rounded sliders, a green toggle, a plus button and a shape-selection panel labeled One, Two and Three, over a pale grid." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-2.jpg"&gt;
+&lt;figcaption&gt;
+            Apple's Liquid Glass Design Language
+          &lt;/figcaption&gt;
+&lt;div class="article-body"&gt;
+
+&lt;p&gt;
+The grace period for opting out is over and Liquid Glass will be applied to your app automatically, like it or not.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+In all honesty I didn't really understand Liquid Glass when it was announced at dub dub last year. However, after several developer events including "one on one's" and lab appointments at Apple campus, I've come around to it.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Below is a somewhat impromptu look at how I've implemented Liquid Glass into my projects. Important to note that I'm usually running the developer beta of whatever I'm building for/in, including Xcode, and things are subject to change before public updates go out. CYA.
+ &lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;hr&gt;
+
+
+&lt;p&gt;
+Like a lot of other devs, I've been tinkering with all the new fine tuning features in iOS/Xcode 27, and there's a LOT to go over. Most importantly, imo, is the Device Hub.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+ &lt;img alt="ShowFlex sign-in screen in an iPhone simulator beside controls for Dark appearance, Clear Liquid Glass and accessibility options. The selected simulator is labeled iPhone 17 Pro Max, iOS 26.5." decoding="async" loading="lazy" src="https://robinwinters.github.io/writing/images/ios-27-liquid-glass-1.png"&gt;
+&lt;figcaption&gt;
+It's...glorious.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+
+
+&lt;p&gt;
+Not to gush, but the Device Hub has been on many a wish list and Apple delivered. Testing is  one of my favorite things to do during the development process, and being able to visually poke at UI/UX across devices and OS iterations, and tweaking the accessibility features is just "Chef's Kiss" for me.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Anyway!
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+I've tried to use Liquid Glass as minimally as possible. As a design principle, I want the UI to get out of the user's way so the content and UX are the primary focus. For ShowFlex, the strongest use is in the global navigation layer. The floating header orb and bottom tab bar use &lt;strong&gt;GlassEffectContainer&lt;/strong&gt;, circular&lt;strong&gt; .glassEffect&lt;/strong&gt;, &lt;strong&gt;glassEffectID&lt;/strong&gt;, and matched geometry so the app’s primary controls behave like native system surfaces. The controls sit above constantly changing content. Event/News feeds, rosters, athlete cards, event details, and social views. Liquid Glass lets the chrome hangout in reach without becoming heavy, and it gives taps, expansion, collapse, and selection changes a physical feel.
+ &lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Watch this video in the original LinkedIn article&lt;/a&gt;&lt;/p&gt;&lt;/figure&gt;
+&lt;figcaption&gt;
+        I call it "Bloopy"
+      &lt;/figcaption&gt;
+&lt;p&gt;
+I try to not overuse it. Dense content surfaces, especially the athlete lineup cards in the above video from the app, often keep a stable filled background and add a lighter custom glass edge treatment instead of full translucency, but the clear material modifier looks pretty cool with bright colors and patterns passing underneath it. Adjust as needed, especially using/testing with Device Hub, to keep things readable and fast in scan heavy areas while still giving the product the same polished visual vocabulary. For more focused surfaces like auth gates, I used native glass more directly b/c those elements benefit from a stronger sense of elevation and touchability. "Touchability" is a word now, just like "Bloopy" which is what I call the animation effect for the tab bar at the bottom of the screen.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+It's basically a question of hierarchy. Glass marks interactive surfaces as touchable, while content cards stay legible. Interactive glass is mostly reserved for things the user acts on like passive surfaces using regular glass or edge highlights.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+There’s also a shared adapter layer &lt;strong&gt;sfGlass&lt;/strong&gt; applies native &lt;strong&gt;.glassEffect&lt;/strong&gt; and keeps an &lt;strong&gt;.ultraThinMaterial&lt;/strong&gt; fallback for older probes. That wrapper is used for practical control surfaces like search bars and sheets. A custom &lt;strong&gt;liquidGlassEdge&lt;/strong&gt; and &lt;strong&gt;lightweightLiquidGlassEdge&lt;/strong&gt; modifiers keep the existing solid card background, then add rim/highlight treatment for depth without making dense list content fully translucent.
+ &lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Watch this video in the original LinkedIn article&lt;/a&gt;&lt;/p&gt;&lt;/figure&gt;
+&lt;figcaption&gt;
+        Auth screen
+      &lt;/figcaption&gt;
+&lt;p&gt;
+On the main auth screen Liquid Glass is used as the control layer over a video backdrop. It renders a looping video background, darkens it with a black overlay, then places the branding and auth controls directly on top, letting the screen feel cinematic while the glass controls pick up the background motion/material instead of hiding it. I think about it like applying an optical illusion to a control surface so we're not blocking the action going on in the back, but also keeping the layers separate.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+That's it for now!
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Apple says pretty specifically to not overuse the material modifier and to use native as much as possible. Group menus and effects so rendering doesn't bog the device down, and keep in mind the accessibility features as they can fundamentally change the UI/UX. Use Device Hub and Instruments to pick out and shave off hangs and root out resource hogs. Biggest takeaway: Less is more. Get out of the user's way and let the device do the work with native implementations over custom jobs.
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+Build accordingly and have fun!
+ &lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt;
+🤘Robin
+ &lt;/p&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;p&gt;&lt;a href="https://robinwinters.github.io/writing/"&gt;All writing&lt;/a&gt; · &lt;a href="https://www.linkedin.com/pulse/ios-27-xcode-liquid-glass-applied-your-app-robin-winters-mcxnc/"&gt;Original LinkedIn edition&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;</description>
+      <dc:creator>Robin Winters</dc:creator>
+      <dc:date>2026-06-30</dc:date>
+      <atom:link rel="related" href="https://dev.to/robinwinters/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-3d90" type="text/html" title="DEV edition" />
+      <atom:link rel="related" href="https://medium.com/@robin_61077/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically-48c61ffbb971" type="text/html" title="Medium edition" />
+      <atom:link rel="related" href="https://robinwinters.hashnode.dev/in-ios-27-and-xcode-27-liquid-glass-will-be-applied-to-your-app-automatically" type="text/html" title="Hashnode edition" />
+    </item>
+  </channel>
+</rss>
