@@ -1,0 +1,91 @@
+{
+  "publishedAt": "2026-10-04T19:24:04.275384+00:00",
+  "run": "https://github.com/RobinWinters/RobinWinters/actions/runs/37227053548",
+  "testedSourceRevision": "de155d8e56a1d85696236bb4fb24ac00a9e2a942",
+  "environment": {
+    "device": "iPhone Air",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+    "udid": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+    "sourceRevision": "de155d8e56a1d85696236bb4fb24ac00a9e2a942",
+    "swift": "swift-driver version: 1.148.6 Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\nTarget: arm64-apple-macosx26.0",
+    "xcode": "Xcode 26.6\nBuild version 17F113",
+    "simulatorSDK": "26.5",
+    "scope": "Synthetic public teaching demo; no private ShowFlex or physical device"
+  },
+  "testSummary": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+          "deviceName": "iPhone Air",
+          "modelName": "iPhone Air",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 4,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "EventSearchDemo \u00b7 Built with macOS 26.6.2",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791141313.154,
+    "passedTests": 4,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1791141096.402,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - EventSearchDemo",
+    "topInsights": [],
+    "totalTestCount": 4
+  },
+  "recording": {
+    "finishedAt": "2026-10-04T19:15:13.980807+00:00",
+    "sourceRevision": "de155d8e56a1d85696236bb4fb24ac00a9e2a942",
+    "simulatorUDID": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+    "testCommandExitCode": 0,
+    "recordingStartedObserved": true,
+    "file": "native-interface-run.mp4",
+    "bytes": 24989173,
+    "codecRequested": "h264",
+    "scope": "Unedited simulator recording of synthetic public teaching-demo XCTest interactions; no private ShowFlex or physical-device footage",
+    "playbackVerified": true
+  },
+  "playbackReview": {
+    "verified": true,
+    "durationSeconds": 234.175,
+    "width": 1260,
+    "height": 2736,
+    "scope": "Browser decoded and played original recording; sought to 125, 170 and 219 seconds. Cancelled late-request interface observed around 170 seconds. Not a frame-by-frame review."
+  },
+  "media": {
+    "url": "https://robinwinters.github.io/writing/media/native-search-interface-run-2026-10-04.mp4",
+    "bytes": 24989173,
+    "sha256": "f50e163999de412de52356b42f8182a288ff83129ecef29bae66bbe2be9cff8c",
+    "unedited": true
+  },
+  "poster": {
+    "url": "https://robinwinters.github.io/writing/images/native-search-recording-poster-2026-10-04.png",
+    "sha256": "2dde709893d7f5288712051000036e346b598a8587054f2c859e5e8151692039",
+    "source": "Unmodified XCTest screenshot from the same CI run, representative of the recorded cancellation test; not extracted from the MP4",
+    "attachment": {
+      "configurationName": "Test Scheme Action",
+      "deviceId": "CB15797E-6053-40B1-BB72-7F30D005A4F2",
+      "deviceName": "iPhone Air",
+      "exportedFileName": "0968BBDB-9D13-4BC3-8D11-C5DDEF75E80F.png",
+      "isAssociatedWithFailure": false,
+      "suggestedHumanReadableName": "cancelled-after-late-completion_0_E8E0EA7E-C9AD-4991-BBCA-635903FD9366.png",
+      "timestamp": 1791141257.923
+    }
+  },
+  "scope": "Synthetic public teaching demo prepared with coding-assistant support. Not private ShowFlex code, production footage, a physical-device run, accessibility or performance evidence."
+}
