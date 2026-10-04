@@ -30,7 +30,7 @@ My [distributed sensing article](../work/technical-writing.md) proposes an archi
 
 ## Reproducible data-contract example
 
-The [Swift fitness event pipeline](https://github.com/RobinWinters/fitness-event-data-pipeline) validates explicit timestamps, source identity, retransmissions and conflicts. It includes synthetic fixtures, a command-line executable and 12 passing macOS tests. This is standalone educational code prepared with coding-assistant support, separate from private ShowFlex work. The [technical account](../writing/fitness-event-data-contracts.md) explains its decisions.
+The [Swift fitness event pipeline](https://github.com/RobinWinters/fitness-event-data-pipeline) validates explicit timestamps, source identity, retransmissions and conflicts. It includes synthetic fixtures, a command-line executable and 12 passing tests on macOS and Linux, including Swift 6.0.3. This is standalone educational code prepared with coding-assistant support, separate from private ShowFlex work. The [technical account](../writing/fitness-event-data-contracts.md) explains its decisions.
 
 ## Application formats
 

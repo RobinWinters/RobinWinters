@@ -62,7 +62,7 @@ My repositories include forks and upstream projects. Those retain their original
 
 ## Reproducible examples and deeper accounts
 
-- [Fitness event data contracts](writing/fitness-event-data-contracts.md), with a [Swift library, command-line tool, synthetic fixtures and 12 passing macOS tests](https://github.com/RobinWinters/fitness-event-data-pipeline). A separate educational example prepared with coding-assistant support.
+- [Fitness event data contracts](writing/fitness-event-data-contracts.md), with a [Swift library, command-line tool, synthetic fixtures and 12 passing tests on macOS and Linux, including Swift 6.0.3](https://github.com/RobinWinters/fitness-event-data-pipeline). A separate educational example prepared with coding-assistant support.
 
 - [Swift search request ownership](writing/swift-search-request-ownership.md), with [code and seven macOS tests](examples/event-search/README.md), also hosted on [Codeberg](https://codeberg.org/RobinWinters/swift-search-request-ownership). A separate educational example prepared with coding-assistant support.
 - [ShowFlex: connecting native event discovery with structured data](work/showflex-event-discovery.md)
