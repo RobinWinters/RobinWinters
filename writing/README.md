@@ -96,3 +96,21 @@ Public feed delivery: [canonical topics and push-update instructions](feed-deliv
 ## Xclawd Duo development preview — October 8, 2026
 
 [Xclawd Duo: an early iPhone Duo IDE preview](xclawd-duo-early-preview.md) · [Watch the full recording](https://robinwinters.github.io/writing/xclawd-duo-early-preview.html). Folding layouts, tabletop keyboard and original Aqua/Windows themes; early development status retained.
+
+## X editions — October 8, 2026
+
+The same thirteen works are available as X Articles. Original wording and attribution are retained; code uses native blocks and original artwork is uploaded directly. These are additional editions, not independent endorsements.
+
+- [Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase](https://x.com/R0BINWinters/status/2108338827538649313)
+- [Distributed Kinematic Sensing and Exercise Intelligence Across Apple Fitness+, GymKit and HealthKit](https://x.com/R0BINWinters/status/2108340418056454536)
+- [Kinematics Lab Part II: You Don't Need Another...](https://x.com/R0BINWinters/status/2108341271647719491)
+- [Swift search request ownership](https://x.com/R0BINWinters/status/2108344341395841334)
+- [Fitness event feeds: explicit dates, stable identity and visible conflicts](https://x.com/R0BINWinters/status/2108343559590232453)
+- [In iOS 27 and Xcode 27 Liquid Glass will be applied to your app automatically.](https://x.com/R0BINWinters/status/2108341983123316779)
+- [What if Myspace Had It Right?](https://x.com/R0BINWinters/status/2108342379585659197)
+- [The “Any Given Tuesday” Theory of AI Startups](https://x.com/R0BINWinters/status/2108342660486623743)
+- [How to Get Around AI Chat App Boundaries (and prevent it from happening)](https://x.com/R0BINWinters/status/2108343039903289676)
+- [ShowFlex: event discovery connects native interaction with structured data](https://x.com/R0BINWinters/status/2108343307000746208)
+- [Yukon Systems: AI systems and product delivery](https://x.com/R0BINWinters/status/2108344028639236299)
+- [A SwiftUI search adapter needs its own request ownership](https://x.com/R0BINWinters/status/2108345785066868825)
+- [Verify a Swift package’s minimum toolchain and CLI contract](https://x.com/R0BINWinters/status/2108344593670639624)
