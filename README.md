@@ -92,3 +92,7 @@ NASM Certified Personal Trainer (NASM-CPT), NASM Certified Nutritionist, and [Ph
 ## Author discovery - October 4, 2026
 
 The separate public reference and writing index advertise confirmed identity links through `rel="me"` and footer h-card attributes. The writing index Person record uses the same approved profile URLs as the professional record. These are self-declared connections, not independent verification or a promise of crawler extraction. The external RSS Amplifier directory has read all thirteen source entries with their original links and Robin Winters bylines; its JSON Feed also inserts a clearly marked sponsored item, excluded from the writing count. https://rssamplifier.com/robin-winters-technical-writing
+
+### Xclawd Duo — early interface preview
+
+[Watch the full iPhone Duo recording](https://robinwinters.github.io/writing/xclawd-duo-early-preview.html): a folding coding workspace, tabletop keyboard and Aqua/Windows NT-inspired themes. This is an early development build, separate from the shipped ShowFlex product.

@@ -2,7 +2,7 @@
   "format": "public-writing-bibliography",
   "author": "Robin Winters",
   "authorUrl": "https://robin.ac/",
-  "reviewedOn": "2026-10-03",
+  "reviewedOn": "2026-10-08",
   "articles": [
     {
       "title": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
@@ -435,6 +435,18 @@
         }
       ],
       "editionEvidenceNote": "Same self-authored work; no independent endorsement or indexing proof. Medium edition remains an unpublished draft under the platform 24-hour publication limit."
+    },
+    {
+      "title": "Xclawd Duo: an early iPhone Duo IDE preview",
+      "url": "https://robinwinters.github.io/writing/xclawd-duo-early-preview.html",
+      "datePublished": "2026-10-08",
+      "scope": "Early Xclawd Duo development/interface preview with the supplied full recording; not a released-product claim.",
+      "author": "Robin Winters",
+      "authorUrl": "https://robin.ac/",
+      "evidenceClass": "self-authored project preview",
+      "datePrecision": "day",
+      "originalPost": "https://www.linkedin.com/feed/update/urn:li:activity:7513816884191043584/",
+      "fullTextMarkdown": "xclawd-duo-early-preview.md"
     }
   ]
 }

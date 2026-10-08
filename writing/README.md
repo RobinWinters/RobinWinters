@@ -92,3 +92,7 @@ Verified additional editions: [DEV](https://dev.to/robinwinters/verify-a-swift-p
 [Download the October 3 technical writing collection](https://robinwinters.github.io/downloads/technical-writing.html): thirteen existing works, all eighteen article images and simulator captures, preserved prose/code, and source attribution. The EPUB is a dated compilation, not a new article, independent endorsement or additional artwork license. [Repository copy](technical-writing-2026-10-03.epub).
 
 Public feed delivery: [canonical topics and push-update instructions](feed-delivery.md).
+
+## Xclawd Duo development preview — October 8, 2026
+
+[Xclawd Duo: an early iPhone Duo IDE preview](xclawd-duo-early-preview.md) · [Watch the full recording](https://robinwinters.github.io/writing/xclawd-duo-early-preview.html). Folding layouts, tabletop keyboard and original Aqua/Windows themes; early development status retained.
