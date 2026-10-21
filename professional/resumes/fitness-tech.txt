@@ -39,6 +39,10 @@ TECHNICAL FOCUS
 Swift, SwiftUI, MapKit, Firebase, native iOS architecture, structured data pipelines, applied AI workflows, product delivery.
 
 PROJECT AND WRITING EVIDENCE
+Xclawd Duo | Early iPhone Duo interface preview
+Folding coding workspace, tabletop keyboard, and Aqua/Windows NT-inspired themes. Early development build; no App Store release asserted.
+Full 57.15-second preview: https://robinwinters.github.io/writing/xclawd-duo-early-preview.html
+
 TORos | Yukon Systems | Prototype
 Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.
 Prototype status; no production deployment or measured accuracy/reliability claim. Development dates and collaborator credits are not yet documented.

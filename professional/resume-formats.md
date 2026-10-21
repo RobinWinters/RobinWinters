@@ -6,7 +6,7 @@ The approved work record is available as [plain text](resume.txt), a [detailed p
 
 The [current PDF resume](resume-current.pdf), dated October 3, 2026, preserves every line of the current approved [plain-text record](resume.txt), including TORos and all three confirmed NASM credentials. It contains selectable text and ordinary clickable source links. Both pages were rendered and visually reviewed; text extraction preserved all 50 nonempty source lines after whitespace normalization. A particular ATS has not been tested, and PDF/UA tagging is not claimed.
 
-The [original PDF resume](resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
+The [original PDF resume](https://github.com/RobinWinters/RobinWinters/blob/6d201503e2926a2920fa0edf7ae1c61efbf99a31/professional/resume.pdf) is a one-page conversion of the approved Word resume, with selectable text and document tags. Layout-preserving text extraction matches every original paragraph after whitespace and list-bullet normalization. All one-page content was visually reviewed. This checks text preservation and layout; parsing by a specific ATS has not been tested. No application was submitted.
 
 ## Standard export
 
@@ -49,3 +49,5 @@ The [Word resume](resume.docx) preserves all 50 nonempty lines of the approved O
 ## Current alignment — October 21, 2026
 
 Work titles, responsibility descriptions and education now follow Robin’s updated LinkedIn profile. Structured dates retain supplied month precision; Yukon’s end date remains 2025. The hosted rendering places dates in visible text to avoid fabricated months or days. The current PDF and Word documents were regenerated; the explicitly labeled original PDF is historical and remains unchanged.
+
+Standard `resume.pdf` and `resume-current.pdf` downloads now both use the current October 21, 2026 record. The explicitly linked original PDF is retained at an immutable historical Git commit.

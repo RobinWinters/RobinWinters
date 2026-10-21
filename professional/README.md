@@ -34,7 +34,7 @@ Additional NASM credentials: **Certified Personal Trainer (NASM-CPT)** and **NAS
 
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
 - [Current PDF resume](resume-current.pdf): the October 21 updated text record, including TORos and all three confirmed NASM credentials, with selectable text and source links.
-- [Original PDF resume](resume.pdf): the preserved one-page, tagged conversion of the earlier approved Word resume.
+- [Original PDF resume](https://github.com/RobinWinters/RobinWinters/blob/6d201503e2926a2920fa0edf7ae1c61efbf99a31/professional/resume.pdf): the preserved one-page, tagged conversion of the earlier approved Word resume.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
 - [Three application-focused resume variants](resumes/README.md): native iOS, Forward Deployed Engineer targets and fitness technology, using identical held roles and dates.
 - [JSON Resume export](resume.json): a schema-validated representation for compatible resume tools. [Format notes](resume-formats.md) explain dates and source boundaries.
@@ -52,3 +52,5 @@ These are normal public files. Publishing them does not register a candidate wit
 The records describe the San Francisco professional associated with robin.ac. A shared name alone does not establish that another profile belongs to the same person. Repository ownership and forks do not establish original authorship of upstream work.
 
 Updated October 3, 2026. Prepared with editorial assistance.
+
+Standard `resume.pdf` and `resume-current.pdf` downloads now both use the current October 21, 2026 record. The explicitly linked original PDF is retained at an immutable historical Git commit.

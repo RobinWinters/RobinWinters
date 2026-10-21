@@ -106,6 +106,16 @@
   ],
   "projects": [
     {
+      "name": "Xclawd Duo — early iPhone Duo interface preview",
+      "description": "Robin Winters’s early preview of an AI-enabled IDE for iPhone Duo, with a folding coding workspace, tabletop keyboard, and Aqua and Windows NT-inspired themes.",
+      "url": "https://robinwinters.github.io/writing/xclawd-duo-early-preview.html",
+      "highlights": [
+        "Early development build; folding layouts, tabletop keyboard and Aqua/Windows NT-inspired themes.",
+        "Full-length 57.15-second simulator preview; no App Store release, successful AI generation or measured performance claim.",
+        "Original LinkedIn post: https://www.linkedin.com/feed/update/urn:li:activity:7513816884191043584/"
+      ]
+    },
+    {
       "name": "ShowFlex iPhone product",
       "url": "https://apps.apple.com/us/app/showflex/id6757890910",
       "description": "Native iOS engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
