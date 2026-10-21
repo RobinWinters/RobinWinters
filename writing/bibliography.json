@@ -2,7 +2,7 @@
   "format": "public-writing-bibliography",
   "author": "Robin Winters",
   "authorUrl": "https://robin.ac/",
-  "reviewedOn": "2026-10-08",
+  "reviewedOn": "2026-10-21",
   "articles": [
     {
       "title": "Building an iOS Moderation Layer with Apple Foundation Models framework and Firebase",
@@ -44,6 +44,13 @@
           "relation": "self-authored republication",
           "status": "published",
           "publicationVerifiedOn": "2026-10-08"
+        },
+        {
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/moderation.md",
+          "relation": "self-authored source edition",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -88,6 +95,13 @@
           "relation": "self-authored republication",
           "status": "published",
           "publicationVerifiedOn": "2026-10-08"
+        },
+        {
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/distributed-kinematic-sensing.md",
+          "relation": "self-authored source edition",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -125,6 +139,13 @@
           "relation": "self-authored republication",
           "status": "published",
           "publicationVerifiedOn": "2026-10-08"
+        },
+        {
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/kinematics-lab-part-ii.md",
+          "relation": "self-authored source edition",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -161,11 +182,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108344341395841334",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/swift-search-request-ownership.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -202,11 +223,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108343559590232453",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/fitness-event-data-contracts.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -246,11 +267,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108341983123316779",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/ios-27-liquid-glass.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -283,11 +304,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108342379585659197",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/what-if-myspace-had-it-right.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -325,6 +346,13 @@
           "relation": "self-authored republication",
           "status": "published",
           "publicationVerifiedOn": "2026-10-08"
+        },
+        {
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/any-given-tuesday-ai-startups.md",
+          "relation": "self-authored source edition",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -364,11 +392,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108343039903289676",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/ai-chat-app-boundaries.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -406,11 +434,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108343307000746208",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/showflex-event-discovery.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -448,11 +476,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108344028639236299",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/yukon-systems.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same self-authored work, not independent endorsements. Publication verification does not establish search indexing."
@@ -490,11 +518,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108345785066868825",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/swiftui-search-ownership-demo.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "These are copies of the same work prepared with coding-assistant support, not independent endorsements. Publication verification does not establish search indexing."
@@ -518,11 +546,11 @@
           "publicationVerifiedOn": "2026-10-03"
         },
         {
-          "publisher": "X",
-          "url": "https://x.com/R0BINWinters/status/2108344593670639624",
-          "relation": "self-authored republication",
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/swift-package-compatibility.md",
+          "relation": "self-authored source edition",
           "status": "published",
-          "publicationVerifiedOn": "2026-10-08"
+          "publicationVerifiedOn": "2026-10-21"
         }
       ],
       "editionEvidenceNote": "Same self-authored work; no independent endorsement or indexing proof. Medium edition remains an unpublished draft under the platform 24-hour publication limit."
@@ -566,6 +594,13 @@
           "status": "published",
           "relation": "self-authored syndication",
           "publicationVerifiedOn": "2026-10-08"
+        },
+        {
+          "publisher": "Codeberg",
+          "url": "https://codeberg.org/RobinWinters/technical-writing/src/branch/main/xclawd-duo-early-preview.md",
+          "relation": "self-authored source edition",
+          "status": "published",
+          "publicationVerifiedOn": "2026-10-21"
         }
       ]
     }

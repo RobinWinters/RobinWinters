@@ -102,3 +102,5 @@ The separate public reference and writing index advertise confirmed identity lin
 ### Xclawd Duo — early interface preview
 
 [Watch the full iPhone Duo recording](https://robinwinters.github.io/writing/xclawd-duo-early-preview.html): a folding coding workspace, tabletop keyboard and Aqua/Windows NT-inspired themes. This is an early development build, separate from the shipped ShowFlex product.
+
+[Codeberg writing collection](https://codeberg.org/RobinWinters/technical-writing): fourteen existing articles and work accounts, including the Xclawd Duo preview, original artwork references and current professional record.
