@@ -2,17 +2,21 @@
 
 Robin Winters builds native iOS software and applied AI systems, with a focus on fitness technology. Based in San Francisco.
 
-This record keeps work history, project status and evidence together in formats useful to people and ordinary retrieval tools. It is self-authored. Supported claims were approved by Robin on October 2, 2026; exact education qualifications remain unresolved and are omitted.
+This record keeps work history, project status and evidence together in formats useful to people and ordinary retrieval tools. It is self-authored. Supported claims were approved by Robin on October 2, 2026; education and work history follow Robin’s updated LinkedIn profile, reviewed October 21, 2026.
 
 ## Work
 
-| Organization | Held title | Year range |
+| Organization | Held title | Dates |
 |---|---|---|
-| ShowFlex | iOS/Full Stack Engineer | 2024–present |
-| Yukon Systems | Product Development Manager | 2023–2025 |
-| Organic Alkaloids | Co-owner | 2017–2023 |
+| ShowFlex Inc | iOS Engineer | Nov 2024–present |
+| Yukon Systems | iOS Engineer, AI Systems Engineer | Mar 2023–2025 |
+| Organic Alkaloids | iOS Developer | Jul 2017–Feb 2023 |
 
 Robin is interested in iOS developer, Forward Deployed Engineer and fitness-technology roles. Forward Deployed Engineer is a target role, not a previously held title.
+
+## Education
+
+The updated LinkedIn profile lists a Bachelor of Arts in Communications from The University of North Carolina at Chapel Hill, Founder Institute Launch Track (Startup Accelerator; October 2025–February 2026; Graduate), and Le Cordon Bleu Grand Diplôme. UNC and Le Cordon Bleu dates are not supplied.
 
 ## Applied AI project
 
@@ -29,12 +33,12 @@ Additional NASM credentials: **Certified Personal Trainer (NASM-CPT)** and **NAS
 - [Readable professional reference and HTML writing](https://robinwinters.github.io/): approved work history, scoped project evidence and resume downloads on GitHub Pages.
 
 - [Machine-readable JSON](professional-record.json): identity, work, project status, evidence and attribution boundaries.
-- [Current PDF resume](resume-current.pdf): the October 3 approved text record, including TORos and all three confirmed NASM credentials, with selectable text and source links.
+- [Current PDF resume](resume-current.pdf): the October 21 updated text record, including TORos and all three confirmed NASM credentials, with selectable text and source links.
 - [Original PDF resume](resume.pdf): the preserved one-page, tagged conversion of the earlier approved Word resume.
 - [Plain-text resume](resume.txt): simple text for reviewing or adapting to a specific application. No application has been submitted through this record.
 - [Three application-focused resume variants](resumes/README.md): native iOS, Forward Deployed Engineer targets and fitness technology, using identical held roles and dates.
 - [JSON Resume export](resume.json): a schema-validated representation for compatible resume tools. [Format notes](resume-formats.md) explain dates and source boundaries.
-- [Hosted resume](https://registry.jsonresume.org/RobinWinters): an additional public rendering from the existing GitHub account, preserving year-only work ranges.
+- [Hosted resume](https://registry.jsonresume.org/RobinWinters): an additional public rendering from the existing GitHub account, preserving the supplied work-date precision.
 - [Questions and answers](questions-and-answers.md): concise answers about work, projects and professional interests.
 - [Role interests and relevant evidence](role-focus.md): native iOS, FDE targets and fitness technology.
 - [Evidence index](evidence-index.md): what each source establishes and who authored it.

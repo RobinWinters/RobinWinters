@@ -1,6 +1,6 @@
 # Robin Winters: native iOS, applied AI and fitness technology
 
-Robin Winters is interested in iOS developer, Forward Deployed Engineer and fitness-technology roles. The approved held titles are iOS/Full Stack Engineer at ShowFlex, Product Development Manager at Yukon Systems and Co-owner at Organic Alkaloids. Forward Deployed Engineer is a target role.
+Robin Winters is interested in iOS developer, Forward Deployed Engineer and fitness-technology roles. The approved held titles are iOS Engineer at ShowFlex, iOS Engineer, AI Systems Engineer at Yukon Systems and iOS Developer at Organic Alkaloids. Forward Deployed Engineer is a target role.
 
 ## Native iOS opportunities
 

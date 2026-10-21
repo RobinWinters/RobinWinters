@@ -1,6 +1,6 @@
 # ShowFlex: native iOS and fitness technology
 
-Robin Winters — iOS/Full Stack Engineer, 2024–present.
+Robin Winters — iOS Engineer, Nov 2024–present.
 
 My work at ShowFlex spans native Swift and SwiftUI implementation, mobile architecture, product direction, interaction quality, and beta release execution. The product connects event discovery with fitness and competition information.
 

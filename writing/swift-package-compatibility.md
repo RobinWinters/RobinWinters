@@ -2,7 +2,7 @@
 
 Robin Winters · October 3, 2026
 
-I’m an iOS / Full Stack Engineer at ShowFlex, a shipped [iPhone fitness product](https://apps.apple.com/us/app/showflex/id6757890910). This article examines a separate, public Swift teaching package prepared with coding-assistant support. Its fixtures are synthetic; the results below are not a test report for ShowFlex.
+I’m an iOS Engineer at ShowFlex, a shipped [iPhone fitness product](https://apps.apple.com/us/app/showflex/id6757890910). This article examines a separate, public Swift teaching package prepared with coding-assistant support. Its fixtures are synthetic; the results below are not a test report for ShowFlex.
 
 A package that passes on my current Mac has established something useful. It has not established that another person can build it on the oldest supported tools, on Linux, or with an unexpected command-line input. Those are different questions, and each needs a concrete check.
 

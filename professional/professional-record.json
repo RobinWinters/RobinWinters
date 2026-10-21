@@ -1,8 +1,8 @@
 {
   "format": "robin-winters-professional-record",
   "format_version": 1,
-  "record_updated": "2026-10-03",
-  "approval": "Supported work facts approved October 2, 2026; PBC attribution and wording, TORos contribution, NASM-CPT and exact title NASM Certified Nutritionist confirmed by Robin October 3, 2026. Robin instructed inclusion now, with individual verification links to follow. Unresolved academic qualifications, credential dates and expiry are omitted.",
+  "record_updated": "2026-10-21",
+  "approval": "Work titles, dates, responsibilities and education aligned to Robin’s updated LinkedIn profile at Robin’s request on October 21, 2026. NASM qualifications and prototype boundaries retain prior direct confirmations; individual CPT/nutrition verification links and dates remain unresolved.",
   "identity": {
     "name": "Robin Winters",
     "website": "https://robin.ac/",
@@ -19,7 +19,7 @@
       "dev": "https://dev.to/robinwinters"
     }
   },
-  "summary": "Robin Winters is an iOS/Full Stack Engineer at ShowFlex, a shipped iPhone fitness product, working across Swift, SwiftUI, MapKit, Firebase and applied AI systems.",
+  "summary": "Robin Winters is an iOS Engineer at ShowFlex, a shipped iPhone fitness product, working across Swift, SwiftUI, MapKit, Firebase and applied AI systems.",
   "target_roles": [
     "iOS developer",
     "Forward Deployed Engineer",
@@ -28,53 +28,94 @@
   "target_role_status": "Interests, not previously held job titles",
   "work": [
     {
-      "organization": "ShowFlex",
-      "title": "iOS/Full Stack Engineer",
+      "organization": "ShowFlex Inc",
+      "title": "iOS Engineer",
       "start_year": 2024,
       "end_year": null,
       "current": true,
       "responsibilities": [
-        "Swift and SwiftUI engineering, mobile architecture and product direction",
-        "MapKit event discovery, search, filtering, geocoding and detail interactions",
-        "Firebase-backed data and ingestion pipelines",
-        "Interaction quality and beta release execution"
+        "Architected and developed a design-forward consumer iOS application using Swift and SwiftUI.",
+        "Built a MapKit-based event discovery feature with advanced search and filtering capabilities.",
+        "Created ingestion pipelines to normalize global event calendars and athlete metadata into structured data.",
+        "Led cross-functional collaboration with engineering, product design, and external partners to ensure seamless delivery."
       ],
       "experimental_work": [
         "AI-assisted physique and posing feedback",
         "Predictive competition features"
       ],
-      "evidence_url": "https://robin.ac/"
+      "evidence_url": "https://www.linkedin.com/in/robinwinters-sf/",
+      "employment_type": "Full-time",
+      "location": "San Francisco, California, United States",
+      "workplace_type": "On-site",
+      "start_date": "2024-11",
+      "end_date": null,
+      "evidence_kind": "Self-authored LinkedIn profile; synchronization requested by Robin October 21, 2026"
     },
     {
       "organization": "Yukon Systems",
-      "title": "Product Development Manager",
+      "title": "iOS Engineer, AI Systems Engineer",
       "start_year": 2023,
       "end_year": 2025,
       "current": false,
       "responsibilities": [
-        "Technical prioritization and cross-functional delivery of AI systems",
-        "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
-        "Agent and consensus-modeling workflows"
+        "Led technical prioritization and cross-functional delivery for AI-driven systems in high-reliability environments.",
+        "Translated research concepts into actionable software requirements and execution plans for iOS devices.",
+        "Collaborated with engineers on architecture decisions focusing on reliability, explainability, and performance."
       ],
-      "evidence_url": "https://robin.ac/"
+      "evidence_url": "https://www.linkedin.com/in/robinwinters-sf/",
+      "employment_type": "Contract",
+      "location": "San Francisco, California, United States",
+      "workplace_type": "On-site",
+      "start_date": "2023-03",
+      "end_date": "2025",
+      "evidence_kind": "Self-authored LinkedIn profile; synchronization requested by Robin October 21, 2026"
     },
     {
       "organization": "Organic Alkaloids",
-      "title": "Co-owner",
+      "title": "iOS Developer",
       "start_year": 2017,
       "end_year": 2023,
       "current": false,
       "responsibilities": [
-        "International import strategy, procurement and logistics",
-        "Client relationships, marketing and financial management"
+        "Developed and maintained operational workflows for iOS devices to streamline overseas sourcing and vendor coordination.",
+        "Managed logistics and shipment planning to enhance customer delivery processes.",
+        "Fostered strong client relationships through effective communication and marketing strategies."
       ],
-      "evidence_url": "https://robin.ac/"
+      "evidence_url": "https://www.linkedin.com/in/robinwinters-sf/",
+      "employment_type": "Full-time",
+      "location": "San Francisco, California, United States",
+      "workplace_type": "On-site",
+      "start_date": "2017-07",
+      "end_date": "2023-02",
+      "evidence_kind": "Self-authored LinkedIn profile; synchronization requested by Robin October 21, 2026"
     }
   ],
-  "date_precision": "year; no month-level dates inferred",
+  "date_precision": "Preserve displayed precision. Yukon end month and UNC/Le Cordon Bleu dates are not supplied and are omitted.",
   "education": {
-    "status": "Exact qualifications and attendance details unresolved; omitted from professional claims",
-    "qualifications": []
+    "status": "Listed in Robin’s updated LinkedIn profile; dates included only where supplied. No independent issuer verification added.",
+    "qualifications": [
+      {
+        "institution": "The University of North Carolina at Chapel Hill",
+        "qualification": "Bachelor of Arts",
+        "field": "Communications",
+        "kind": "Degree"
+      },
+      {
+        "institution": "Founder Institute",
+        "qualification": "Launch Track",
+        "field": "Startup Accelerator",
+        "kind": "Startup accelerator program",
+        "start": "2025-10",
+        "end": "2026-02",
+        "status": "Graduate"
+      },
+      {
+        "institution": "Le Cordon Bleu",
+        "qualification": "Grand Diplôme",
+        "kind": "Diploma"
+      }
+    ],
+    "evidence_url": "https://www.linkedin.com/in/robinwinters-sf/details/education/"
   },
   "projects_and_writing": [
     {
@@ -180,5 +221,7 @@
       "issued_status": "Unresolved; date omitted",
       "expiration_status": "Unresolved; date and current validity not inferred"
     }
-  ]
+  ],
+  "headline": "iOS Engineer | Applied AI Systems",
+  "source_update": "https://www.linkedin.com/in/robinwinters-sf/"
 }

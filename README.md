@@ -4,15 +4,21 @@ I'm an iOS engineer at ShowFlex, a shipped iPhone fitness product [available on 
 
 ## Work
 
-- **ShowFlex — iOS/Full Stack Engineer, 2024–present.** Swift and SwiftUI engineering, mobile architecture, product direction, MapKit event discovery, Firebase-backed data and ingestion pipelines, interaction quality, and beta release execution. AI-assisted physique and posing feedback and predictive competition features are prototype work.
-- **Yukon Systems — Product Development Manager, 2023–2025.** Technical prioritization and delivery of AI systems, software requirements, architecture tradeoffs involving reliability, explainability, latency and performance, and agent workflows.
-- **Organic Alkaloids — Co-owner, 2017–2023.** International import strategy, procurement, logistics, client relationships, marketing and financial operations.
+- **ShowFlex Inc — iOS Engineer, Nov 2024–present.** Architected and developed a design-forward consumer iOS application using Swift and SwiftUI. Built a MapKit-based event discovery feature with advanced search and filtering capabilities. Created ingestion pipelines to normalize global event calendars and athlete metadata into structured data. Led cross-functional collaboration with engineering, product design, and external partners to ensure seamless delivery.
+- **Yukon Systems — iOS Engineer, AI Systems Engineer, Mar 2023–2025.** Led technical prioritization and cross-functional delivery for AI-driven systems in high-reliability environments. Translated research concepts into actionable software requirements and execution plans for iOS devices. Collaborated with engineers on architecture decisions focusing on reliability, explainability, and performance.
+- **Organic Alkaloids — iOS Developer, Jul 2017–Feb 2023.** Developed and maintained operational workflows for iOS devices to streamline overseas sourcing and vendor coordination. Managed logistics and shipment planning to enhance customer delivery processes. Fostered strong client relationships through effective communication and marketing strategies.
+
+## Education
+
+- The University of North Carolina at Chapel Hill — Bachelor of Arts, Communications.
+- Founder Institute — Launch Track, Startup Accelerator (October 2025–February 2026; Graduate).
+- Le Cordon Bleu — Grand Diplôme.
 
 ## Work accounts
 
 - [ShowFlex: native iOS and fitness technology](work/showflex.md)
 - [Yukon Systems: AI systems and product delivery](work/yukon-systems.md)
-- [Organic Alkaloids: business operations and delivery](work/organic-alkaloids.md)
+- [Organic Alkaloids: iOS workflows and operational delivery](work/organic-alkaloids.md)
 
 These are self-authored accounts. Experimental features, role interests, and former positions are identified explicitly.
 

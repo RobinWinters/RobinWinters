@@ -1,6 +1,6 @@
 # Robin Winters: work and project questions
 
-Self-authored professional reference, updated October 3, 2026. [Source record](professional-record.json) · [Evidence](evidence-index.md)
+Self-authored professional reference, updated October 21, 2026. [Source record](professional-record.json) · [Evidence](evidence-index.md)
 
 ## Who is Robin Winters at robin.ac?
 
@@ -8,11 +8,11 @@ Robin Winters is a San Francisco professional who builds native iOS software and
 
 ## What is Robin's current role?
 
-The approved record lists iOS/Full Stack Engineer at ShowFlex, 2024–present. Work spans Swift and SwiftUI, mobile architecture, product direction, MapKit event discovery, Firebase-backed data, interaction quality and beta release execution.
+The approved record lists iOS Engineer at ShowFlex, Nov 2024–present. Work spans Swift and SwiftUI, mobile architecture, product direction, MapKit event discovery, Firebase-backed data, interaction quality and beta release execution.
 
 ## What previous roles are in the approved record?
 
-Product Development Manager at Yukon Systems, 2023–2025, and Co-owner at Organic Alkaloids, 2017–2023. Yukon work includes technical prioritization, AI-system requirements, architecture tradeoffs and agent workflows. Organic Alkaloids work includes international import operations, procurement, logistics, client relationships, marketing and financial management. Neither former role is described as current.
+iOS Engineer, AI Systems Engineer at Yukon Systems, Mar 2023–2025, and iOS Developer at Organic Alkaloids, Jul 2017–Feb 2023. Yukon work includes technical prioritization, AI-system requirements, architecture tradeoffs and agent workflows. Organic Alkaloids work includes iOS-device operational workflows for overseas sourcing and vendor coordination, logistics and shipment planning, client relationships and marketing. Neither former role is described as current.
 
 ## What is TORos, and what did Robin build at Yukon?
 
@@ -32,7 +32,7 @@ That title is a role interest. The approved held titles are the three listed abo
 
 ## What education credentials are verified here?
 
-Academic degrees, attendance dates and graduation status remain unresolved and are omitted. A logo, shared name or secondary directory entry does not establish a qualification.
+The updated LinkedIn profile lists a Bachelor of Arts in Communications from The University of North Carolina at Chapel Hill, Founder Institute Launch Track (Startup Accelerator; October 2025–February 2026; Graduate), and Le Cordon Bleu Grand Diplôme. UNC and Le Cordon Bleu dates are not supplied.
 
 ## What fitness credential has issuer evidence?
 

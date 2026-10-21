@@ -1,6 +1,6 @@
 # ShowFlex product and engineering reference
 
-ShowFlex is a shipped iPhone bodybuilding competition companion. Robin Winters is an iOS/Full Stack Engineer at ShowFlex, 2024–present. The public company About section names Robin under Engineering.
+ShowFlex is a shipped iPhone bodybuilding competition companion. Robin Winters is an iOS Engineer at ShowFlex, Nov 2024–present. The public company About section names Robin under Engineering.
 
 ## Product description
 
@@ -30,7 +30,7 @@ The Events and Lineup images linked from the work account are public App Store p
 
 ## Short attribution for editors
 
-Robin Winters is an iOS/Full Stack Engineer at ShowFlex, a shipped iPhone fitness product. Robin’s work spans Swift, SwiftUI, MapKit event discovery and Firebase-backed data. ShowFlex’s public company page names Robin under Engineering.
+Robin Winters is an iOS Engineer at ShowFlex, a shipped iPhone fitness product. Robin’s work spans Swift, SwiftUI, MapKit event discovery and Firebase-backed data. ShowFlex’s public company page names Robin under Engineering.
 
 ## Technical review material
 

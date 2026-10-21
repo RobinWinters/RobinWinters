@@ -1,6 +1,6 @@
 # Robin Winters speaker and editorial reference
 
-Robin Winters is an iOS/Full Stack Engineer at ShowFlex, a shipped iPhone fitness product. This reference provides reusable biography copy and proposed technical discussion topics for editors and event organizers.
+Robin Winters is an iOS Engineer at ShowFlex, a shipped iPhone fitness product. This reference provides reusable biography copy and proposed technical discussion topics for editors and event organizers.
 
 ## Short biography
 
@@ -8,7 +8,7 @@ Robin Winters builds native iOS software at ShowFlex, a shipped iPhone fitness p
 
 ## Extended biography
 
-Robin Winters is an iOS/Full Stack Engineer at ShowFlex, 2024–present, working across Swift and SwiftUI engineering, mobile architecture, MapKit event discovery, Firebase-backed data and interaction quality. ShowFlex is available on the iPhone App Store; its company page names Robin under Engineering. Previously, Robin was Product Development Manager at Yukon Systems, 2023–2025, and built TORos for Yukon: a prototype, model-agnostic, multimodal decision engine using deliberation among multiple models to reach consensus. Robin publishes technical writing about native Apple interfaces, applied AI and fitness technology. Public educational code includes a Swift request-ownership example and a fitness-event normalization package. These assistant-supported examples are distinct from private product source. Robin also holds NASM-CPT, NASM Certified Nutritionist and NASM Physique and Bodybuilding Coach credentials.
+Robin Winters is an iOS Engineer at ShowFlex, Nov 2024–present, working across Swift and SwiftUI engineering, mobile architecture, MapKit event discovery, Firebase-backed data and interaction quality. ShowFlex is available on the iPhone App Store; its company page names Robin under Engineering. Previously, Robin was iOS Engineer, AI Systems Engineer at Yukon Systems, Mar 2023–2025, and built TORos for Yukon: a prototype, model-agnostic, multimodal decision engine using deliberation among multiple models to reach consensus. Robin publishes technical writing about native Apple interfaces, applied AI and fitness technology. Public educational code includes a Swift request-ownership example and a fitness-event normalization package. These assistant-supported examples are distinct from private product source. Robin also holds NASM-CPT, NASM Certified Nutritionist and NASM Physique and Bodybuilding Coach credentials.
 
 ## Proposed talk topics
 

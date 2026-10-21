@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Robin Winters",
-    "label": "iOS/Full Stack Engineer",
+    "label": "iOS Engineer | Applied AI Systems",
     "email": "robin@showflex.pro",
     "url": "https://robin.ac/",
     "location": {
@@ -43,34 +43,35 @@
   },
   "work": [
     {
-      "name": "ShowFlex",
-      "position": "iOS/Full Stack Engineer",
+      "name": "ShowFlex Inc",
+      "position": "iOS Engineer",
       "highlights": [
-        "Swift and SwiftUI engineering, mobile architecture and product direction",
-        "MapKit event discovery, search, filtering, geocoding and detail interactions",
-        "Firebase-backed data and ingestion pipelines",
-        "Interaction quality and beta release execution"
+        "Architected and developed a design-forward consumer iOS application using Swift and SwiftUI.",
+        "Built a MapKit-based event discovery feature with advanced search and filtering capabilities.",
+        "Created ingestion pipelines to normalize global event calendars and athlete metadata into structured data.",
+        "Led cross-functional collaboration with engineering, product design, and external partners to ensure seamless delivery."
       ],
-      "summary": "2024\u2013present. Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
+      "summary": "Nov 2024–present. Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
     },
     {
       "name": "Yukon Systems",
-      "position": "Product Development Manager",
+      "position": "iOS Engineer, AI Systems Engineer",
       "highlights": [
-        "Technical prioritization and cross-functional delivery of AI systems",
-        "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
-        "Agent and consensus-modeling workflows"
+        "Led technical prioritization and cross-functional delivery for AI-driven systems in high-reliability environments.",
+        "Translated research concepts into actionable software requirements and execution plans for iOS devices.",
+        "Collaborated with engineers on architecture decisions focusing on reliability, explainability, and performance."
       ],
-      "summary": "2023\u20132025."
+      "summary": "Mar 2023–2025. "
     },
     {
       "name": "Organic Alkaloids",
-      "position": "Co-owner",
+      "position": "iOS Developer",
       "highlights": [
-        "International import strategy, procurement and logistics",
-        "Client relationships, marketing and financial management"
+        "Developed and maintained operational workflows for iOS devices to streamline overseas sourcing and vendor coordination.",
+        "Managed logistics and shipment planning to enhance customer delivery processes.",
+        "Fostered strong client relationships through effective communication and marketing strategies."
       ],
-      "summary": "2017\u20132023."
+      "summary": "Jul 2017–Feb 2023. "
     }
   ],
   "skills": [
@@ -107,7 +108,7 @@
     {
       "name": "ShowFlex iPhone product",
       "url": "https://apps.apple.com/us/app/showflex/id6757890910",
-      "description": "Native iOS/Full Stack engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
+      "description": "Native iOS engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
       "highlights": [
         "Swift/SwiftUI, MapKit event discovery, Firebase-backed data and ingestion pipelines.",
         "AI-assisted physique/posing feedback and predictive competition features are prototypes, not established released product capabilities.",
@@ -115,7 +116,7 @@
       ]
     },
     {
-      "name": "TORos \u2014 Yukon Systems prototype",
+      "name": "TORos — Yukon Systems prototype",
       "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
       "description": "Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.",
       "highlights": [
@@ -166,13 +167,13 @@
   ],
   "meta": {
     "version": "v1.0.0",
-    "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/registry-resume.json",
-    "theme": "reference",
+    "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json",
     "recordUpdated": "2026-10-03",
-    "datePrecision": "Approved year ranges appear in visible work summaries. Numeric date fields are omitted in this rendering copy because themes can manufacture January dates from year-only values.",
-    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles. TORos prototype contribution confirmed by Robin October 3; company article corroborates prototype existence, not individual authorship or measured outcomes.",
+    "datePrecision": "Exact displayed dates are retained as text to avoid themes manufacturing months or days.",
+    "evidenceNote": "Work titles, dates, responsibilities and education aligned to Robin’s updated LinkedIn profile at Robin’s request on October 21, 2026. NASM qualifications and prototype boundaries retain prior direct confirmations; individual CPT/nutrition verification links and dates remain unresolved.",
     "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json",
-    "structuredDateSource": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json"
+    "lastModified": "2026-10-21",
+    "theme": "reference"
   },
   "certificates": [
     {
@@ -188,6 +189,26 @@
     {
       "name": "NASM Certified Nutritionist",
       "issuer": "National Academy of Sports Medicine (NASM)"
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of North Carolina at Chapel Hill",
+      "studyType": "Bachelor of Arts",
+      "area": "Communications"
+    },
+    {
+      "institution": "Founder Institute",
+      "studyType": "Launch Track",
+      "area": "Startup Accelerator",
+      "courses": [
+        "Oct 2025–Feb 2026; Graduate"
+      ]
+    },
+    {
+      "institution": "Le Cordon Bleu",
+      "studyType": "Grand Diplôme",
+      "area": ""
     }
   ]
 }

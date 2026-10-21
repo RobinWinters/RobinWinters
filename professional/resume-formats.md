@@ -18,7 +18,7 @@ The export's canonical source is this repository's public `professional/resume.j
 
 ## Hosted rendering
 
-The [hosted resume](https://registry.jsonresume.org/RobinWinters) is rendered from a [public Gist on the existing GitHub account](https://gist.github.com/RobinWinters/2b52055db3cf1f0697ffefb2e5e27a6e). The separate [registry rendering copy](registry-resume.json) is also schema-valid and places year ranges directly in visible work summaries. It omits numeric date fields to prevent themes from expanding a year into January or inventing durations. The original [standard export](resume.json) retains structured year-only date fields. The reference theme was checked to preserve the three work titles and dates without inferred months.
+The [hosted resume](https://registry.jsonresume.org/RobinWinters) is rendered from a [public Gist on the existing GitHub account](https://gist.github.com/RobinWinters/2b52055db3cf1f0697ffefb2e5e27a6e). The separate [registry rendering copy](registry-resume.json) is also schema-valid and places the supplied date ranges directly in visible work summaries. It omits numeric date fields to prevent themes from expanding a year into January or inventing durations. The original [standard export](resume.json) retains the supplied structured date precision. The reference theme was checked to preserve the three work titles and dates without inferred months.
 
 ## Evidence boundaries
 
@@ -45,3 +45,7 @@ Robin confirmed Certified Personal Trainer (NASM-CPT) and the exact title NASM C
 ## Editable Word resume
 
 The [Word resume](resume.docx) preserves all 50 nonempty lines of the approved October 3 plain-text record. It uses one text column, ordinary paragraphs and clickable public evidence links. Both rendered pages were checked. No tables, text boxes, hidden credentials or new claims were added; parsing by a particular ATS has not been tested.
+
+## Current alignment — October 21, 2026
+
+Work titles, responsibility descriptions and education now follow Robin’s updated LinkedIn profile. Structured dates retain supplied month precision; Yukon’s end date remains 2025. The hosted rendering places dates in visible text to avoid fabricated months or days. The current PDF and Word documents were regenerated; the explicitly labeled original PDF is historical and remains unchanged.

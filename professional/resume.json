@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Robin Winters",
-    "label": "iOS/Full Stack Engineer",
+    "label": "iOS Engineer | Applied AI Systems",
     "email": "robin@showflex.pro",
     "url": "https://robin.ac/",
     "location": {
@@ -43,37 +43,38 @@
   },
   "work": [
     {
-      "name": "ShowFlex",
-      "position": "iOS/Full Stack Engineer",
-      "startDate": "2024",
+      "name": "ShowFlex Inc",
+      "position": "iOS Engineer",
+      "startDate": "2024-11",
       "highlights": [
-        "Swift and SwiftUI engineering, mobile architecture and product direction",
-        "MapKit event discovery, search, filtering, geocoding and detail interactions",
-        "Firebase-backed data and ingestion pipelines",
-        "Interaction quality and beta release execution"
+        "Architected and developed a design-forward consumer iOS application using Swift and SwiftUI.",
+        "Built a MapKit-based event discovery feature with advanced search and filtering capabilities.",
+        "Created ingestion pipelines to normalize global event calendars and athlete metadata into structured data.",
+        "Led cross-functional collaboration with engineering, product design, and external partners to ensure seamless delivery."
       ],
       "summary": "Prototype work: AI-assisted physique and posing feedback; Predictive competition features."
     },
     {
       "name": "Yukon Systems",
-      "position": "Product Development Manager",
-      "startDate": "2023",
+      "position": "iOS Engineer, AI Systems Engineer",
+      "startDate": "2023-03",
       "highlights": [
-        "Technical prioritization and cross-functional delivery of AI systems",
-        "Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance",
-        "Agent and consensus-modeling workflows"
+        "Led technical prioritization and cross-functional delivery for AI-driven systems in high-reliability environments.",
+        "Translated research concepts into actionable software requirements and execution plans for iOS devices.",
+        "Collaborated with engineers on architecture decisions focusing on reliability, explainability, and performance."
       ],
       "endDate": "2025"
     },
     {
       "name": "Organic Alkaloids",
-      "position": "Co-owner",
-      "startDate": "2017",
+      "position": "iOS Developer",
+      "startDate": "2017-07",
       "highlights": [
-        "International import strategy, procurement and logistics",
-        "Client relationships, marketing and financial management"
+        "Developed and maintained operational workflows for iOS devices to streamline overseas sourcing and vendor coordination.",
+        "Managed logistics and shipment planning to enhance customer delivery processes.",
+        "Fostered strong client relationships through effective communication and marketing strategies."
       ],
-      "endDate": "2023"
+      "endDate": "2023-02"
     }
   ],
   "skills": [
@@ -110,7 +111,7 @@
     {
       "name": "ShowFlex iPhone product",
       "url": "https://apps.apple.com/us/app/showflex/id6757890910",
-      "description": "Native iOS/Full Stack engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
+      "description": "Native iOS engineering at ShowFlex. Public iPhone listing verified October 2, 2026; publisher and seller ShowFlex Inc.",
       "highlights": [
         "Swift/SwiftUI, MapKit event discovery, Firebase-backed data and ingestion pipelines.",
         "AI-assisted physique/posing feedback and predictive competition features are prototypes, not established released product capabilities.",
@@ -118,7 +119,7 @@
       ]
     },
     {
-      "name": "TORos \u2014 Yukon Systems prototype",
+      "name": "TORos — Yukon Systems prototype",
       "url": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/work/yukon-systems.md",
       "description": "Robin Winters built TORos for Yukon Systems: a prototype, model-agnostic, multimodal decision engine that uses deliberation among multiple models to reach consensus.",
       "highlights": [
@@ -171,9 +172,10 @@
     "version": "v1.0.0",
     "canonical": "https://raw.githubusercontent.com/RobinWinters/RobinWinters/Radpository/professional/resume.json",
     "recordUpdated": "2026-10-03",
-    "datePrecision": "year for employment; no month-level dates inferred",
-    "evidenceNote": "Approved professional claims; issuer-hosted NASM PBC credential approved October 3, 2026. Academic qualifications remain unresolved and omitted. Target roles are interests, not held titles. TORos prototype contribution confirmed by Robin October 3; company article corroborates prototype existence, not individual authorship or measured outcomes.",
-    "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json"
+    "datePrecision": "Preserve displayed precision. Yukon end month and UNC/Le Cordon Bleu dates are not supplied and are omitted.",
+    "evidenceNote": "Work titles, dates, responsibilities and education aligned to Robin’s updated LinkedIn profile at Robin’s request on October 21, 2026. NASM qualifications and prototype boundaries retain prior direct confirmations; individual CPT/nutrition verification links and dates remain unresolved.",
+    "sourceRecord": "https://github.com/RobinWinters/RobinWinters/blob/Radpository/professional/professional-record.json",
+    "lastModified": "2026-10-21"
   },
   "certificates": [
     {
@@ -189,6 +191,25 @@
     {
       "name": "NASM Certified Nutritionist",
       "issuer": "National Academy of Sports Medicine (NASM)"
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of North Carolina at Chapel Hill",
+      "studyType": "Bachelor of Arts",
+      "area": "Communications"
+    },
+    {
+      "institution": "Founder Institute",
+      "studyType": "Launch Track",
+      "area": "Startup Accelerator",
+      "startDate": "2025-10",
+      "endDate": "2026-02"
+    },
+    {
+      "institution": "Le Cordon Bleu",
+      "studyType": "Grand Diplôme",
+      "area": ""
     }
   ]
 }

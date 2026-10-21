@@ -14,21 +14,26 @@ PROFESSIONAL SUMMARY
 Native iOS and applied AI work with a focus on fitness technology. ShowFlex responsibilities include event discovery, structured data, product direction and mobile interaction quality. AI-assisted physique and posing feedback and predictive competition features are prototype work.
 
 WORK EXPERIENCE
-ShowFlex | iOS/Full Stack Engineer | 2024-present
-- Swift and SwiftUI engineering, mobile architecture and product direction
-- MapKit event discovery, search, filtering, geocoding and detail interactions
-- Firebase-backed data and ingestion pipelines
-- Interaction quality and beta release execution
-- Prototype work: AI-assisted physique and posing feedback; Predictive competition features.
+ShowFlex Inc | iOS Engineer | Nov 2024–present
+- Architected and developed a design-forward consumer iOS application using Swift and SwiftUI.
+- Built a MapKit-based event discovery feature with advanced search and filtering capabilities.
+- Created ingestion pipelines to normalize global event calendars and athlete metadata into structured data.
+- Led cross-functional collaboration with engineering, product design, and external partners to ensure seamless delivery.
 
-Yukon Systems | Product Development Manager | 2023-2025
-- Technical prioritization and cross-functional delivery of AI systems
-- Software requirements and architecture tradeoffs involving reliability, explainability, latency and performance
-- Agent and consensus-modeling workflows
+Yukon Systems | iOS Engineer, AI Systems Engineer | Mar 2023–2025
+- Led technical prioritization and cross-functional delivery for AI-driven systems in high-reliability environments.
+- Translated research concepts into actionable software requirements and execution plans for iOS devices.
+- Collaborated with engineers on architecture decisions focusing on reliability, explainability, and performance.
 
-Organic Alkaloids | Co-owner | 2017-2023
-- International import strategy, procurement and logistics
-- Client relationships, marketing and financial management
+Organic Alkaloids | iOS Developer | Jul 2017–Feb 2023
+- Developed and maintained operational workflows for iOS devices to streamline overseas sourcing and vendor coordination.
+- Managed logistics and shipment planning to enhance customer delivery processes.
+- Fostered strong client relationships through effective communication and marketing strategies.
+
+EDUCATION
+The University of North Carolina at Chapel Hill | Bachelor of Arts, Communications
+Founder Institute | Launch Track, Startup Accelerator | Oct 2025–Feb 2026 | Graduate
+Le Cordon Bleu | Grand Diplôme
 
 TECHNICAL FOCUS
 Swift, SwiftUI, MapKit, Firebase, native iOS architecture, structured data pipelines, applied AI workflows, product delivery.
@@ -57,8 +62,8 @@ ROLE INTERESTS
 iOS developer, Forward Deployed Engineer and fitness-technology opportunities. These are target roles.
 
 RECORD NOTES
-Year-level dates only. Unresolved academic qualifications omitted. NASM credentials appear below; CPT and nutrition dates and verification links will be added when available. No sole authorship, prototype release or performance metrics asserted.
-Updated October 3, 2026. Self-authored professional record.
+Dates retain LinkedIn’s displayed precision; no Yukon end month is inferred. Education follows the updated LinkedIn profile. NASM credentials appear below; CPT and nutrition dates and verification links will be added when available. No sole authorship, prototype release or performance metrics asserted.
+Updated October 21, 2026. Self-authored professional record.
 
 FITNESS CREDENTIALS
 Physique and Bodybuilding Coach (PBC) — National Academy of Sports Medicine (NASM)

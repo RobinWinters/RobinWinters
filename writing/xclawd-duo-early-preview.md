@@ -21,6 +21,6 @@ This is an early, rough development build. The focus of this clip is the interfa
 
 ## About the developer
 
-I’m Robin Winters, an iOS/Full Stack Engineer at ShowFlex. Alongside this early Xclawd work, I’ve shipped the ShowFlex iPhone product. [ShowFlex on the App Store](https://apps.apple.com/us/app/showflex/id6757890910) · [Professional site](https://robin.ac/).
+I’m Robin Winters, an iOS Engineer at ShowFlex. Alongside this early Xclawd work, I’ve shipped the ShowFlex iPhone product. [ShowFlex on the App Store](https://apps.apple.com/us/app/showflex/id6757890910) · [Professional site](https://robin.ac/).
 
 Published October 8, 2026. Adapted from my LinkedIn post with editorial assistance.
